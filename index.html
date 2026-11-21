@@ -131,6 +131,50 @@ html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);font-fami
 .diaryWorkout.highlightTarget{border-color:#a69076;box-shadow:0 0 0 2px #c5b7a545}
 .diaryExercise.isFocused{border-color:#a69076;background:#f9f6f1}
 @media(max-width:760px){.strengthControls{grid-template-columns:1fr}.diarySubtab{min-width:0;font-size:12px}.strengthStats{gap:6px}.strengthStat{padding:11px}.strengthStat strong{font-size:19px}.strengthTabs button{flex:1}.strengthChartWrap{padding:8px 0}}
+
+/* FORMA 1.5 — dziennik progresu */
+.progressSubtabs{display:flex;gap:7px;padding:6px;background:#f8f6f3;border:1px solid var(--line);border-radius:14px;margin:2px 0 15px;overflow-x:auto}
+.progressSubtab{flex:1;border:0;min-width:128px;padding:11px 14px;border-radius:10px;background:transparent;color:#6b6055;font-weight:650;font-size:13px;white-space:nowrap}
+.progressSubtab.active{background:#fff;color:var(--ink);box-shadow:0 2px 8px #21181012}
+.progressSummary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:15px 0 20px}
+.progressMetric{background:#f8f6f3;border:1px solid #eee8e0;border-radius:13px;padding:14px;min-width:0}
+.progressMetric strong{font-size:23px;letter-spacing:-.04em;display:block;line-height:1.45;overflow-wrap:anywhere}
+.progressMetric .miniLabel{font-size:10px}
+.progressToolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin:15px 0}
+.progressToolbar >div{min-width:145px}
+.progressToolbar label{margin-top:0}
+.progressPlot{padding:12px;border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden}
+.progressPlot svg{display:block;width:100%;height:auto}
+.progressEntryForm{background:#faf9f7;border:1px solid var(--line);border-radius:16px;padding:20px;margin:18px 0}
+.progressEntryForm h3{margin-bottom:12px}
+.progressEntryForm .formgrid{margin-bottom:8px}
+.progressFormButtons{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.progressHistory{overflow:auto;border:1px solid var(--line);border-radius:13px;margin-top:12px}
+.progressHistory table{width:100%;border-collapse:collapse;font-size:13px}
+.progressHistory th{background:#f8f6f3;color:#6d6258;font-size:11px;text-align:left;white-space:nowrap;padding:12px 13px}
+.progressHistory td{border-top:1px solid var(--line);padding:11px 13px;white-space:nowrap}
+.progressHistory .progressHistoryActions{white-space:nowrap;text-align:right}
+.progressHistory button{border:0;background:#f5f1ed;color:#625748;padding:7px 10px;border-radius:8px;font-size:12px;margin-right:5px}
+.progressHistory button:hover{background:#eae2d8}
+.progressHistory button.delete{color:#973f3f;background:#faf0ed}
+.progressHistory .neutral{color:#857b70}
+.progressGallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:15px}
+.progressPhotoTile{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;min-width:0}
+.progressPhotoTile img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;background:#efebe5}
+.progressPhotoTile footer{margin:0;padding:12px;border:0;display:flex;justify-content:space-between;align-items:center;gap:7px;color:var(--ink)}
+.progressPhotoTile footer small{color:var(--muted);font-size:11px;display:block}
+.progressPhotoTile button{background:transparent;color:#983b3b;border:0;font-size:12px;padding:5px}
+.progressCompareFilters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:16px}
+.progressComparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.progressCompareCard{min-width:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#f8f6f3}
+.progressCompareCard img{width:100%;height:380px;object-fit:contain;display:block;background:#eee8e0}
+.progressCompareCaption{padding:12px;text-align:center;font-weight:650;font-size:13px}
+.progressEmptyPhoto{padding:30px 12px;color:#7c736a;text-align:center;font-size:13px}
+.progressPrivacy{background:#f7f4f0;border:1px solid #e8e0d6;padding:12px 14px;border-radius:11px;color:#6f665e;font-size:12px;line-height:1.6;margin:12px 0}
+.progressEmpty{padding:22px;border:1px dashed #ded7cf;border-radius:13px;background:#faf9f7;color:#807a72;font-size:13px;text-align:center}
+.progressSmallBtn{border:1px solid var(--line);background:white;border-radius:9px;padding:9px 12px;font-size:12px}
+@media(max-width:760px){.progressSummary{gap:7px}.progressMetric{padding:11px}.progressMetric strong{font-size:18px}.progressGallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.progressCompareFilters{grid-template-columns:1fr}.progressCompareCard img{height:240px}.progressComparison{gap:8px}.progressSubtab{font-size:12px;min-width:108px;padding:10px 9px}.progressEntryForm{padding:14px}.progressPlot{padding:7px}}
+
 </style><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#F0EBE5"><link rel="icon" type="image/png" href="/icon-192.png"><link rel="apple-touch-icon" href="/icon-192.png"></head><body>
 <div class="appLayout"><aside class="sidebar" id="sidebar"><div class="brand"><strong>FORMA<span>.</span></strong><small>BY ZUZIA FIKS</small></div><div class="sideNav" id="sideNav"></div><div class="sidebarFooter" id="identity">Łączenie…</div></aside>
 <div class="pagePane"><header class="mobileHeader"><div class="brand"><strong>FORMA<span>.</span></strong><small>BY ZUZIA FIKS</small></div><div id="mobileIdentity" class="mobileUser"></div></header><main class="shell"><div class="top"><div><div class="muted small">TWÓJ TRENING. TWOJE TEMPO.</div><h1 id="title">FORMA</h1></div><span class="tag">● TWOJA PRZESTRZEŃ</span></div><div id="flash"></div><nav class="tabs" id="tabs"></nav><div id="app">Ładowanie…</div><footer>FORMA | by Zuzia Fiks · Konto prywatne · Dane zapisane w Supabase.</footer></main></div></div><nav class="bottomNav" id="mobileNav" aria-label="Nawigacja mobilna"></nav><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
@@ -639,6 +683,126 @@ async function openCalendarTraining(id){const b=bookings.find(x=>x.id===id&&x.st
   render();window.scrollTo({top:0,behavior:'smooth'})
  }catch(e){message('Nie udało się otworzyć treningu: '+e.message,true)}}
 
+
+/* FORMA 1.5 — masa ciała, obwody i prywatne zdjęcia sylwetki.
+   Tabele body_measurements oraz progress_photos pochodzą z Etapu 1. */
+let progressSection='weight', progressRange='all', progressMeasureMetric='waist_cm';
+let progressWeightEditing='', progressMeasurementsEditing='', progressGalleryFilter='all';
+let progressCompareType='front', progressCompareBefore='', progressCompareAfter='';
+let progressPhotoSignedUrls={}, progressPhotoCacheKey='', progressPhotoCacheUntil=0, progressPhotoRequest=0;
+const progressFields=[['waist_cm','Talia'],['hips_cm','Biodra'],['chest_cm','Klatka piersiowa'],['arm_cm','Ramię'],['thigh_cm','Udo']];
+const progressPhotoLabels={front:'Przód',side:'Bok',back:'Tył',other:'Inne'};
+const progressNum=x=>Number.isFinite(Number(x))?Number(x).toLocaleString('pl-PL',{maximumFractionDigits:2}):'—';
+const progressSort=(a,b)=>String(a.measured_on).localeCompare(String(b.measured_on))||String(a.created_at||'').localeCompare(String(b.created_at||''));
+const progressHas=x=>x!==null&&x!==undefined&&x!==''&&Number.isFinite(Number(x));
+const progressDateLabel=d=>{const [y,m,day]=String(d||'').split('-');return y&&m&&day?`${day}.${m}.${y}`:'—'};
+function progressRelevantRows(key){return measurements.filter(m=>progressHas(m[key])&&Number(m[key])>0).sort(progressSort)}
+function progressFieldRows(){return measurements.filter(m=>progressFields.some(([k])=>progressHas(m[k])&&Number(m[k])>0)).sort(progressSort)}
+function progressRangeRows(rows){if(progressRange==='all')return rows;const monthCount=Number(progressRange);if(!monthCount)return rows;const date=new Date();date.setHours(0,0,0,0);date.setMonth(date.getMonth()-monthCount);return rows.filter(r=>new Date(r.measured_on+'T12:00:00')>=date)}
+function progressStat(title,val,detail=''){return `<div class="progressMetric"><span class="miniLabel">${esc(title)}</span><strong>${esc(val)}</strong>${detail?`<div class="hint">${esc(detail)}</div>`:''}</div>`}
+function progressStats(rows,key,unit){const first=rows[0],last=rows[rows.length-1];if(!first)return '<div class="progressEmpty">Dodaj pierwszy pomiar, aby zobaczyć podsumowanie.</div>';
+ const diff=Number(last[key])-Number(first[key]),signed=`${diff>0?'+':''}${progressNum(diff)} ${unit}`;
+ return `<div class="progressSummary">${progressStat('Pierwszy pomiar',progressNum(first[key])+' '+unit,progressDateLabel(first.measured_on))}${progressStat('Ostatni pomiar',progressNum(last[key])+' '+unit,progressDateLabel(last.measured_on))}${progressStat('Zmiana',signed,rows.length>1?`${rows.length} zapisanych pomiarów`:'Pierwszy zapis')}</div>`;
+}
+function progressChartSvg(rows,key,unit){if(!rows.length)return '<div class="progressEmpty">Brak pomiarów w wybranym okresie. Wybierz „Całość” lub dodaj wpis.</div>';
+ const filtered=rows.slice().sort(progressSort),values=filtered.map(r=>Number(r[key])),min=Math.min(...values),max=Math.max(...values),pad=Math.max((max-min)*0.16,unit==='kg'?0.5:0.3),low=Math.max(0,min-pad),high=max+pad,lo=Number.isFinite(low)?low:0,hi=high>lo?high:lo+1;
+ const w=760,h=252,plotLeft=61,plotRight=737,plotTop=23,plotBottom=204;
+ const dates=filtered.map(r=>new Date(r.measured_on+'T12:00:00').getTime()),firstDate=Math.min(...dates),lastDate=Math.max(...dates);
+ const xAt=(d,i)=>lastDate>firstDate?plotLeft+(plotRight-plotLeft)*((d-firstDate)/(lastDate-firstDate)):(plotLeft+plotRight)/2;
+ const yAt=n=>plotBottom-(n-lo)/(hi-lo)*(plotBottom-plotTop);
+ const pts=filtered.map((r,i)=>[xAt(dates[i],i),yAt(values[i]),r]);
+ const lines=Array.from({length:5},(_,i)=>{const y=plotTop+(plotBottom-plotTop)*i/4,n=hi-(hi-lo)*i/4;return `<line x1="${plotLeft}" x2="${plotRight}" y1="${y}" y2="${y}" stroke="#e9e4dd" stroke-dasharray="4 5"/><text x="52" y="${y+4}" font-size="11" text-anchor="end" fill="#82796d">${esc(progressNum(n))}</text>`}).join('');
+ const count=Math.min(5,filtered.length),axis=Array.from({length:count},(_,i)=>{const idx=count===1?0:Math.round(i*(filtered.length-1)/(count-1)),r=filtered[idx],px=xAt(dates[idx],idx);return `<text x="${px}" y="228" font-size="10.5" text-anchor="middle" fill="#857b70">${esc(progressDateLabel(r.measured_on).slice(0,5))}</text>`}).join('');
+ const points=pts.map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="4.2" fill="#a48b72" stroke="#fff" stroke-width="1.6"><title>${esc(progressDateLabel(r.measured_on))}: ${esc(progressNum(r[key]))} ${esc(unit)}</title></circle>`).join('');
+ const coords=pts.map(([x,y])=>`${x.toFixed(2)},${y.toFixed(2)}`).join(' ');
+ return `<div class="progressPlot" role="img" aria-label="Wykres ${esc(key)} w czasie, ${filtered.length} pomiarów"><svg viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg">${lines}${pts.length>1?`<polyline points="${coords}" stroke="#a48b72" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`:''}${points}${axis}</svg></div>`;
+}
+function progressRangeSelect(){return `<div><label for="progressRange">Zakres czasu</label><select id="progressRange" onchange="progressChangeRange(this.value)"><option value="1" ${progressRange==='1'?'selected':''}>Ostatni miesiąc</option><option value="3" ${progressRange==='3'?'selected':''}>3 miesiące</option><option value="6" ${progressRange==='6'?'selected':''}>6 miesięcy</option><option value="all" ${progressRange==='all'?'selected':''}>Cała historia</option></select></div>`}
+function progressChangeRange(value){progressRange=value;render()}
+function switchProgressSection(value){progressSection=value;progressWeightEditing='';progressMeasurementsEditing='';render()}
+function progress(){if(!clientId())return card('<p>Wybierz podopieczną.</p>');
+ const tabs=`<div class="progressSubtabs" role="tablist" aria-label="Rodzaj progresu"><button class="progressSubtab ${progressSection==='weight'?'active':''}" role="tab" aria-selected="${progressSection==='weight'}" onclick="switchProgressSection('weight')">Masa ciała</button><button class="progressSubtab ${progressSection==='measurements'?'active':''}" role="tab" aria-selected="${progressSection==='measurements'}" onclick="switchProgressSection('measurements')">Pomiary ciała</button><button class="progressSubtab ${progressSection==='photos'?'active':''}" role="tab" aria-selected="${progressSection==='photos'}" onclick="switchProgressSection('photos')">Zdjęcia sylwetki</button></div>`;
+ if(progressSection==='photos')setTimeout(()=>{if(tab==='progress'&&progressSection==='photos')hydrateProgressPhotos()},0);
+ return `${card(`<div class="sectionHeading"><h2>Dziennik progresu</h2><span class="statusPill">Sylwetka i pomiary</span></div><p class="hint">Obserwuj zmiany masy ciała, obwodów i sylwetki. Progres siłowy znajdziesz w Dzienniku treningowym.</p>${tabs}`)}${progressSection==='weight'?progressWeightPage():progressSection==='measurements'?progressMeasurementsPage():progressPhotosPage()}`;
+}
+function progressWeightPage(){const rows=progressRelevantRows('weight_kg'),plotRows=progressRangeRows(rows),editing=measurements.find(m=>m.id===progressWeightEditing),history=rows.slice().reverse();
+ return `${card(`<div class="sectionHeading"><h2>Masa ciała</h2><span class="statusPill">${rows.length} pomiarów</span></div>${progressStats(rows,'weight_kg','kg')}<div class="progressToolbar"><p class="hint">Zmiana masy ciała w czasie — każdy punkt to zapisany pomiar.</p>${progressRangeSelect()}</div>${progressChartSvg(plotRows,'weight_kg','kg')}`)}
+ ${card(`<div class="progressEntryForm" id="progressWeightForm"><h3>${editing?'Edytuj pomiar':'Dodaj pomiar masy ciała'}</h3><form onsubmit="progressSaveWeight(event)"><div class="formgrid"><div><label for="progressWeightDate">Data pomiaru</label><input id="progressWeightDate" type="date" required value="${esc(editing?.measured_on||today())}"></div><div><label for="progressWeightValue">Masa ciała (kg)</label><input id="progressWeightValue" type="number" inputmode="decimal" min="0.1" max="1000" step="0.1" placeholder="Np. 68,5" required value="${esc(editing?.weight_kg??'')}"></div></div><div class="progressFormButtons"><button class="primary" type="submit">${editing?'Zapisz zmiany':'Zapisz pomiar'}</button>${editing?'<button type="button" class="ghost" onclick="progressWeightEditing=\'\';render()">Anuluj</button>':''}</div></form></div><h3>Historia masy ciała</h3>${history.length?`<div class="progressHistory"><table><thead><tr><th>Data</th><th>Masa ciała</th><th>Zmiana od poprzedniego</th><th></th></tr></thead><tbody>${history.map((m,i)=>{const previous=history[i+1],delta=previous?Number(m.weight_kg)-Number(previous.weight_kg):null;return `<tr><td>${progressDateLabel(m.measured_on)}</td><td><strong>${progressNum(m.weight_kg)} kg</strong></td><td>${delta===null?'—':`${delta>0?'+':''}${progressNum(delta)} kg`}</td><td class="progressHistoryActions"><button type="button" onclick="progressEditWeight('${esc(m.id)}')">Edytuj</button><button type="button" class="delete" onclick="progressDeleteWeight('${esc(m.id)}')">Usuń</button></td></tr>`}).join('')}</tbody></table></div>`:'<div class="progressEmpty">Nie ma jeszcze zapisanych pomiarów wagi.</div>'}`)}`;
+}
+function progressEditWeight(id){progressWeightEditing=id;render();$('progressWeightForm')?.scrollIntoView({behavior:'smooth',block:'center'})}
+function progressValue(id){const raw=v(id).replace(',','.');if(!raw)return null;const n=Number(raw);if(!Number.isFinite(n)||n<=0||n>1000)throw Error('Podaj prawidłowy pomiar większy od 0.');return n}
+async function progressSaveWeight(event){event.preventDefault();try{
+ const weight=progressValue('progressWeightValue'),date=v('progressWeightDate');if(!weight||!/^\d{4}-\d{2}-\d{2}$/.test(date))throw Error('Podaj datę i prawidłową masę ciała.');
+ const existing=measurements.find(m=>m.id===progressWeightEditing),payload={measured_on:date,weight_kg:weight};
+ if(existing)check(await sb.from('body_measurements').update(payload).eq('id',existing.id).eq('client_id',clientId()));
+ else check(await sb.from('body_measurements').insert({...payload,client_id:clientId()}));
+ progressWeightEditing='';await loadClient();render();message('Pomiar masy ciała zapisany.');
+ }catch(e){message('Nie udało się zapisać wagi: '+e.message,true)}}
+function progressOtherMeasurements(m){return progressFields.some(([k])=>progressHas(m[k])&&Number(m[k])>0)}
+async function progressDeleteWeight(id){const m=measurements.find(x=>x.id===id&&progressHas(x.weight_kg));if(!m||!window.confirm('Usunąć ten pomiar masy ciała?'))return;
+ try{const q=progressOtherMeasurements(m)?sb.from('body_measurements').update({weight_kg:null}).eq('id',id).eq('client_id',clientId()):sb.from('body_measurements').delete().eq('id',id).eq('client_id',clientId());check(await q);progressWeightEditing='';await loadClient();render();message('Pomiar masy ciała usunięty.')}catch(e){message('Nie udało się usunąć pomiaru: '+e.message,true)}}
+function progressMeasurementsPage(){const rows=progressFieldRows(),metric=progressFields.find(([k])=>k===progressMeasureMetric)||progressFields[0],chartRows=progressRangeRows(rows.filter(m=>progressHas(m[metric[0]])&&Number(m[metric[0]])>0));
+ const edit=measurements.find(m=>m.id===progressMeasurementsEditing),history=rows.slice().reverse();
+ const columns=progressFields.map(([k,title])=>`<th>${esc(title)}</th>`).join('');
+ return `${card(`<div class="sectionHeading"><h2>Pomiary ciała</h2><span class="statusPill">${rows.length} zestawów</span></div><div class="progressToolbar"><div style="flex:1;max-width:370px"><label for="progressMeasurementMetric">Obwód na wykresie</label><select id="progressMeasurementMetric" onchange="progressMeasureMetric=this.value;render()">${progressFields.map(([k,title])=>`<option value="${k}" ${progressMeasureMetric===k?'selected':''}>${esc(title)}</option>`).join('')}</select></div>${progressRangeSelect()}</div>${progressStats(rows.filter(m=>progressHas(m[metric[0]])&&Number(m[metric[0]])>0),metric[0],'cm')}${progressChartSvg(chartRows,metric[0],'cm')}`)}
+ ${card(`<div class="progressEntryForm" id="progressMeasurementsForm"><h3>${edit?'Edytuj pomiary':'Dodaj pomiary obwodów'}</h3><form onsubmit="progressSaveMeasurements(event)"><div class="formgrid"><div><label for="progressMeasurementsDate">Data pomiaru</label><input type="date" id="progressMeasurementsDate" required value="${esc(edit?.measured_on||today())}"></div>${progressFields.map(([k,title])=>`<div><label for="progress-${k}">${esc(title)} (cm)</label><input id="progress-${k}" type="number" min="0.1" max="500" step="0.1" inputmode="decimal" placeholder="cm" value="${esc(edit?.[k]??'')}"></div>`).join('')}</div><label for="progressMeasurementsNotes">Notatka (opcjonalnie)</label><textarea id="progressMeasurementsNotes" rows="2" maxlength="1000" placeholder="Np. pomiar rano, na czczo">${esc(edit?.notes||'')}</textarea><div class="progressFormButtons"><button class="primary" type="submit">${edit?'Zapisz zmiany':'Zapisz pomiary'}</button>${edit?'<button class="ghost" type="button" onclick="progressMeasurementsEditing=\'\';render()">Anuluj</button>':''}</div></form></div><h3>Historia pomiarów</h3>${history.length?`<div class="progressHistory"><table><thead><tr><th>Data</th>${columns}<th></th></tr></thead><tbody>${history.map(m=>`<tr><td>${progressDateLabel(m.measured_on)}</td>${progressFields.map(([k])=>`<td>${progressHas(m[k])?progressNum(m[k])+' cm':'—'}</td>`).join('')}<td class="progressHistoryActions"><button type="button" onclick="progressEditMeasurements('${esc(m.id)}')">Edytuj</button><button class="delete" type="button" onclick="progressDeleteMeasurements('${esc(m.id)}')">Usuń</button></td></tr>`).join('')}</tbody></table></div>`:'<div class="progressEmpty">Nie ma jeszcze pomiarów obwodów. Wystarczy wprowadzić jeden obwód.</div>'}`)}`;
+}
+function progressEditMeasurements(id){progressMeasurementsEditing=id;render();$('progressMeasurementsForm')?.scrollIntoView({behavior:'smooth',block:'center'})}
+async function progressSaveMeasurements(event){event.preventDefault();try{
+ const date=v('progressMeasurementsDate'),record={measured_on:date,notes:v('progressMeasurementsNotes')};if(!/^\d{4}-\d{2}-\d{2}$/.test(date))throw Error('Wybierz datę pomiaru.');
+ let present=0;for(const [key] of progressFields){const raw=v('progress-'+key);if(raw){const n=progressValue('progress-'+key);if(n>500)throw Error('Pomiary obwodów muszą być mniejsze niż 500 cm.');record[key]=n;present++}else record[key]=null}
+ if(!present)throw Error('Wpisz przynajmniej jeden obwód.');
+ const editing=measurements.find(x=>x.id===progressMeasurementsEditing);
+ if(editing)check(await sb.from('body_measurements').update(record).eq('id',editing.id).eq('client_id',clientId()));
+ else check(await sb.from('body_measurements').insert({...record,client_id:clientId()}));
+ progressMeasurementsEditing='';await loadClient();render();message('Pomiary ciała zapisane.');
+ }catch(e){message('Nie udało się zapisać pomiarów: '+e.message,true)}}
+async function progressDeleteMeasurements(id){const m=measurements.find(x=>x.id===id&&progressOtherMeasurements(x));if(!m||!window.confirm('Usunąć pomiary obwodów z tego dnia?'))return;
+ try{const payload=Object.fromEntries(progressFields.map(([k])=>[k,null]));const q=progressHas(m.weight_kg)?sb.from('body_measurements').update(payload).eq('id',id).eq('client_id',clientId()):sb.from('body_measurements').delete().eq('id',id).eq('client_id',clientId());check(await q);progressMeasurementsEditing='';await loadClient();render();message('Pomiary obwodów usunięte.')}catch(e){message('Nie udało się usunąć pomiarów: '+e.message,true)}}
+function progressPhotosPage(){return `${card(`<div class="sectionHeading"><h2>Zdjęcia sylwetki</h2><span class="statusPill">${photos.length} zdjęć</span></div><p class="hint">Dodaj zdjęcia przodem, bokiem lub tyłem, a następnie porównuj sylwetkę z dwóch dat.</p><div class="progressPrivacy">Zdjęcia są prywatne — dostęp ma podopieczna i trenerka. Pliki są przechowywane w prywatnym zasobniku Supabase i wyświetlane przez czasowe odnośniki.</div><div class="progressEntryForm"><h3>Dodaj zdjęcie</h3><form onsubmit="progressUploadPhoto(event)"><div class="formgrid"><div><label for="progressPhotoDate">Data zdjęcia</label><input id="progressPhotoDate" type="date" value="${today()}" required></div><div><label for="progressPhotoType">Ujęcie</label><select id="progressPhotoType"><option value="front">Przód</option><option value="side">Bok</option><option value="back">Tył</option><option value="other">Inne</option></select></div></div><label for="progressPhotoFile">Zdjęcie JPG, PNG lub WebP (do 5 MB)</label><input type="file" id="progressPhotoFile" accept="image/jpeg,image/png,image/webp" required><div class="progressFormButtons"><button type="submit" class="primary" id="progressPhotoUploadButton">Dodaj zdjęcie</button></div></form></div><div id="progressPhotoDisplay"><div class="progressEmpty">${photos.length?'Ładowanie prywatnych zdjęć…':'Nie ma jeszcze zdjęć sylwetki.'}</div></div>`)}`}
+async function hydrateProgressPhotos(force=false){const container=$('progressPhotoDisplay');if(!container||tab!=='progress'||progressSection!=='photos')return;
+ const cid=clientId(),key=cid+'|'+photos.map(p=>p.id+':'+p.storage_path).join('|');
+ if(!photos.length){container.innerHTML=progressPhotoContent();return}
+ if(!force&&progressPhotoCacheKey===key&&Date.now()<progressPhotoCacheUntil){container.innerHTML=progressPhotoContent();return}
+ const request=++progressPhotoRequest;container.innerHTML='<div class="progressEmpty">Wczytywanie prywatnych zdjęć…</div>';
+ const results=await Promise.all(photos.map(p=>sb.storage.from('forma-progress').createSignedUrl(p.storage_path,3600)));
+ if(request!==progressPhotoRequest||clientId()!==cid||tab!=='progress'||progressSection!=='photos')return;
+ progressPhotoSignedUrls={};let errors=0;results.forEach((r,i)=>{if(r.error||!r.data?.signedUrl)errors++;else progressPhotoSignedUrls[photos[i].id]=r.data.signedUrl});
+ progressPhotoCacheKey=key;progressPhotoCacheUntil=Date.now()+45*60*1000;
+ if($('progressPhotoDisplay'))$('progressPhotoDisplay').innerHTML=(errors?`<div class="notice error">Nie udało się odczytać ${errors} zdjęć. Sprawdź SQL i dostęp do prywatnego Storage.</div>`:'')+progressPhotoContent();
+}
+function progressPhotoContent(){if(!photos.length)return '<div class="progressEmpty">Nie ma jeszcze zdjęć sylwetki. Dodaj zdjęcie, aby rozpocząć historię.</div>';
+ const availableTypes=['front','side','back','other'];const candidates=photos.filter(p=>p.photo_type===progressCompareType),dates=[...new Set(candidates.map(p=>p.taken_on))].sort();
+ if(!dates.includes(progressCompareBefore))progressCompareBefore=dates[0]||'';
+ if(!dates.includes(progressCompareAfter))progressCompareAfter=dates[dates.length-1]||'';
+ const typeOptions=availableTypes.map(type=>`<option value="${type}" ${progressCompareType===type?'selected':''}>${progressPhotoLabels[type]}</option>`).join('');
+ const dateOptions=selected=>dates.map(date=>`<option value="${esc(date)}" ${date===selected?'selected':''}>${progressDateLabel(date)}</option>`).join('');
+ const findPhoto=date=>photos.filter(p=>p.taken_on===date&&p.photo_type===progressCompareType).sort((a,b)=>String(b.created_at).localeCompare(String(a.created_at)))[0];
+ const compareCard=(p,title,date)=>`<div class="progressCompareCard">${p&&progressPhotoSignedUrls[p.id]?`<img src="${esc(progressPhotoSignedUrls[p.id])}" alt="Zdjęcie sylwetki: ${esc(title)}, ${esc(progressPhotoLabels[progressCompareType])}" loading="lazy">`:'<div class="progressEmptyPhoto">Brak zdjęcia dla wybranej daty i ujęcia</div>'}<div class="progressCompareCaption">${esc(title)} · ${progressDateLabel(date)}</div></div>`;
+ const gallery=photos.filter(p=>progressGalleryFilter==='all'||p.photo_type===progressGalleryFilter).slice().sort((a,b)=>String(b.taken_on).localeCompare(String(a.taken_on))||String(b.created_at).localeCompare(String(a.created_at)));
+ return `<h3>Porównaj sylwetkę</h3><div class="progressCompareFilters"><div><label for="progressCompareType">Ujęcie</label><select id="progressCompareType" onchange="progressCompareType=this.value;progressCompareBefore='';progressCompareAfter='';progressUpdatePhotoContent()">${typeOptions}</select></div><div><label for="progressCompareBefore">Zdjęcie wcześniejsze</label><select id="progressCompareBefore" onchange="progressCompareBefore=this.value;progressUpdatePhotoContent()" ${dates.length?'':'disabled'}>${dateOptions(progressCompareBefore)}</select></div><div><label for="progressCompareAfter">Zdjęcie późniejsze</label><select id="progressCompareAfter" onchange="progressCompareAfter=this.value;progressUpdatePhotoContent()" ${dates.length?'':'disabled'}>${dateOptions(progressCompareAfter)}</select></div></div>${dates.length?`<div class="progressComparison">${compareCard(findPhoto(progressCompareBefore),'Wcześniej',progressCompareBefore)}${compareCard(findPhoto(progressCompareAfter),'Później',progressCompareAfter)}</div>${dates.length===1?'<p class="hint" style="margin-top:10px">Dodaj zdjęcie tego samego ujęcia z innego dnia, aby zobaczyć porównanie.</p>':''}`:'<div class="progressEmpty">Brak zdjęć dla tego ujęcia. Wybierz inny typ.</div>'}
+ <div class="sectionHeading" style="margin-top:28px"><h2>Historia zdjęć</h2><span class="statusPill">${gallery.length} zdjęć</span></div><div class="progressToolbar"><div><label for="progressGalleryFilter">Filtruj ujęcia</label><select id="progressGalleryFilter" onchange="progressGalleryFilter=this.value;progressUpdatePhotoContent()"><option value="all" ${progressGalleryFilter==='all'?'selected':''}>Wszystkie zdjęcia</option>${availableTypes.map(t=>`<option value="${t}" ${progressGalleryFilter===t?'selected':''}>${progressPhotoLabels[t]}</option>`).join('')}</select></div></div>
+ ${gallery.length?`<div class="progressGallery">${gallery.map(p=>`<div class="progressPhotoTile">${progressPhotoSignedUrls[p.id]?`<a href="${esc(progressPhotoSignedUrls[p.id])}" target="_blank" rel="noopener noreferrer" aria-label="Powiększ zdjęcie ${esc(progressDateLabel(p.taken_on))}"><img src="${esc(progressPhotoSignedUrls[p.id])}" loading="lazy" alt="${esc(progressPhotoLabels[p.photo_type]||'Sylwetka')} — ${progressDateLabel(p.taken_on)}"></a>`:'<div class="progressEmptyPhoto">Brak podglądu zdjęcia</div>'}<footer><div><strong>${progressPhotoLabels[p.photo_type]||'Inne'}</strong><small>${progressDateLabel(p.taken_on)}</small></div><button type="button" onclick="progressDeletePhoto('${esc(p.id)}')" aria-label="Usuń zdjęcie">Usuń</button></footer></div>`).join('')}</div>`:'<div class="progressEmpty">Brak zdjęć o wybranym typie.</div>'}`;
+}
+function progressUpdatePhotoContent(){const el=$('progressPhotoDisplay');if(el)el.innerHTML=progressPhotoContent()}
+async function progressUploadPhoto(event){event.preventDefault();const button=$('progressPhotoUploadButton');let path='',uploaded=false;try{
+ const file=$('progressPhotoFile')?.files?.[0],cid=clientId(),date=v('progressPhotoDate'),type=v('progressPhotoType');
+ if(!cid||!file)throw Error('Wybierz plik zdjęcia.');
+ const mimeExt={'image/jpeg':'jpg','image/png':'png','image/webp':'webp'};
+ if(!mimeExt[file.type])throw Error('Dozwolone formaty: JPG, PNG, WebP.');
+ if(file.size>5*1024*1024)throw Error('Zdjęcie nie może przekraczać 5 MB.');
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(date)||!progressPhotoLabels[type])throw Error('Wybierz datę i typ zdjęcia.');
+ if(button){button.disabled=true;button.textContent='Zapisywanie…'}
+ path=`${cid}/${crypto.randomUUID()}.${mimeExt[file.type]}`;
+ const up=await sb.storage.from('forma-progress').upload(path,file,{contentType:file.type,upsert:false,cacheControl:'3600'});if(up.error)throw up.error;uploaded=true;
+ check(await sb.from('progress_photos').insert({client_id:cid,storage_path:path,taken_on:date,photo_type:type}));
+ progressPhotoCacheKey='';progressCompareAfter=date;await loadClient();render();message('Zdjęcie sylwetki dodane.');
+ }catch(e){if(uploaded&&path){await sb.storage.from('forma-progress').remove([path]).catch(()=>{})}message('Nie udało się przesłać zdjęcia: '+e.message,true)}finally{if(button){button.disabled=false;button.textContent='Dodaj zdjęcie'}}}
+async function progressDeletePhoto(id){const p=photos.find(p=>p.id===id);if(!p||!window.confirm('Usunąć wybrane zdjęcie sylwetki? Tej operacji nie można cofnąć.'))return;
+ try{check(await sb.from('progress_photos').delete().eq('id',id).eq('client_id',clientId()));
+ const removed=await sb.storage.from('forma-progress').remove([p.storage_path]);
+ progressPhotoCacheKey='';await loadClient();render();message(removed.error?'Wpis usunięty, ale usunięcie pliku ze Storage wymaga sprawdzenia: '+removed.error.message:'Zdjęcie usunięte.');
+ }catch(e){message('Nie udało się usunąć zdjęcia: '+e.message,true)}}
 
 (async()=>{try{if(!window.supabase)throw Error('Nie udało się załadować biblioteki Supabase');const r=await fetch('/api/config',{cache:'no-store'});if(!r.ok)throw Error('Brak konfiguracji Supabase. Sprawdź zmienne Vercel i ponowne wdrożenie.');const {url,key}=await r.json();sb=window.supabase.createClient(url,key);let recovering=false;sb.auth.onAuthStateChange((event)=>{if(event==='PASSWORD_RECOVERY'){recovering=true;setTimeout(showNewPassword,0)}});const hash=new URLSearchParams(window.location.hash.slice(1));const query=new URLSearchParams(window.location.search);if(hash.get('type')==='recovery'||query.get('type')==='recovery'){recovering=true;showNewPassword()}else{await initSession();if(recovering)showNewPassword()}}catch(e){$('title').textContent='Konfiguracja';$('app').innerHTML=card(`<h2>Nie udało się uruchomić FORMA</h2><p class="error">${esc(e.message)}</p><p>Sprawdź wdrożenie pliku <code>api/config.js</code> na Vercel.</p>`)}})();
 </script><script>if ('serviceWorker' in navigator && location.protocol==='https:') navigator.serviceWorker.register('/sw.js').catch(()=>{});</script></body></html>
