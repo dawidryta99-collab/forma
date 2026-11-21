@@ -1,4 +1,4 @@
-<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FORMA — by Zuzia Fiks</title><style>
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FORMA 1.8 — by Zuzia Fiks</title><style>
 :root{--bg:#f7f7f4;--ink:#242723;--muted:#747a72;--line:#e6e8e1;--accent:#657b65;--pale:#e8eee6}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.55;cursor:wait}header{background:white;border-bottom:1px solid var(--line);padding:16px max(20px,calc((100vw - 1120px)/2));display:flex;justify-content:space-between;align-items:center;gap:12px}.logo{font-size:25px;font-weight:800;letter-spacing:.13em}.sub{font-size:11px;letter-spacing:.04em;color:var(--muted)}.shell{max-width:1120px;margin:auto;padding:30px 20px 90px}.top{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}h1{font-size:32px;letter-spacing:-.04em;margin:0}h2{font-size:21px;letter-spacing:-.03em;margin:0 0 14px}h3{font-size:16px;margin:0 0 8px}p{margin:6px 0 14px}.muted{color:var(--muted)}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}.tabs button,.ghost{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 15px;border-radius:12px}.tabs button.active{background:var(--ink);color:#fff}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;margin-bottom:16px;box-shadow:0 6px 20px #25342506}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.stat{font-size:29px;font-weight:750;letter-spacing:-.05em}.tag{display:inline-block;padding:5px 10px;border-radius:99px;background:var(--pale);color:#49614a;font-size:12px}.primary{border:0;border-radius:12px;background:var(--accent);color:white;padding:11px 17px;font-weight:650}.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}label{display:block;font-size:13px;font-weight:650;margin:12px 0 6px}input,select,textarea{width:100%;border:1px solid #dce0d8;border-radius:11px;padding:11px;background:#fff;color:var(--ink)}textarea{min-height:80px;resize:vertical}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}.choice{display:flex;gap:8px;flex-wrap:wrap}.choice button{padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:white;font-size:12px}.choice button.on{background:var(--pale);border-color:var(--accent);color:#3d5b3d}.exercise{border-top:1px solid var(--line);padding:12px 0}.small{font-size:12px}.chart{display:flex;align-items:end;gap:9px;height:155px;padding:12px 0 0;border-bottom:1px solid var(--line)}.bar{flex:1;background:#a9bba4;border-radius:7px 7px 0 0;min-height:6px;position:relative}.bar span{position:absolute;bottom:100%;left:0;font-size:11px;white-space:nowrap}.bar em{position:absolute;top:100%;left:0;font-style:normal;font-size:10px;color:var(--muted)}.recipe{background:#f2f4ee;border-radius:14px;padding:20px}.notice{background:#fff7e7;border:1px solid #f0dfbd;padding:12px 16px;border-radius:12px;font-size:13px;margin:15px 0}.error{color:#a34242}.hidden{display:none!important}footer{color:var(--muted);font-size:12px;margin-top:30px}@media(max-width:720px){.grid,.two,.formgrid{grid-template-columns:1fr}.shell{padding:20px 14px 90px}.card{padding:17px}h1{font-size:27px}.tabs{flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px}.tabs button{white-space:nowrap}header{padding:12px 16px}}
 
 /* FORMA | Etap 1 — elegancki minimalizm (wariant B) */
@@ -301,6 +301,13 @@ body.f17Editing #app{min-width:0}
 @media(max-width:950px){.f17Columns{grid-template-columns:1fr}.f17History{position:static;max-height:none;overflow:visible}.f17MobileSwitch{display:flex;gap:8px;margin-bottom:14px}.f17MobileSwitch button{flex:1;min-width:0;font-size:13px}.f17MobileSwitch button.active{background:#ece7df;border-color:#c9bdaf}.f17Columns.f17MobileHistory .f17Main,.f17Columns:not(.f17MobileHistory) .f17History{display:none}.f17History .f17HistoryCopyBar{position:sticky;bottom:70px;padding:12px 0;background:#fff}.f17Saving{bottom:68px}}
 @media(min-width:951px){.f17Columns.f17MobileHistory .f17Main{display:block}}
 @media(max-width:520px){body.f17Editing .pagePane .shell{padding:14px 12px 90px}.f17Panel{padding:13px}.f17Exercise{padding:12px}.f17Fields3{gap:6px}.f17Editor input,.f17Editor select{padding:10px 8px;font-size:13px}.f17Saving{gap:8px;padding:10px;flex-wrap:wrap}.f17Saving .hint{display:none}.f17SaveButtons{width:100%;margin:0}.f17SaveButtons button{flex:1}.f17Header{margin-bottom:12px}}
+/* FORMA 1.8 — wyłącznie nowe widoki podopiecznej i domowego planu */
+.f18ClientStart{max-width:930px;margin:0 auto}.f18Welcome{margin:4px 0 19px}.f18Welcome h2{font-size:clamp(23px,4vw,29px);font-weight:760;letter-spacing:-.035em;margin:4px 0 0}.f18Next{border-radius:22px;padding:24px;background:#eef0ea;border:1px solid #dce3d8;margin-bottom:26px}.f18Next .miniLabel{font-size:12px;color:#667766;letter-spacing:.08em}.f18Next h2{font-size:clamp(22px,3vw,29px);margin:12px 0 16px}.f18NextDetail{display:flex;align-items:center;gap:10px;color:#455447;margin:9px 0}.f18NextDetail svg,.f18ShortcutGrid svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8}.f18Next .primary{margin-top:16px;min-width:175px}.f18StartHeading{margin:0 0 12px}.f18ShortcutGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.f18ShortcutGrid button{background:#fff;border:1px solid var(--line);border-radius:17px;padding:18px;text-align:left;display:flex;flex-direction:column;gap:9px;min-width:0}.f18ShortcutGrid button strong{font-size:15px}.f18ShortcutGrid button small{color:var(--muted)}
+.f18Subtabs{display:flex;flex-wrap:wrap;gap:7px;margin:6px 0}.f18Subtabs button{border:1px solid var(--line);border-radius:11px;padding:10px 13px;background:white;font-weight:600;color:var(--ink)}.f18Subtabs button.active{background:var(--ink);color:#fff}.f18HistoryCard{border:1px solid var(--line);border-radius:16px;margin:12px 0;background:#fff;overflow:hidden}.f18HistoryCard>summary{list-style:none;cursor:pointer;padding:17px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px}.f18HistoryCard>summary::-webkit-details-marker{display:none}.f18HistoryCard>summary span:first-child{display:flex;flex-direction:column;gap:3px}.f18HistoryCard>summary strong{font-size:16px}.f18HistoryCard>summary small{color:var(--muted)}.f18HistoryCard[open] .f18Chevron{transform:rotate(180deg)}.f18HistoryInside{padding:2px 18px 18px}.f18HistoryExercise{padding:14px 0;border-top:1px solid var(--line)}.f18HistoryExercise>div:first-child{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.f18HistoryExercise span{color:var(--muted)}.f18TextButton{display:inline-block;border:0;background:transparent;color:#47654d;text-decoration:underline;text-underline-offset:4px;padding:6px 0;font-size:13px;font-weight:600}.f18SavedComment{background:#f5f6f2;padding:9px 11px;border-radius:11px;color:#434c42;margin:8px 0;white-space:pre-wrap;overflow-wrap:anywhere}.f18CommentEditor{margin:8px 0;padding:10px;background:#f5f6f2;border-radius:12px}.f18CommentEditor textarea{background:white}.f18WorkoutNote{padding:15px 0 3px;border-top:1px solid var(--line)}.f18WorkoutNote>strong{display:block;margin-bottom:4px}
+.f18MineSearch{margin:12px 0}.f18FilterRow{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}.f18FilterRow button{padding:7px 11px}.f18FilterRow button.active{background:var(--ink);color:white}.f18MyCard{margin:11px 0;border:1px solid var(--line);border-radius:15px;overflow:hidden}.f18MyHead{border:0;background:#fff;padding:14px 15px;width:100%;display:flex;gap:12px;align-items:center;justify-content:space-between;text-align:left}.f18MyHead>span:first-child{display:flex;flex-direction:column;gap:4px;min-width:0;flex:1}.f18MyHead small{color:var(--muted);font-size:12px}.f18MyHeadRight{display:flex;flex-direction:column;align-items:flex-end;white-space:nowrap;color:#7c684b;font-size:13px}.f18MyHeadRight small{color:#a54e42}.f18MyBody{border-top:1px solid var(--line);padding:17px 16px 20px}.f18Label{font-weight:650}.f18Stars{display:flex;gap:7px;margin:7px 0}.f18Stars button{border:0;background:transparent;color:#d5d4cc;font-size:30px;padding:0 2px;line-height:1.3}.f18Stars button.filled{color:#b69b71}.f18CheckLabel{display:flex;align-items:flex-start;gap:10px;margin:18px 0 10px;font-size:14px}.f18CheckLabel input{width:auto;margin-top:4px;accent-color:#657b65}.f18PainNote[hidden]{display:none}.f18OpinionHistory,.f18HomePreview{margin-top:14px;padding:12px;border-radius:12px;background:#f7f8f5;color:#495448}.f18OpinionHistory summary,.f18HomePreview summary{cursor:pointer;font-weight:650}.f18OpinionHistory p{font-size:13px;margin:9px 0}.f18Aligned{display:flex;gap:10px;justify-content:flex-end;margin:15px 0 5px;flex-wrap:wrap}.f18LibraryOpinion{padding:11px 14px;margin:6px 0 16px 0;border-left:3px solid #c1c9ba;background:#fafbf8;border-radius:0 12px 12px 0}.f18LibraryOpinionTitle{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:13px}.f18Alert{border:1px solid #edd3c8;background:#fdf4ef;color:#804c3b;padding:11px 13px;border-radius:12px;margin:11px 0}.f18Alert p{font-size:13px;margin:7px 0}.f18Alert .ghost{margin-top:4px}.f18TrainerComment{margin:6px 0;font-size:12px}.f18TrainerComment summary{display:inline-block;color:#5d725f;cursor:pointer;font-weight:650}.f18TrainerComment p{background:#f6f7f4;padding:10px;border-radius:9px;white-space:pre-wrap;overflow-wrap:anywhere}
+.f18CalendarExtras{margin:10px 0 15px}.f18CalendarToolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0}.f18CalendarToolbar .hint{margin:0}.f18CalendarDetail,.f18HomeDateForm{border:1px solid var(--line);background:#f7f8f5;border-radius:16px;padding:17px;margin:14px 0}.f18CalendarDetail h3{font-size:19px;margin:5px 0}.f18CalendarDetail p{color:var(--muted)}.f18DetailHeading{display:flex;justify-content:space-between;align-items:start;gap:10px}.f18SimpleExercise{border-bottom:1px solid var(--line);padding:12px 0;display:flex;flex-wrap:wrap;gap:4px 10px;justify-content:space-between}.f18SimpleExercise:last-child{border:0}.f18SimpleExercise span{color:#58665b;font-size:13px}.f18SimpleExercise small{display:block;width:100%;color:var(--muted)}.f18HomeEditorBody{max-width:790px;margin:auto;background:white;border:1px solid var(--line);padding:24px;border-radius:18px}.f18HomeEditorBody>.f17Exercise{margin:10px 0}.f18HomeEditorBody>.f17AddExercise{width:100%;margin:15px 0}.f18HomeEditor .f17Saving{margin-top:18px}
+@media(max-width:760px){.f18ClientStart{max-width:100%}.f18Welcome{margin:4px 0 12px}.f18Welcome h2{font-size:24px}.f18Next{padding:17px;margin-bottom:18px}.f18Next h2{font-size:22px;margin:9px 0 13px}.f18Next .primary{width:100%}.f18ShortcutGrid{gap:9px}.f18ShortcutGrid button{padding:13px;gap:7px}.f18ShortcutGrid button strong{font-size:13px}.f18Subtabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.f18Subtabs button{padding:10px 5px;font-size:12px}.f18HistoryCard>summary{padding:13px}.f18HistoryInside{padding:0 13px 13px}.f18MyHead{padding:13px}.f18MyBody{padding:13px}.f18HomeEditorBody{padding:14px}.f18CalendarToolbar .ghost{width:100%}.f18CalendarDetail,.f18HomeDateForm{padding:12px}}
+
 </style><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#F0EBE5"><link rel="icon" type="image/png" href="/icon-192.png"><link rel="apple-touch-icon" href="/icon-192.png"></head><body>
 <div class="appLayout"><aside class="sidebar" id="sidebar"><div class="brand"><strong>FORMA<span>.</span></strong><small>BY ZUZIA FIKS</small></div><div class="sideNav" id="sideNav"></div><div class="sidebarFooter" id="identity">Łączenie…</div></aside>
 <div class="pagePane"><header class="mobileHeader"><div class="brand"><strong>FORMA<span>.</span></strong><small>BY ZUZIA FIKS</small></div><div id="mobileIdentity" class="mobileUser"></div></header><main class="shell"><div class="top"><div><div class="muted small">TWÓJ TRENING. TWOJE TEMPO.</div><h1 id="title">FORMA</h1></div><span class="tag">● TWOJA PRZESTRZEŃ</span></div><div id="flash"></div><nav class="tabs" id="tabs"></nav><div id="app">Ładowanie…</div><footer>FORMA | by Zuzia Fiks · Konto prywatne · Dane zapisane w Supabase.</footer></main></div></div><nav class="bottomNav" id="mobileNav" aria-label="Nawigacja mobilna"></nav><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
@@ -324,26 +331,26 @@ const uiIcons={home:'<path d="m3 10 9-7 9 7v11H3z"/><path d="M9 21v-8h6v8"/>',ca
 function ico(name){return '<svg viewBox="0 0 24 24" aria-hidden="true">'+(uiIcons[name]||uiIcons.more)+'</svg>'}
 const mainTrainer=[['start','Start','home'],['clients','Podopieczne','users'],['calendar','Kalendarz','calendar'],['exercises','Biblioteka ćwiczeń','dumbbell'],['recipes','Biblioteka przepisów','book']];
 const clientSections=[['profile','Profil','user'],['plan','Plan treningowy','dumbbell'],['diary','Dziennik treningowy','list'],['progress','Dziennik progresu','chart'],['nutrition','Plan odżywiania','heart'],['home','Plan domowy','home']];
-const mainClient=[['start','Start','home'],['calendar','Kalendarz','calendar'],...clientSections,['exercises','Biblioteka ćwiczeń','dumbbell'],['recipes','Biblioteka przepisów','book']];
-function switchTab(next){if(next!=='plan'){trainingDraft=null;calendarSelectedBookingId=''}tab=next;render();window.scrollTo({top:0,behavior:'smooth'})}
+const mainClient=[['start','Start','home'],['calendar','Kalendarz','calendar'],['trainings','Treningi','dumbbell'],['progress','Progres','chart'],['nutrition','Dieta','heart']];
+function switchTab(next){if($('flash'))$('flash').innerHTML='';if(next!=='plan'){trainingDraft=null;calendarSelectedBookingId=''}tab=next;render();window.scrollTo({top:0,behavior:'smooth'})}
 function openClient(id){selected=id;trainingDraft=null;loadClient().then(()=>switchTab('profile')).catch(e=>message(e.message,true))}
 function displayDate(x){if(!x)return 'Brak danych';const d=new Date(String(x).length===10?x+'T12:00:00':x);return isNaN(d)?'Brak danych':d.toLocaleDateString('pl-PL',{day:'numeric',month:'long',year:'numeric'})}
 function navButton([id,name,icon],scope='side'){const active=tab===id||((tab==='more')&&id==='more');return `<button type="button" class="${scope==='bottom'?'bottomItem':'navItem'} ${active?'active':''}" onclick="switchTab('${id}')" ${active?'aria-current="page"':''}>${ico(icon)}<span>${esc(scope==='bottom'&&name==='Plan treningowy'?'Plan':scope==='bottom'&&name==='Dziennik treningowy'?'Dziennik':name)}</span></button>`}
 function renderMenus(){const t=trainer(),all=t?mainTrainer:mainClient;let html=`<div class="sidebarTitle">Menu główne</div>`+all.map(x=>navButton(x)).join('');if(t&&selected){const c=clients.find(c=>c.id===selected);html+=`<div class="sidebarTitle">Podopieczna</div><div style="padding:0 11px 10px"><label class="miniLabel" for="sideClientPick">Wybrana klientka</label><select id="sideClientPick" onchange="openClient(this.value)">${clients.map(x=>`<option value="${esc(x.id)}" ${x.id===selected?'selected':''}>${esc(x.full_name)}</option>`).join('')}</select></div>`+clientSections.map(x=>navButton(x)).join('')+`<button class="navItem navBack" onclick="switchTab('clients')">← Wszystkie podopieczne</button>`}
 $('sideNav').innerHTML=html;
-const bottom=t?[['start','Start','home'],['calendar','Kalendarz','calendar'],['clients','Podopieczne','users'],['more','Więcej','more']]:[['start','Start','home'],['calendar','Kalendarz','calendar'],['plan','Plan treningowy','dumbbell'],['diary','Dziennik treningowy','list'],['more','Więcej','more']];
+const bottom=t?[['start','Start','home'],['calendar','Kalendarz','calendar'],['clients','Podopieczne','users'],['more','Więcej','more']]:mainClient;
 $('mobileNav').style.gridTemplateColumns=`repeat(${bottom.length},minmax(0,1fr))`;$('mobileNav').innerHTML=bottom.map(x=>navButton(x,'bottom')).join('');
 const name=esc(me.full_name||'Użytkownik');$('identity').innerHTML=`<strong style="color:var(--ink)">${name}</strong><div class="small">${t?'Trenerka':'Podopieczna'}</div><button class="ghost" onclick="logout()">Wyloguj się</button>`;$('mobileIdentity').innerHTML=`<span>${name}</span><button class="ghost" onclick="logout()">Wyloguj</button>`;
 }
-function render(){if(!me)return;document.body.classList.toggle('f17Editing',Boolean(trainer()&&tab==='plan'&&trainingDraft));document.body.classList.remove('authMode');if(trainer()&&clientSections.some(x=>x[0]===tab)&&!selected)tab='clients';const valid=trainer()?[...mainTrainer.map(x=>x[0]),...clientSections.map(x=>x[0]),'addclient','survey','more']:[...mainClient.map(x=>x[0]),'survey','more'];if(!valid.includes(tab))tab='start';const names={...Object.fromEntries([...mainClient,...mainTrainer].map(x=>[x[0],x[1]])),diary:'Dziennik treningowy',profile:'Profil podopiecznej',more:'Więcej',addclient:'Nowa podopieczna',survey:'Preferencje'};$('title').textContent=names[tab]||'FORMA';$('tabs').innerHTML='';renderMenus();
-const handlers={start:()=>start(),clients:()=>clientsPage(),calendar:()=>calendarPage(),exercises:()=>exercisesPage(),recipes:()=>recipesPage(),profile:()=>profilePage(),plan:()=>plan(),diary:()=>diaryPage(),progress:()=>progress(),nutrition:()=>plannedFeature('Plan odżywiania','Wprowadzanie zaleceń kalorycznych, białka i suplementacji uruchomimy w etapie 5.'),home:()=>plannedFeature('Plan domowy','Treningi domowe i cel kroków uruchomimy w etapie 5.'),addclient:()=>plannedFeature('Dodanie podopiecznej','Zapraszanie klientek e-mailem wymaga bezpiecznego procesu serwerowego. Zostanie wdrożone w etapie 2; nie trzeba ręcznie wpisywać UUID.'),survey:()=>survey(),more:()=>morePage()};
+function render(){if(!me)return;document.body.classList.toggle('f17Editing',Boolean(trainer()&&tab==='plan'&&(trainingDraft||f18HomeEditing)));document.body.classList.remove('authMode');if(trainer()&&clientSections.some(x=>x[0]===tab)&&!selected)tab='clients';const valid=trainer()?[...mainTrainer.map(x=>x[0]),...clientSections.map(x=>x[0]),'addclient','survey','more']:[...mainClient.map(x=>x[0]),'survey','more'];if(!valid.includes(tab))tab='start';const names={...Object.fromEntries([...mainClient,...mainTrainer].map(x=>[x[0],x[1]])),diary:'Dziennik treningowy',profile:'Profil podopiecznej',more:'Więcej',addclient:'Nowa podopieczna',survey:'Preferencje'};$('title').textContent=names[tab]||'FORMA';$('tabs').innerHTML='';renderMenus();
+const handlers={start:()=>start(),clients:()=>clientsPage(),calendar:()=>calendarPage(),exercises:()=>exercisesPage(),recipes:()=>recipesPage(),profile:()=>profilePage(),plan:()=>plan(),diary:()=>diaryPage(),trainings:()=>f18ClientTrainings(),progress:()=>progress(),nutrition:()=>f18DietPage(),home:()=>f18HomeTrainerPage(),addclient:()=>plannedFeature('Dodanie podopiecznej','Zapraszanie klientek e-mailem wymaga bezpiecznego procesu serwerowego. Zostanie wdrożone w etapie 2; nie trzeba ręcznie wpisywać UUID.'),survey:()=>survey(),more:()=>morePage()};
 if(formaCalendarInstance){try{calendarAnchorDate=formaCalendarInstance.getDate().toISOString();calendarActiveView=formaCalendarInstance.view.type;formaCalendarInstance.destroy()}catch(_){}formaCalendarInstance=null}
 $('app').innerHTML=(handlers[tab]||handlers.start)();if(tab==='calendar')mountFormaCalendar();}
 function plannedFeature(title,description){return card(`<span class="statusPill">Zaplanowane · kolejny etap</span><h2 style="margin-top:15px">${esc(title)}</h2><p class="hint">${esc(description)}</p><p class="hint">Ta sekcja jest widoczna w nawigacji, ale nie zapisuje jeszcze nowych danych.</p>`)}
 function clientTile(c){return `<button class="clientTile" onclick="openClient('${esc(c.id)}')"><span class="goArrow">↗</span><strong>${esc(c.full_name||'Bez nazwy')}</strong><span class="miniLabel">Najbliższy trening</span><br/><small>${(()=>{const b=bookings.filter(b=>b.client_id===c.id&&b.status==='approved'&&new Date(b.starts_at)>=new Date()).sort((a,b)=>new Date(a.starts_at)-new Date(b.starts_at))[0];return b?esc(displayDate(b.starts_at)):'Brak terminu'})()}</small></button>`}
 function clientBrowser(){return `${card(`<div class="sectionHeading"><h2>Podopieczne</h2><span class="statusPill">${clients.length} kont</span></div><div class="toolbar"><div><label for="clientSearch">Wyszukaj</label><input id="clientSearch" class="searchInput" placeholder="Imię lub nazwisko" oninput="filterTiles()"></div><div><label for="sortClients">Sortuj</label><select id="sortClients" onchange="filterTiles()"><option value="alpha">Alfabetycznie</option><option value="date">Najbliższy trening (po etapie 3)</option></select></div><div><label for="clientQuickPick">Przejdź do profilu</label><select id="clientQuickPick" onchange="if(this.value)openClient(this.value)"><option value="">Wybierz z listy…</option>${clients.map(c=>`<option value="${esc(c.id)}">${esc(c.full_name)}</option>`).join('')}</select></div><div class="action"><button class="primary" onclick="switchTab('addclient')">+ Dodaj podopieczną</button></div></div><div class="clientTiles" id="clientTiles">${clients.length?clients.slice().sort((a,b)=>(a.full_name||'').localeCompare(b.full_name||'','pl')).map(clientTile).join(''):'<div class="emptyState">Nie ma jeszcze podopiecznych.</div>'}</div>`)}`}
 function filterTiles(){const q=(v('clientSearch')||'').toLocaleLowerCase('pl');let sorted=clients.filter(x=>(x.full_name||'').toLocaleLowerCase('pl').includes(q)).slice().sort((a,b)=>(a.full_name||'').localeCompare(b.full_name||'','pl'));$('clientTiles').innerHTML=sorted.length?sorted.map(clientTile).join(''):'<div class="emptyState">Brak pasujących podopiecznych.</div>'}
-function start(){if(trainer()){const name=esc(me.full_name?.split(' ')[0]||'Zuzia');const d=new Date().toLocaleDateString('pl-PL',{weekday:'long',day:'numeric',month:'long'});return `<div class="dashboardIntro"><div class="eyebrow">${esc(d)}</div><h2 style="font-size:24px;margin:8px 0 6px">Dzień dobry, ${name}.</h2><p class="hint">Twoje centrum zarządzania treningami i podopiecznymi.</p></div><div class="dashboardGrid"><div class="stack">${card(`<div class="sectionHeading"><h2>Dzisiejsze treningi</h2><button class="ghost" onclick="switchTab('calendar')">Kalendarz →</button></div>${bookings.filter(b=>b.status==='approved'&&new Date(b.starts_at).toDateString()===new Date().toDateString()).map(b=>`<div class="flatRow"><b>${esc(new Date(b.starts_at).toLocaleTimeString('pl-PL',{hour:'2-digit',minute:'2-digit'}))}</b><span>${esc(clients.find(c=>c.id===b.client_id)?.full_name||'Podopieczna')}</span></div>`).join('')||'<div class="emptyState">Brak treningów na dzisiaj.</div>'}`)}${card(`<div class="sectionHeading"><h2>Oczekujące prośby</h2><span class="statusPill">Etap 3</span></div><div class="emptyState">Prośby o rezerwację i zmiany terminów będą widoczne tutaj.</div>`)}</div>${card(`<div class="sectionHeading"><h2>Powiadomienia</h2>${ico('bell')}</div><p class="hint">Nowe zmiany wprowadzone przez podopieczne będą oznaczane kropką i poprowadzą do konkretnego wpisu.</p><div class="emptyState">System powiadomień włączymy w etapie 6. Nie wyświetlamy fikcyjnych alertów.</div>`)}</div><div style="margin-top:21px">${clientBrowser()}</div>`}
+function start(){if(!trainer())return f18ClientStart();if(trainer()){const name=esc(me.full_name?.split(' ')[0]||'Zuzia');const d=new Date().toLocaleDateString('pl-PL',{weekday:'long',day:'numeric',month:'long'});return `<div class="dashboardIntro"><div class="eyebrow">${esc(d)}</div><h2 style="font-size:24px;margin:8px 0 6px">Dzień dobry, ${name}.</h2><p class="hint">Twoje centrum zarządzania treningami i podopiecznymi.</p></div><div class="dashboardGrid"><div class="stack">${card(`<div class="sectionHeading"><h2>Dzisiejsze treningi</h2><button class="ghost" onclick="switchTab('calendar')">Kalendarz →</button></div>${bookings.filter(b=>b.status==='approved'&&new Date(b.starts_at).toDateString()===new Date().toDateString()).map(b=>`<div class="flatRow"><b>${esc(new Date(b.starts_at).toLocaleTimeString('pl-PL',{hour:'2-digit',minute:'2-digit'}))}</b><span>${esc(clients.find(c=>c.id===b.client_id)?.full_name||'Podopieczna')}</span></div>`).join('')||'<div class="emptyState">Brak treningów na dzisiaj.</div>'}`)}${card(`<div class="sectionHeading"><h2>Oczekujące prośby</h2><span class="statusPill">Etap 3</span></div><div class="emptyState">Prośby o rezerwację i zmiany terminów będą widoczne tutaj.</div>`)}</div>${card(`<div class="sectionHeading"><h2>Powiadomienia</h2>${ico('bell')}</div><p class="hint">Nowe zmiany wprowadzone przez podopieczne będą oznaczane kropką i poprowadzą do konkretnego wpisu.</p><div class="emptyState">System powiadomień włączymy w etapie 6. Nie wyświetlamy fikcyjnych alertów.</div>`)}</div><div style="margin-top:21px">${clientBrowser()}</div>`}
 const c=me;const weights=measurements.filter(m=>m.weight_kg!=null);const last=weights[weights.length-1];const first=weights[0];return `<div class="softBanner"><div class="eyebrow">Twoja przestrzeń FORMA</div><h2>Cześć, ${esc(c.full_name?.split(' ')[0]||'')}!</h2><p class="hint">Twój plan, treningi i postępy w jednym miejscu.</p></div>${card(`<div class="sectionHeading"><h2>Najbliższy trening</h2><span class="statusPill">Zatwierdzony termin</span></div><p class="hint">${(()=>{const next=bookings.filter(b=>b.client_id===me.id&&b.status==='approved'&&new Date(b.starts_at)>=new Date()).sort((a,b)=>new Date(a.starts_at)-new Date(b.starts_at))[0];return next?esc(bookingLabel(next)+' · '+(next.title||'Trening bez planu')):'Brak nadchodzących treningów.'})()}</p><button class="pillLink" onclick="switchTab('plan')">Zobacz swój plan →</button>`)}<div class="metricGrid"><div class="metric"><div class="miniLabel">Ostatnia masa ciała</div><div class="metricValue">${last?esc(last.weight_kg)+' kg':'—'}</div><div class="muted">${last?displayDate(last.measured_on):'Brak pomiarów'}</div></div><div class="metric"><div class="miniLabel">Masa początkowa</div><div class="metricValue">${first?esc(first.weight_kg)+' kg':'—'}</div><div class="muted">Pierwszy zapis</div></div><div class="metric"><div class="miniLabel">Zapisane sesje</div><div class="metricValue">${sessions.length}</div><div class="muted">W obecnym dzienniku</div></div></div><div class="featureGrid" style="margin-top:16px">${card(`<h2>Plan treningowy</h2><p>Sprawdź zapisane ćwiczenia i serie.</p><button class="ghost" onclick="switchTab('plan')">Otwórz plan →</button>`)}${card(`<h2>Plan domowy</h2><p>Ćwiczenia mobilizacyjne i cel kroków uruchomimy w kolejnym etapie.</p><button class="ghost" onclick="switchTab('home')">Zobacz sekcję →</button>`)}</div>`}
 function clientsPage(){return `${clientBrowser()}${card(`<div class="sectionHeading"><h2>Ankiety początkowe</h2><span class="statusPill">Etap 2</span></div><p class="hint">Nowy obowiązkowy formularz będzie powiązany bezpośrednio z kontem podopiecznej.</p><button class="ghost" onclick="switchTab('survey')">Zobacz dotychczasowe ankiety</button>`)}`}
 function profilePage(){const c=trainer()?clients.find(x=>x.id===selected):me;if(!c)return card('<p class="hint">Wybierz podopieczną z listy.</p>');const val=x=>esc(x??'—');const rows=[['Imię i nazwisko',c.full_name],['E-mail',c.email],['Data urodzenia','Do uzupełnienia po rozszerzeniu bazy'],['Telefon',c.phone],['Cel treningowy',c.goal],['Treningi tygodniowo',c.weekly_sessions],['Początek współpracy',c.start_date?displayDate(c.start_date):null]];return `${trainer()?`<button class="backBtn" onclick="switchTab('clients')">← Wróć do podopiecznych</button>`:''}${card(`<div class="sectionHeading"><h2>${val(c.full_name)}</h2><span class="statusPill">Profil</span></div>${rows.map(([k,v])=>`<div class="profileRow"><span>${esc(k)}</span><strong>${val(v)}</strong></div>`).join('')}`)}${trainer()?card(`<h2>Notatki prywatne Zuzi</h2><p style="white-space:pre-line">${esc(c.trainer_notes||'Brak notatek')}</p><p class="hint">Ta sekcja nie jest widoczna dla podopiecznej.</p>`):''}${card(`<h2>Dalsza edycja profilu</h2><p class="hint">W etapie 2 dodamy edycję przez Zuzię i podopieczną, datę urodzenia, cele wielokrotnego wyboru, ograniczenia zdrowotne i ankietę początkową. Nie będziemy zapisywać niekompletnych danych w przypadkowych polach.</p>`)}`}
@@ -390,7 +397,7 @@ function calendarEventRows(){return calendarDisplayedBookings().map(b=>{const c=
 function calendarAddAt(date){if(!trainer())return;calendarDatePrefill=localDateTime(date||new Date(Date.now()+86400000));calendarFormOpen=true;render();const f=$('calendarStart');if(f){f.focus();f.scrollIntoView({block:'center',behavior:'smooth'})}}
 function calendarSetFilter(id){calendarFilterClient=id;render()}
 function calendarPage(){const t=trainer();return `${card(`<div class="calendarIntro"><div><h2>Kalendarz treningów</h2><p class="hint">${t?'Kliknij pustą godzinę, aby dodać trening. Kliknij zajęty termin, aby otworzyć jego plan.':'Kliknij trening, aby zobaczyć jego plan.'}</p></div>${t?`<button type="button" class="primary" onclick="calendarFormOpen? (calendarFormOpen=false,render()):calendarAddAt()">＋ Dodaj trening</button>`:''}</div>${!bookingsReady?`<div class="calendarSetup">Kalendarz wymaga poprzedniego skryptu SQL tworzącego tabelę <code>forma_bookings</code>.</div>`:''}${t&&clients.length?`<div class="calendarFilters"><label for="calendarFilter">Podopieczna:</label><select id="calendarFilter" onchange="calendarSetFilter(this.value)"><option value="all" ${calendarFilterClient==='all'?'selected':''}>Wszystkie podopieczne</option>${clients.map(c=>`<option value="${esc(c.id)}" ${calendarFilterClient===c.id?'selected':''}>${esc(c.full_name)}</option>`).join('')}</select></div>`:''}${t&&calendarFormOpen&&bookingsReady?`<form onsubmit="saveCalendarBooking(event)" class="trainingForm calendarForm"><h3 style="margin-top:0">Nowy zatwierdzony termin</h3><div class="formgrid"><div><label for="calendarClient">Podopieczna *</label><select id="calendarClient" required>${clients.map(c=>`<option value="${esc(c.id)}" ${c.id===(calendarFilterClient!=='all'?calendarFilterClient:selected)?'selected':''}>${esc(c.full_name)}</option>`).join('')}</select></div>${input('Data i godzina rozpoczęcia','calendarStart','datetime-local',calendarDatePrefill||localDateTime(new Date(Date.now()+86400000)))}<div><label for="calendarDuration">Czas trwania</label><select id="calendarDuration"><option value="60">60 minut</option><option value="75">75 minut</option><option value="90">90 minut</option></select></div></div><div class="trainingActions"><button class="ghost" type="button" onclick="calendarFormOpen=false;render()">Anuluj</button><button class="primary" type="submit">Zatwierdź termin</button></div></form>`:''}<div class="formaCalendar" id="formaCalendar" aria-label="Interaktywny kalendarz treningów"></div><div class="calendarHelp"><span class="calendarLegend"></span><span>Zatwierdzony trening</span>${t?'<span>· Przeciągnij trening, aby zmienić termin (z potwierdzeniem).</span>':''}</div>`).replace('<section class="card">','<section class="card formaCalendarCard">')}`}
-function mountFormaCalendar(){const el=$('formaCalendar');if(!el||!bookingsReady)return;if(!window.FullCalendar?.Calendar){el.innerHTML='<div class="calendarEmpty">Nie udało się załadować widoku kalendarza. Sprawdź połączenie internetowe i odśwież stronę.</div>'+calendarDisplayedBookings().map(b=>`<div class="flatRow"><button class="ghost" type="button" onclick="openCalendarTraining('${esc(b.id)}')">${esc(bookingLabel(b))} · ${esc(b.title||'Trening')} →</button></div>`).join('');return}
+function mountFormaCalendar(){const el=$('formaCalendar');if(!el||!bookingsReady)return;if(!window.FullCalendar?.Calendar){el.innerHTML='<div class="calendarEmpty">Nie udało się załadować widoku kalendarza. Sprawdź połączenie internetowe i odśwież stronę.</div>'+f18CalendarEvents().map(b=>`<div class="flatRow"><button class="ghost" type="button" onclick="openCalendarTraining('${esc(b.id)}')">${esc(f18ShortDate(b.start))} · ${esc(f18ShortTime(b.start))} · ${esc(b.title||'Trening')} →</button></div>`).join('');return}
  const isMobile=isPhoneCalendar();const view=calendarActiveView|| (isMobile?'listUpcoming':'timeGridWeek');
  formaCalendarInstance=new FullCalendar.Calendar(el,{
   locale:'pl',firstDay:1,initialView:view,initialDate:calendarAnchorDate||undefined,
@@ -401,7 +408,7 @@ function mountFormaCalendar(){const el=$('formaCalendar');if(!el||!bookingsReady
   height:'auto',contentHeight:'auto',slotMinTime:'06:00:00',slotMaxTime:'23:00:00',slotDuration:'00:30:00',slotLabelInterval:'01:00',scrollTime:'08:00:00',
   eventTimeFormat:{hour:'2-digit',minute:'2-digit',hour12:false},displayEventEnd:false,
   editable:trainer(),eventStartEditable:trainer(),eventDurationEditable:trainer(),eventOverlap:false,
-  selectable:false,events:calendarEventRows(),
+  selectable:false,events:f18CalendarEvents(),
   eventClick(info){info.jsEvent.preventDefault();openCalendarTraining(info.event.id)},
   dateClick(info){if(!trainer())return;let d=new Date(info.date);if(info.allDay){d.setHours(10,0,0,0)}calendarAddAt(d)},
   eventDrop(info){confirmCalendarReschedule(info,'Przenieść trening?')},
@@ -556,7 +563,7 @@ function exercisesPage(){const active=validExerciseRows();const editing=exercise
  <label for="einstructions">Opis wykonania (opcjonalnie)</label><textarea id="einstructions" rows="3">${valTextarea(editing?.instructions)}</textarea>
  <div class="trainingActions">${editing?'<button class="ghost" onclick="cancelExerciseEditing()">Anuluj edycję</button>':''}<button class="primary" onclick="saveLibraryExercise()">${editing?'Zapisz zmiany':'Dodaj ćwiczenie'}</button></div>`):''}`}
 function exerciseRow(e){return `<div class="flatRow"><div><b>${esc(e.name)}</b><div class="hint">${esc(e.muscle_group||'Bez kategorii')}${e.equipment?' · '+esc(e.equipment):''}</div></div>
- ${trainer()?`<div class="exerciseRowActions"><button type="button" class="ghost" title="Edytuj ćwiczenie" onclick="editLibraryExercise('${esc(e.id)}')">✎ Edytuj</button><button type="button" class="ghost dangerButton" title="Usuń ćwiczenie" onclick="archiveLibraryExercise('${esc(e.id)}')">Usuń</button></div>`:'<span class="statusPill">Ćwiczenie</span>'}</div>`}
+ ${trainer()?`<div class="exerciseRowActions"><button type="button" class="ghost" title="Edytuj ćwiczenie" onclick="editLibraryExercise('${esc(e.id)}')">✎ Edytuj</button><button type="button" class="ghost dangerButton" title="Usuń ćwiczenie" onclick="archiveLibraryExercise('${esc(e.id)}')">Usuń</button></div>`:'<span class="statusPill">Ćwiczenie</span>'}</div>${trainer()?f18TrainerExerciseOpinion(e.id):''}`} 
 function filterExercises(){const q=v('exerciseSearch').toLocaleLowerCase('pl');const el=$('exerciseList');if(!el)return;
  el.innerHTML=validExerciseRows().filter(e=>[e.name,e.muscle_group,e.equipment].some(x=>String(x||'').toLocaleLowerCase('pl').includes(q))).map(exerciseRow).join('')||'<p class="hint">Brak pasujących ćwiczeń.</p>'}
 function editLibraryExercise(id){exerciseEditingId=id;render();document.getElementById('ename')?.scrollIntoView({block:'center',behavior:'smooth'})}
@@ -788,7 +795,7 @@ function calendarPage(){const t=trainer(),pref=calendarDatePrefill||localDateTim
  <div class="formgrid"><div><label for="calendarStartTime">Godzina rozpoczęcia *</label><input id="calendarStartTime" type="time" required value="${prefTime}" oninput="calendarAutoEnd()"></div><div><label for="calendarEndTime">Godzina zakończenia *</label><input id="calendarEndTime" type="time" required value="${calendarDefaultEndTime(prefTime)}" oninput="calendarEndManuallyEdited=true"></div></div>
  <p class="hint">Domyślny czas treningu to 60 minut. Możesz zmienić godzinę zakończenia.</p>
  <div class="trainingActions"><button type="button" class="ghost" onclick="calendarFormOpen=false;render()">Anuluj</button><button class="primary" type="submit">Zatwierdź termin</button></div></form>`:''}
- <div id="formaCalendar" class="formaCalendar" aria-label="Interaktywny kalendarz treningów"></div><div class="calendarHelp"><span class="calendarLegend"></span> Zatwierdzony trening ${t?'· Przeciągnij, by przesunąć termin':''}</div>`).replace('<section class="card">','<section class="card formaCalendarCard">')}
+ ${!t?f18ClientCalendarExtras():''}<div id="formaCalendar" class="formaCalendar" aria-label="Interaktywny kalendarz treningów"></div><div class="calendarHelp"><span class="calendarLegend"></span> Trening z Zuzią ${t?'· Przeciągnij, by przesunąć termin':'· Treningi domowe są oznaczone ikoną domu'}</div>`).replace('<section class="card">','<section class="card formaCalendarCard">')}
 async function saveCalendarBooking(e){e.preventDefault();if(!trainer())return;
  const day=v('calendarDate'),startString=v('calendarStartTime'),endString=v('calendarEndTime'),id=v('calendarClient');
  const start=new Date(`${day}T${startString}:00`),end=new Date(`${day}T${endString}:00`);
@@ -800,10 +807,10 @@ async function saveCalendarBooking(e){e.preventDefault();if(!trainer())return;
  catch(err){message(err.code==='23P01'?'Ten termin zajmuje już inny zatwierdzony trening.':'Nie udało się zapisać terminu: '+err.message,true)}}
 function openClient(id){selected=id;profileHealthEdit=false;trainingDraft=null;trainingWeekMonday=weekStart(new Date());
  loadClient().then(()=>switchTab('profile')).catch(e=>message(e.message,true))}
-async function openCalendarTraining(id){const b=bookings.find(x=>x.id===id&&x.status==='approved');if(!b)return message('Nie znaleziono terminu.',true);
+async function openCalendarTraining(id){if(id.startsWith('home:'))return f18OpenHomeEvent(id.slice(5));const b=bookings.find(x=>x.id===id&&x.status==='approved');if(!b)return message('Nie znaleziono terminu.',true);
  calendarSelectedBookingId=id;trainingDraft=null;trainingWeekMonday=weekStart(b.starts_at);
  try{if(trainer()&&selected!==b.client_id){selected=b.client_id;await loadClient()}
-  tab='plan';const p=plans.find(x=>x.booking_id===id);
+  tab=trainer()?'plan':'calendar';const p=plans.find(x=>x.booking_id===id);
   if(trainer()&&!p)trainingDraft={mode:'new',booking_id:id,name:'',notes:'',items:[]};
   render();window.scrollTo({top:0,behavior:'smooth'})
  }catch(e){message('Nie udało się otworzyć treningu: '+e.message,true)}}
@@ -967,6 +974,7 @@ async function loadClient(){
  if(c?.avatar_path){const r=await sb.storage.from('forma-avatars').createSignedUrl(c.avatar_path,3600);
   if(!r.error)clientAvatarUrl=r.data.signedUrl;
  }
+ await f18LoadClientData();
 }
 function futureBookingsForClient(){return bookings.filter(b=>b.client_id===clientId()&&b.status==='approved'&&new Date(b.starts_at).getTime()>Date.now())}
 function f16PlanForBooking(b){return plans.find(p=>p.booking_id===b.id)}
@@ -1049,6 +1057,7 @@ function trainingEditForm(){if(!trainingDraft)return '';const d=trainingDraft;
 }
 function f16BookingWithoutPlanCard(b){return `<div class="f16WorkoutCard"><div class="f16WorkoutTop"><div><div class="hint">${esc(fmtShortDate(b.starts_at))} · ${esc(fmtTime(b.starts_at))}</div><h3>Trening z kalendarza</h3></div><span class="statusPill">Brak planu</span></div><p class="hint">Ten termin nie ma jeszcze przypisanych ćwiczeń.</p><div class="f16WorkoutActions"><button class="primary" onclick="startTrainingForBooking('${esc(b.id)}')">Utwórz plan</button></div></div>`}
 function plan(){
+ if(trainer()&&f18HomeEditing)return f18HomeEditor();
  if(trainer()&&trainingDraft)return f17FullEditor();
  if(!clientId())return card('<h2>Plan treningowy</h2><div class="emptyState">Wybierz podopieczną.</div>');
  const id=clientId();
@@ -1067,13 +1076,13 @@ function plan(){
  const cards=card(`<div class="sectionHeading"><h2>Treningi w wybranym tygodniu</h2><span class="statusPill">${week.length} terminów</span></div>
  ${week.length?`<div class="f16WeekCards">${week.map(b=>{const p=f16PlanForBooking(b);return p?storedPlanCard(p):(new Date(b.starts_at).getTime()>Date.now()?f16BookingWithoutPlanCard(b):`<div class="f16WorkoutCard"><strong>${esc(fmtShortDate(b.starts_at))}</strong><p class="hint">Miniony termin bez planu</p></div>`)}).join('')}</div>`:'<div class="emptyState">Brak terminów w tym tygodniu. Przejdź strzałkami do kolejnego tygodnia albo dodaj termin w Kalendarzu.</div>'}
  ${!future.length?'<p class="hint" style="margin-top:14px">W tym tygodniu nie ma już przyszłych treningów. Możesz przejść do następnego tygodnia.</p>':''}`);
- return `${header}<div class="planningColumns"><div>${trainingEditForm()}${cards}</div>${historyPanel()}</div>`;
+ return `${header}${f18HomeTrainerPanel()}<div class="planningColumns"><div>${trainingEditForm()}${cards}</div>${historyPanel()}</div>`;
 }
 function historicBookingItem(b){const p=f16PlanForBooking(b),entry=diaryEntryFor(b.id);if(!p)return '';
  const review=f16WorkoutReview(b.id);
  return `<details class="historyItem"><summary><strong>${esc(fmtShortDate(b.starts_at))}</strong><span>${esc(p.name)}</span>${entry?.status==='missed'?'<span class="statusPill">Nieodbyty</span>':''}</summary>
- ${entry?.status==='missed'?'<p class="hint">Trening oznaczony przez Zuzię jako nieodbyty.</p>':f16PlanExercises(p).map(x=>`<div class="historyExercise"><strong>${esc(exerciseDisplayName(x))}</strong><span>${f16ExerciseParams(x,entry)}</span>${f16ReviewReadOnly(f16ExerciseReview(x.id),'Opinia podopiecznej')}</div>`).join('')}
- ${f16ReviewReadOnly(review,'Ocena całego treningu')}
+ ${entry?.status==='missed'?'<p class="hint">Trening oznaczony przez Zuzię jako nieodbyty.</p>':f16PlanExercises(p).map(x=>`<div class="historyExercise"><strong>${esc(exerciseDisplayName(x))}</strong><span>${f16ExerciseParams(x,entry)}</span>${f18TrainerExerciseComment(x.id)}</div>`).join('')}
+ ${f18TrainerWorkoutComment(b.id)}
  <button type="button" class="ghost" style="margin-top:10px" onclick="f16OpenResults('${esc(b.id)}')">Otwórz w dzienniku →</button>
  </details>`
 }
@@ -1128,9 +1137,9 @@ function diaryBookingCard(b){
  <div class="diaryInside"><div class="f16ReadonlyHint">Jeśli trening przebiegł zgodnie z planem, niczego nie zmieniaj. Zapisz tylko odstępstwa od planu.</div>
  <label for="diaryStatus-${key}" style="margin-top:14px">Czy trening się odbył?</label><select id="diaryStatus-${key}" onchange="toggleDiaryExercises('${key}')"><option value="completed" ${!missed?'selected':''}>Tak — odbył się</option><option value="missed" ${missed?'selected':''}>Nie — nie odbył się</option></select>
  <div class="diaryExercises" id="diaryExercises-${key}" ${missed?'hidden':''}>
- ${ex.map(x=>{const a=diaryActualFor(entry,x),k=key+'-'+x.id;return `<div id="diaryExercise-${esc(k)}" class="diaryExercise ${key===diaryFocusedBookingId&&x.id===diaryFocusedExerciseId?'isFocused':''}"><div class="diaryExerciseTop"><strong>${esc(exerciseDisplayName(x))}</strong><label class="diarySkip"><input type="checkbox" id="diarySkip-${k}" ${a.skipped?'checked':''}> Pominięto</label></div><div class="diaryNumbers"><div><span>Serie</span><small>Plan: ${esc(x.sets_target)}</small><input id="diarySets-${k}" type="number" min="0" max="30" step="1" value="${esc(a.sets)}"></div><div><span>Powtórzenia</span><small>Plan: ${esc(x.reps_target)}</small><input id="diaryReps-${k}" maxlength="40" value="${esc(a.reps)}"></div><div><span>Ciężar (kg)</span><small>Plan: ${esc(x.weight_target_kg??0)}</small><input id="diaryWeight-${k}" type="number" min="0" max="9999" step="0.25" value="${esc(a.weight)}"></div></div><label for="diaryNote-${k}">Uwagi trenerki do wykonania</label><input id="diaryNote-${k}" value="${esc(a.comment||'')}">${f16ReviewReadOnly(f16ExerciseReview(x.id),'Opinia podopiecznej')}</div>`}).join('')}
+ ${ex.map(x=>{const a=diaryActualFor(entry,x),k=key+'-'+x.id;return `<div id="diaryExercise-${esc(k)}" class="diaryExercise ${key===diaryFocusedBookingId&&x.id===diaryFocusedExerciseId?'isFocused':''}"><div class="diaryExerciseTop"><strong>${esc(exerciseDisplayName(x))}</strong><label class="diarySkip"><input type="checkbox" id="diarySkip-${k}" ${a.skipped?'checked':''}> Pominięto</label></div><div class="diaryNumbers"><div><span>Serie</span><small>Plan: ${esc(x.sets_target)}</small><input id="diarySets-${k}" type="number" min="0" max="30" step="1" value="${esc(a.sets)}"></div><div><span>Powtórzenia</span><small>Plan: ${esc(x.reps_target)}</small><input id="diaryReps-${k}" maxlength="40" value="${esc(a.reps)}"></div><div><span>Ciężar (kg)</span><small>Plan: ${esc(x.weight_target_kg??0)}</small><input id="diaryWeight-${k}" type="number" min="0" max="9999" step="0.25" value="${esc(a.weight)}"></div></div><label for="diaryNote-${k}">Uwagi trenerki do wykonania</label><input id="diaryNote-${k}" value="${esc(a.comment||'')}">${f18TrainerExerciseComment(x.id)}</div>`}).join('')}
  </div><label for="diaryComment-${key}">Notatka trenerki do całego treningu</label><textarea id="diaryComment-${key}" rows="2">${valTextarea(entry?.comment)}</textarea>
- ${f16ReviewReadOnly(review,'Ocena całego treningu')}
+ ${f18TrainerWorkoutComment(b.id)}
  <div class="trainingActions"><button class="primary" onclick="saveDiaryBooking('${esc(key)}')">Zapisz korekty wykonania</button></div></div></details>`;
 }
 
@@ -1226,7 +1235,7 @@ function f17SpecificHistory(exId){
    found.push({date:fmtShortDate(b.starts_at),sets:a.sets,reps:a.reps,weight:a.weight,review:f16ExerciseReview(x.id)});
   }
  }
- return found.length?found.slice(0,5).map(row=>`<div class="f17LastRow"><span>${esc(row.date)}</span><strong>${esc(row.sets)} × ${esc(row.reps)} · ${esc(row.weight)} kg${row.review?.rating?' · '+esc(f16Stars(row.review.rating)):''}</strong></div>`).join(''):'<div class="f17Note">Nie ma wcześniejszych wyników tego ćwiczenia.</div>';
+ return found.length?found.slice(0,5).map(row=>`<div class="f17LastRow"><span>${esc(row.date)}</span><strong>${esc(row.sets)} × ${esc(row.reps)} · ${esc(row.weight)} kg</strong></div>`).join(''):'<div class="f17Note">Nie ma wcześniejszych wyników tego ćwiczenia.</div>';
 }
 function f17ExerciseCard(x,i){
  const open=i===f17Expanded;
@@ -1236,7 +1245,7 @@ function f17ExerciseCard(x,i){
  ${open?`<div class="f17ExerciseDetails"><div class="f17LabelGroup"><label for="trainingExercise-${i}">Ćwiczenie</label><select id="trainingExercise-${i}" onchange="f17ChangeExercise(${i},this.value)">${choices.map(e=>`<option value="${esc(e.id)}" ${e.id===x.exercise_id?'selected':''}>${esc(e.name)}${e.archived_at?' (archiwalne)':''}</option>`).join('')}</select></div>
  <div class="f17Fields3"><div class="f17LabelGroup"><label for="trainingSets-${i}">Serie</label><input id="trainingSets-${i}" type="number" min="1" max="30" step="1" value="${esc(x.sets_target)}"></div><div class="f17LabelGroup"><label for="trainingReps-${i}">Powtórzenia</label><input id="trainingReps-${i}" maxlength="40" value="${esc(x.reps_target)}"></div><div class="f17LabelGroup"><label for="trainingWeight-${i}">Ciężar (kg)</label><input id="trainingWeight-${i}" type="number" min="0" max="9999" step="0.25" value="${esc(x.weight_target_kg)}"></div></div>
  <div class="f17LabelGroup"><label for="trainingExNotes-${i}">Wskazówki do ćwiczenia</label><input id="trainingExNotes-${i}" value="${esc(x.notes||'')}" placeholder="Np. przerwy 90 sekund"></div>
- <div class="f17InlineHistory"><h4>Ostatnie wyniki: ${esc(name)}</h4>${f17SpecificHistory(x.exercise_id)}</div>
+ ${f18TrainerActiveAlert(x.exercise_id)}<div class="f17InlineHistory"><h4>Ostatnie wyniki: ${esc(name)}</h4>${f17SpecificHistory(x.exercise_id)}</div>
  <div class="f17ItemActions"><button class="ghost" type="button" ${i===0?'disabled':''} onclick="f17MoveExercise(${i},-1)">↑ Wyżej</button><button class="ghost" type="button" ${i===trainingDraft.items.length-1?'disabled':''} onclick="f17MoveExercise(${i},1)">↓ Niżej</button><button class="ghost f17ButtonDanger" type="button" onclick="f17RemoveExercise(${i})">Usuń</button></div>
  </div>`:''}</article>`;
 }
@@ -1245,14 +1254,14 @@ function f17HistoryExercise(x,b){
  const showActual=f17CopyMode==='actual';
  const d=showActual?actual:{sets:x.sets_target,reps:x.reps_target,weight:x.weight_target_kg,skipped:false};
  const key=b.id+':'+x.id,archived=!validExerciseRows().some(e=>e.id===x.exercise_id);
- return `<div class="f17HistoryExercise"><label><input type="checkbox" ${archived||!done&&showActual?'disabled':''} ${f17Selected[key]?'checked':''} onchange="f17SetSelected('${esc(key)}',this.checked)"><span><strong>${esc(exerciseDisplayName(x))}${archived?' · archiwalne':''}</strong><small>${d.skipped?'Pominięte':`${esc(d.sets)} × ${esc(d.reps)} · ${esc(d.weight)} kg`}</small></span></label></div>`;
+ return `<div class="f17HistoryExercise"><label><input type="checkbox" ${archived||!done&&showActual?'disabled':''} ${f17Selected[key]?'checked':''} onchange="f17SetSelected('${esc(key)}',this.checked)"><span><strong>${esc(exerciseDisplayName(x))}${archived?' · archiwalne':''}</strong><small>${d.skipped?'Pominięte':`${esc(d.sets)} × ${esc(d.reps)} · ${esc(d.weight)} kg`}</small></span></label>${f18TrainerExerciseComment(x.id)}</div>`;
 }
 function f17HistoryPanel(){
  const history=f17HistoryCandidates(),visible=history.slice(0,f17HistoryCount);
  return `<aside class="f17History f17Panel"><div class="f17HistoryIntro"><div><h2>Poprzednie treningi</h2><p class="hint">Pełne sesje do planowania kolejnych ćwiczeń</p></div><span class="statusPill">${history.length} sesji</span></div>
  <div class="miniLabel">Kopiuj parametry</div><div class="f17HistoryModes"><button type="button" class="${f17CopyMode==='actual'?'active':''}" onclick="f17ChangeCopyMode('actual')">Wykonane</button><button type="button" class="${f17CopyMode==='planned'?'active':''}" onclick="f17ChangeCopyMode('planned')">Planowane</button></div>
  <div class="f17Note">Wykonane = zgodnie z planem, jeśli trenerka nie wprowadziła korekty.</div>
- ${visible.length?visible.map(b=>{const p=f16PlanForBooking(b),ex=f16PlanExercises(p);return `<div class="f17Source"><div class="f17SourceHead"><div><strong>${esc(p.name||'Trening')}</strong><small>${esc(fmtShortDate(b.starts_at))} · ${ex.length} ćwiczeń</small></div><button class="ghost" type="button" onclick="f17CopyWhole('${esc(b.id)}')">Kopiuj cały</button></div>${ex.map(x=>f17HistoryExercise(x,b)).join('')||'<p class="hint">Brak ćwiczeń</p>'}</div>`}).join(''):'<div class="f17Empty">Brak wcześniejszych treningów. Dodaj ćwiczenia z biblioteki, aby ułożyć pierwszy plan.</div>'}
+ ${visible.length?visible.map(b=>{const p=f16PlanForBooking(b),ex=f16PlanExercises(p);return `<div class="f17Source"><div class="f17SourceHead"><div><strong>${esc(p.name||'Trening')}</strong><small>${esc(fmtShortDate(b.starts_at))} · ${ex.length} ćwiczeń</small></div><button class="ghost" type="button" onclick="f17CopyWhole('${esc(b.id)}')">Kopiuj cały</button></div>${f18TrainerWorkoutComment(b.id)}${ex.map(x=>f17HistoryExercise(x,b)).join('')||'<p class="hint">Brak ćwiczeń</p>'}</div>`}).join(''):'<div class="f17Empty">Brak wcześniejszych treningów. Dodaj ćwiczenia z biblioteki, aby ułożyć pierwszy plan.</div>'}
  ${history.length>f17HistoryCount?`<button type="button" class="ghost f17HistoryMore" onclick="f17ShowOlder()">Pokaż 5 starszych treningów (${history.length-f17HistoryCount} pozostało)</button>`:''}
  ${history.length?`<div class="f17HistoryCopyBar"><button type="button" class="primary" onclick="f17CopySelected()">＋ Dodaj zaznaczone (<span id="f17SelectionCount">${f17SelectedCount()}</span>)</button></div>`:''}
  </aside>`;
@@ -1271,6 +1280,240 @@ function f17FullEditor(){
  <div class="f17Saving"><p class="hint">Plan dotyczy wybranego terminu w Kalendarzu. Zapis nie zmienia historii.</p><div class="f17SaveButtons"><button class="ghost" type="button" onclick="f17CancelEditor()">Anuluj</button><button type="button" class="primary" id="saveTrainingButton" onclick="saveTrainingDraft()">✓ Zapisz plan</button></div></div></div>`;
 }
 function f17CancelEditor(){if(!window.confirm('Zamknąć edytor? Niezapisane zmiany zostaną utracone.'))return;trainingDraft=null;f17DraftRef=null;f17MobilePane='editor';render()}
+
+
+/* FORMA 1.8 — panel podopiecznej / domowy / opinie.
+   Wymaga migracji SQL 1.8. Wszystkie działania na danych są autoryzowane RLS/RPC. */
+let f18HomePlan=null,f18HomeExercises=[],f18HomeSessions=[],f18Opinions=[],f18Discomfort=[],
+ f18WorkoutComments=[],f18ExerciseComments=[],f18DataReady=true,f18DataError='';
+let f18TrainingSection='history',f18DietSection='plan',f18MyFilter='all',f18MySearch='',
+ f18MineOpen='',f18MineRating={},f18MinePainDraft={},f18MineNoteDraft={},f18HomeEditing=false,f18HomeDraft=null,f18HomeExpanded=0,
+ f18ViewingHomeId='',f18HistoryFocus='',f18CommentOpen='',f18HomeFormOpen=false;
+
+async function f18LoadClientData(){
+ f18HomePlan=null;f18HomeExercises=[];f18HomeSessions=[];f18Opinions=[];f18Discomfort=[];
+ f18WorkoutComments=[];f18ExerciseComments=[];f18DataReady=true;f18DataError='';
+ const id=clientId();if(!id)return;
+ const queries=[
+   sb.from('forma_home_plans').select('*').eq('client_id',id).maybeSingle(),
+   sb.from('forma_home_plan_exercises').select('*').eq('client_id',id).order('sort_order'),
+   sb.from('forma_exercise_opinions').select('*').eq('client_id',id),
+   sb.from('forma_exercise_discomfort_events').select('*').eq('client_id',id).order('reported_at',{ascending:false}),
+   sb.from('forma_training_comments').select('*').eq('client_id',id),
+   sb.from('forma_training_exercise_comments').select('*').eq('client_id',id)
+ ];
+ if(!trainer())queries.push(sb.from('forma_home_sessions').select('*').eq('client_id',id).order('starts_at'));
+ const res=await Promise.all(queries);
+ const failed=res.find(x=>x.error);
+ if(failed){f18DataReady=false;f18DataError=failed.error.message||'Brak tabel FORMA 1.8';return}
+ f18HomePlan=res[0].data||null;f18HomeExercises=res[1].data||[];
+ f18Opinions=res[2].data||[];f18Discomfort=res[3].data||[];
+ f18WorkoutComments=res[4].data||[];f18ExerciseComments=res[5].data||[];
+ f18HomeSessions=trainer()?[]:res[6].data||[];
+}
+function f18SqlWarning(){return !f18DataReady?`<div class="notice error">Nie można odczytać nowych danych. Uruchom SQL FORMA 1.8 w Supabase i odśwież stronę. ${esc(f18DataError)}</div>`:''}
+function f18ShortDate(date){return date?new Date(date).toLocaleDateString('pl-PL',{day:'numeric',month:'long',year:'numeric'}):''}
+function f18ShortTime(date){return date?new Date(date).toLocaleTimeString('pl-PL',{hour:'2-digit',minute:'2-digit'}):''}
+function f18ValidHomeItems(){return f18HomeExercises.filter(x=>x.client_id===clientId())}
+function f18HomeSummary(){return f18HomePlan?`<strong>${esc(f18HomePlan.name)}</strong><p class="hint">${f18HomeExercises.length} ćwiczeń${f18HomePlan.notes?' · '+esc(f18HomePlan.notes):''}</p>`:'<p class="hint">Zuzia nie przygotowała jeszcze planu domowego.</p>'}
+function f18ClientStart(){
+ const name=String(me?.full_name||'').trim().split(/\s+/)[0];
+ const upcomingPersonal=bookings.filter(b=>b.client_id===me.id&&b.status==='approved'&&new Date(b.starts_at).getTime()>Date.now()).map(b=>({type:'personal',date:new Date(b.starts_at),b}));
+ const upcomingHome=f18HomeSessions.filter(h=>new Date(h.starts_at).getTime()>Date.now()).map(h=>({type:'home',date:new Date(h.starts_at),h}));
+ const next=[...upcomingPersonal,...upcomingHome].sort((a,b)=>a.date-b.date)[0];
+ const p=next?.type==='personal'?f16PlanForBooking(next.b):null;
+ const title=next?.type==='home'?(next.h.title||f18HomePlan?.name||'Trening domowy'):(p?.name||next?.b?.title||'Trening z Zuzią');
+ const date=next?.date;
+ const location=next?.type==='home'?'W domu':(me?.training_location||'Lokalizacja do ustalenia');
+ return `<div class="f18ClientStart">
+ <div class="f18Welcome"><span class="eyebrow">FORMA | BY ZUZIA FIKS</span><h2>Cześć${name?', '+esc(name):''}!</h2></div>
+ <section class="f18Next"><div class="miniLabel">NAJBLIŻSZY TRENING</div>
+ ${next?`<h2>${esc(title)}</h2><div class="f18NextDetail">${ico('calendar')} <span>${esc(f18ShortDate(date))} · ${esc(f18ShortTime(date))}</span></div><div class="f18NextDetail">${ico(next.type==='home'?'home':'dumbbell')} <span>${esc(location)}</span></div>
+ <button type="button" class="primary" onclick="${next.type==='home'?`f18OpenHomeEvent('${esc(next.h.id)}')`:`f18OpenPersonalPlan('${esc(next.b.id)}')`}">Zobacz plan →</button>`:'<h2>Brak nadchodzącego treningu</h2><p>Nowe terminy pojawią się tutaj po ich zaplanowaniu.</p><button class="ghost" onclick="switchTab(\'calendar\')">Otwórz kalendarz</button>'}
+ </section>
+ <h3 class="f18StartHeading">Twoje postępy</h3><div class="f18ShortcutGrid">
+ <button type="button" onclick="f18TrainingSection='strength';switchTab('trainings')">${ico('dumbbell')}<strong>Progres siłowy</strong><small>Wykresy ćwiczeń →</small></button>
+ <button type="button" onclick="switchTab('progress')">${ico('chart')}<strong>Progres sylwetki</strong><small>Waga i pomiary →</small></button></div>${f18SqlWarning()}</div>`;
+}
+function f18OpenPersonalPlan(id){f18ViewingHomeId='';calendarSelectedBookingId=id;tab='calendar';render();window.scrollTo({top:0,behavior:'smooth'})}
+function f18OpenHomeEvent(id){if(trainer())return;calendarSelectedBookingId='';f18ViewingHomeId=id;f18HomeFormOpen=false;tab='calendar';render();window.scrollTo({top:0,behavior:'smooth'})}
+function f18CalendarEvents(){
+ const src=calendarEventRows().map(event=>{
+  if(trainer())return event;
+  const b=bookings.find(b=>b.id===event.id),p=b&&f16PlanForBooking(b),desc=p?.description;
+  return {...event,title:(p?.name||b?.title||'Trening z Zuzią')+(desc?' · '+String(desc).slice(0,35):''),extendedProps:{...event.extendedProps,kind:'personal'}};
+ });
+ if(trainer())return src;
+ return src.concat(f18HomeSessions.map(h=>({id:'home:'+h.id,title:'⌂ '+(h.title||f18HomePlan?.name||'Trening domowy'),start:h.starts_at,end:h.ends_at,
+ backgroundColor:'#f0e5d9',borderColor:'#d2bfa9',textColor:'#725c43',editable:false,
+ extendedProps:{kind:'home'}})));
+}
+function f18ClientCalendarExtras(){
+ if(trainer())return '';
+ const b=bookings.find(x=>x.id===calendarSelectedBookingId&&x.client_id===me.id&&x.status==='approved');
+ const p=b&&f16PlanForBooking(b);
+ const h=f18HomeSessions.find(x=>x.id===f18ViewingHomeId);
+ const personalCard=b?`<div class="f18CalendarDetail"><div class="f18DetailHeading"><div><span class="miniLabel">TRENING Z ZUZIĄ</span><h3>${esc(p?.name||b.title||'Trening')}</h3><p>${esc(f18ShortDate(b.starts_at))} · ${esc(f18ShortTime(b.starts_at))}–${esc(f18ShortTime(b.ends_at))}</p></div><button class="ghost" onclick="calendarSelectedBookingId='';render()">Zamknij ×</button></div>
+ ${p?`${p.description?`<p>${esc(p.description)}</p>`:''}${f16PlanExercises(p).map(x=>`<div class="f18SimpleExercise"><b>${esc(exerciseDisplayName(x))}</b><span>${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg??0)} kg</span>${x.notes?`<small>${esc(x.notes)}</small>`:''}</div>`).join('')}`:'<p class="hint">Zuzia jeszcze nie uzupełniła planu na ten termin.</p>'}</div>`:'';
+ const homeCard=h?`<div class="f18CalendarDetail"><div class="f18DetailHeading"><div><span class="miniLabel">TRENING W DOMU</span><h3>${esc(h.title||f18HomePlan?.name||'Trening domowy')}</h3><p>${esc(f18ShortDate(h.starts_at))} · ${esc(f18ShortTime(h.starts_at))}</p></div><button class="ghost" onclick="f18ViewingHomeId='';render()">Zamknij ×</button></div>${f18HomePlan?f18HomeExercises.map(x=>`<div class="f18SimpleExercise"><b>${esc(x.exercise_name_snapshot)}</b><span>${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg)} kg</span>${x.notes?`<small>${esc(x.notes)}</small>`:''}</div>`).join(''):'<p class="hint">Plan domowy nie jest obecnie dostępny.</p>'}<div class="f18Aligned"><button class="ghost dangerButton" onclick="f18DeleteHomeEvent('${esc(h.id)}')">Usuń termin z kalendarza</button></div></div>`:'';
+ const form=f18HomeFormOpen?`<form class="f18HomeDateForm" onsubmit="f18SaveHomeEvent(event)"><h3>Dodaj trening w domu</h3><p class="hint">Wybierz termin dla planu przygotowanego przez Zuzię.</p><div class="formgrid"><div><label for="f18HomeDate">Data</label><input id="f18HomeDate" type="date" required value="${today()}"></div><div><label for="f18HomeTime">Godzina</label><input id="f18HomeTime" type="time" required value="18:00"></div></div><div class="trainingActions"><button class="ghost" type="button" onclick="f18HomeFormOpen=false;render()">Anuluj</button><button class="primary" type="submit">Dodaj do kalendarza</button></div></form>`:'';
+ return `<div class="f18CalendarExtras">${f18SqlWarning()}<div class="f18CalendarToolbar"><div class="hint">W kalendarzu widzisz treningi z Zuzią oraz swoje terminy domowe.</div><button type="button" class="ghost" ${!f18HomePlan||!f18DataReady?'disabled':''} onclick="f18HomeFormOpen=!f18HomeFormOpen;render()">＋ Trening w domu</button></div>${!f18HomePlan?'<p class="hint">Trening domowy dodasz, gdy Zuzia przygotuje Twój plan domowy.</p>':''}${form}${personalCard}${homeCard}</div>`;
+}
+async function f18SaveHomeEvent(ev){ev.preventDefault();if(trainer()||!f18HomePlan)return;
+ const date=v('f18HomeDate'),time=v('f18HomeTime'),start=new Date(date+'T'+time+':00');
+ if(!date||!time||!Number.isFinite(start.getTime())||start<=new Date())return message('Wybierz przyszłą datę i godzinę.',true);
+ const end=new Date(start.getTime()+60*60000);
+ try{check(await sb.from('forma_home_sessions').insert({client_id:me.id,starts_at:start.toISOString(),ends_at:end.toISOString(),title:f18HomePlan.name}));
+ await f18LoadClientData();f18HomeFormOpen=false;render();message('Dodano trening domowy do Twojego kalendarza. Nie pojawia się w kalendarzu Zuzi.')}
+ catch(e){message('Nie udało się dodać terminu domowego: '+e.message,true)}
+}
+async function f18DeleteHomeEvent(id){if(trainer()||!window.confirm('Usunąć wybrany termin treningu domowego?'))return;
+ try{check(await sb.from('forma_home_sessions').delete().eq('id',id).eq('client_id',me.id));f18ViewingHomeId='';await f18LoadClientData();render();message('Usunięto termin domowy. Plan Zuzi nie zmienił się.')}
+ catch(e){message(e.message,true)}
+}
+function f18ClientTrainings(){
+ if(trainer())return diaryPage();
+ const options=[['history','Historia treningów'],['strength','Progres siłowy'],['mine','Moje ćwiczenia'],['home','Plan domowy']];
+ return `${card(`<div class="sectionHeading"><h2>Treningi</h2></div><div class="f18Subtabs">${options.map(([key,label])=>`<button type="button" class="${key===f18TrainingSection?'active':''}" onclick="f18TrainingSection='${key}';render()">${label}</button>`).join('')}</div>`)}
+ ${f18SqlWarning()}${f18TrainingSection==='history'?f18ClientHistory():f18TrainingSection==='strength'?strengthOverview():f18TrainingSection==='mine'?f18MyExercises():f18ClientHomeSection()}`;
+}
+function f18WorkoutNote(id){return f18WorkoutComments.find(x=>x.booking_id===id)}
+function f18ExNote(id){return f18ExerciseComments.find(x=>x.plan_exercise_id===id)}
+function f18CommentButton(kind,bookingId,exId='',label='Dodaj komentarz'){
+ const id=kind==='workout'?bookingId:exId,key=kind+':'+id,entry=kind==='workout'?f18WorkoutNote(id):f18ExNote(id);
+ return `<div class="f18CommentBox">${entry?.comment?`<p class="f18SavedComment">${esc(entry.comment)}</p>`:''}<button type="button" class="f18TextButton" onclick="f18ToggleComment('${esc(key)}','${esc(bookingId)}')">${entry?'✎ Edytuj komentarz':'＋ '+label}</button>
+ ${f18CommentOpen===key?`<div class="f18CommentEditor"><textarea id="f18CommentDraft" maxlength="3000" rows="2" placeholder="Notatka dla Zuzi...">${valTextarea(entry?.comment||'')}</textarea><div class="trainingActions"><button class="ghost" onclick="f18CommentOpen='';render()">Anuluj</button><button class="primary" onclick="f18SaveComment('${kind}','${esc(bookingId)}','${esc(exId)}')">Zapisz komentarz</button></div></div>`:''}</div>`;
+}
+function f18ToggleComment(key,bookingId){f18HistoryFocus=bookingId;f18CommentOpen=f18CommentOpen===key?'':key;render();document.getElementById('f18History-'+bookingId)?.scrollIntoView({block:'nearest'})}
+async function f18SaveComment(kind,bookingId,exId){if(trainer())return;
+ const text=v('f18CommentDraft'),b=bookings.find(b=>b.id===bookingId&&b.client_id===me.id&&b.status==='approved'&&new Date(b.ends_at)<=new Date());
+ if(!b)return message('Komentarze można dodać do zakończonych treningów.',true);
+ if(text.length>3000)return message('Komentarz jest za długi.',true);
+ const table=kind==='workout'?'forma_training_comments':'forma_training_exercise_comments';
+ const key=kind==='workout'?'booking_id':'plan_exercise_id';
+ const id=kind==='workout'?bookingId:exId;
+ const payload={client_id:me.id,booking_id:bookingId,comment:text,updated_at:new Date().toISOString()};
+ if(kind!=='workout')payload.plan_exercise_id=exId;
+ try{if(text)check(await sb.from(table).upsert(payload,{onConflict:key}));
+ else check(await sb.from(table).delete().eq(key,id).eq('client_id',me.id));
+ await f18LoadClientData();f18CommentOpen='';render();message(text?'Komentarz zapisany.':'Komentarz usunięty.')}
+ catch(e){message('Nie udało się zapisać komentarza: '+e.message,true)}
+}
+function f18ClientHistory(){
+ const finished=bookings.filter(b=>b.client_id===clientId()&&b.status==='approved'&&new Date(b.ends_at).getTime()<=Date.now()&&!!f16PlanForBooking(b)).sort((a,b)=>new Date(b.starts_at)-new Date(a.starts_at));
+ return card(`<div class="sectionHeading"><h2>Historia treningów</h2><span class="statusPill">${finished.length} sesji</span></div>
+ ${finished.length?finished.map(b=>{const p=f16PlanForBooking(b),entry=diaryEntryFor(b.id),missed=entry?.status==='missed';
+ return `<details id="f18History-${esc(b.id)}" class="f18HistoryCard" ${f18HistoryFocus===b.id||calendarSelectedBookingId===b.id?'open':''}><summary><span><small>${esc(f18ShortDate(b.starts_at))}</small><strong>${esc(p.name||'Trening')}</strong><small>${missed?'Nieodbyty':f16PlanExercises(p).length+' ćwiczeń'}</small></span><span class="f18Chevron">⌄</span></summary><div class="f18HistoryInside">${missed?'<p class="hint">Trenerka oznaczyła ten trening jako nieodbyty.</p>':f16PlanExercises(p).map(x=>`<div class="f18HistoryExercise"><div><strong>${esc(exerciseDisplayName(x))}</strong><span>${f16ExerciseParams(x,entry)}</span></div>${f18CommentButton('exercise',b.id,x.id)}</div>`).join('')}
+ <div class="f18WorkoutNote"><strong>Notatka do całego treningu</strong>${f18CommentButton('workout',b.id,'','Dodaj notatkę')}</div></div></details>`}).join(''):'<div class="emptyState">Nie masz jeszcze zakończonych treningów.</div>'}`);
+}
+function f18MyItems(){
+ const found=new Map();
+ for(const p of plans){const b=bookings.find(b=>b.id===p.booking_id&&b.status==='approved'&&b.client_id===clientId());if(!b)continue;
+  for(const x of f16PlanExercises(p)){if(!x.exercise_id)continue;
+   let item=found.get(x.exercise_id);if(!item){item={id:x.exercise_id,name:exerciseDisplayName(x),group:exercises.find(e=>e.id===x.exercise_id)?.muscle_group||'',done:false,planned:false,home:false};found.set(x.exercise_id,item)}
+   if(new Date(b.ends_at)<=new Date())item.done=true;else item.planned=true;
+  }
+ }
+ for(const x of f18HomeExercises){if(!x.exercise_id)continue;
+  if(!found.has(x.exercise_id))found.set(x.exercise_id,{id:x.exercise_id,name:x.exercise_name_snapshot,group:exercises.find(e=>e.id===x.exercise_id)?.muscle_group||'',done:false,planned:false,home:true});
+  else found.get(x.exercise_id).home=true;
+ }
+ return [...found.values()].sort((a,b)=>a.name.localeCompare(b.name,'pl'));
+}
+function f18Opinion(id){return f18Opinions.find(x=>x.exercise_id===id)}
+function f18Events(id){return f18Discomfort.filter(x=>x.exercise_id===id)}
+function f18ActiveEvent(id){return f18Events(id).find(x=>!x.discussed_at&&!x.resolved_at)}
+function f18MyFilters(kind){f18MyFilter=kind;render()}
+function f18SetRating(id,number){f18CaptureMyDraft(id);f18MineRating[id]=number;render()}
+function f18CaptureMyDraft(id){const toggle=$('f18Pain-'+id),note=$('f18PainText-'+id);if(toggle)f18MinePainDraft[id]=toggle.checked;if(note)f18MineNoteDraft[id]=note.value}
+function f18MyExercises(){
+ const items=f18MyItems(),visible=items.filter(x=>x.name.toLocaleLowerCase('pl').includes(f18MySearch.toLocaleLowerCase('pl'))&&(f18MyFilter==='all'||(f18MyFilter==='rated'&&f18Opinion(x.id)?.rating)||(f18MyFilter==='pain'&&f18Opinion(x.id)?.discomfort)||(f18MyFilter==='future'&&!x.done)));
+ return card(`<div class="sectionHeading"><h2>Moje ćwiczenia</h2><span class="statusPill">${items.length} ćwiczeń</span></div><p class="hint">Gwiazdki oznaczają, jak bardzo lubisz ćwiczenie. Ból lub dyskomfort zgłaszasz osobno.</p>
+ <div class="f18MineSearch"><label for="f18MySearch">Szukaj ćwiczenia</label><input id="f18MySearch" value="${esc(f18MySearch)}" placeholder="Wpisz nazwę..." oninput="f18FilterMySearch(this.value)"></div>
+ <div class="f18FilterRow">${[['all','Wszystkie'],['rated','Ocenione'],['pain','Dyskomfort'],['future','Zaplanowane']].map(([k,n])=>`<button type="button" class="ghost ${f18MyFilter===k?'active':''}" onclick="f18MyFilters('${k}')">${n}</button>`).join('')}</div>
+ <div id="f18MineResults">${visible.map(f18MyCard).join('')||'<p class="hint">Brak pasujących ćwiczeń.</p>'}</div>`);
+}
+function f18FilterMySearch(value){f18MySearch=value;const el=$('f18MineResults');if(el)el.innerHTML=f18MyItems().filter(x=>x.name.toLocaleLowerCase('pl').includes(value.toLocaleLowerCase('pl'))&&(f18MyFilter==='all'||(f18MyFilter==='rated'&&f18Opinion(x.id)?.rating)||(f18MyFilter==='pain'&&f18Opinion(x.id)?.discomfort)||(f18MyFilter==='future'&&!x.done))).map(f18MyCard).join('')||'<p class="hint">Brak pasujących ćwiczeń.</p>'}
+function f18MyCard(ex){
+ const o=f18Opinion(ex.id),rating=f18MineRating[ex.id]??o?.rating??0,open=f18MineOpen===ex.id,history=f18Events(ex.id),active=f18ActiveEvent(ex.id),painDraft=f18MinePainDraft[ex.id]??o?.discomfort??false,noteDraft=f18MineNoteDraft[ex.id]??o?.discomfort_note??'';
+ return `<article class="f18MyCard"><button type="button" class="f18MyHead" onclick="f18MineOpen=f18MineOpen==='${esc(ex.id)}'?'':'${esc(ex.id)}';render()"><span><strong>${esc(ex.name)}</strong><small>${esc(ex.group||'Ćwiczenie')} · ${ex.done?'Wcześniej wykonywane':ex.home?'Plan domowy':'Zaplanowane na przyszłość'}</small></span><span class="f18MyHeadRight">${o?.rating?'★ '+o.rating+'/5':'Bez oceny'}${o?.discomfort?'<small>⚠ Dyskomfort</small>':''}</span><span>⌄</span></button>
+ ${open?`<div class="f18MyBody"><div class="f18Label">Jak bardzo lubisz to ćwiczenie?</div><div class="f18Stars">${[1,2,3,4,5].map(n=>`<button type="button" class="${n<=rating?'filled':''}" onclick="f18SetRating('${esc(ex.id)}',${n})" aria-label="${n} na 5">★</button>`).join('')}</div><p class="hint">1 — nie lubię · 5 — bardzo lubię</p>
+ <label class="f18CheckLabel"><input type="checkbox" id="f18Pain-${esc(ex.id)}" ${painDraft?'checked':''} onchange="f18TogglePain('${esc(ex.id)}',this.checked)"><span>To ćwiczenie powoduje ból lub dyskomfort</span></label>
+ <div class="f18PainNote" id="f18PainBox-${esc(ex.id)}" ${!painDraft?'hidden':''}><label for="f18PainText-${esc(ex.id)}">Gdzie odczuwasz dolegliwości? (opcjonalnie)</label><textarea id="f18PainText-${esc(ex.id)}" maxlength="1000" rows="2">${valTextarea(noteDraft)}</textarea></div>
+ <div class="f18Aligned"><button type="button" class="primary" onclick="f18SaveOpinion('${esc(ex.id)}')">Zapisz opinię</button>${o?.discomfort&&!active?`<button type="button" class="ghost" onclick="f18SaveOpinion('${esc(ex.id)}',true)">Zgłoś ponownie</button>`:''}</div>
+ ${history.length?`<details class="f18OpinionHistory"><summary>Historia zgłoszeń (${history.length})</summary>${history.map(h=>`<p><strong>${esc(f18ShortDate(h.reported_at))}</strong> · ${h.discussed_at?'Omówione':h.resolved_at?'Wycofane':'Do omówienia'}${h.description?' · '+esc(h.description):''}</p>`).join('')}</details>`:''}</div>`:''}</article>`;
+}
+function f18TogglePain(id,on){f18MinePainDraft[id]=on;const el=$('f18PainBox-'+id);if(el)el.hidden=!on}
+async function f18SaveOpinion(id,reopen=false){if(trainer())return;
+ const rating=f18MineRating[id]??f18Opinion(id)?.rating??null;
+ const discomfort=!!$('f18Pain-'+id)?.checked;
+ const note=discomfort?($('f18PainText-'+id)?.value||'').trim():'';
+ try{check(await sb.rpc('forma_set_exercise_opinion',{p_exercise_id:id,p_rating:rating||null,p_discomfort:discomfort,p_note:note,p_reopen:reopen}));
+ await f18LoadClientData();delete f18MineRating[id];delete f18MinePainDraft[id];delete f18MineNoteDraft[id];render();message(reopen?'Zgłoszenie dyskomfortu ponownie przekazane Zuzi.':'Opinia zapisana.')}
+ catch(e){message('Nie udało się zapisać opinii: '+e.message,true)}
+}
+function f18TrainerExerciseOpinion(id){if(!trainer()||!selected)return '';
+ const o=f18Opinion(id),history=f18Events(id),active=f18ActiveEvent(id);
+ if(!o&&!history.length)return '';
+ return `<div class="f18LibraryOpinion"><div class="f18LibraryOpinionTitle"><strong>Opinia wybranej podopiecznej</strong><span>${o?.rating?'★ '+o.rating+'/5':'Brak oceny'}</span></div>
+ ${active?`<div class="f18Alert"><strong>⚠ Zgłoszony ból lub dyskomfort</strong><p>${esc(active.description||'Nie podano miejsca dolegliwości.')} · ${esc(f18ShortDate(active.reported_at))}</p><button type="button" class="ghost" onclick="f18MarkDiscussed('${esc(active.id)}')">Oznacz jako omówione</button></div>`:o?.discomfort?'<p class="hint">Dyskomfort zgłoszony wcześniej — brak aktywnego zgłoszenia.</p>':''}
+ ${history.length?`<details class="f18OpinionHistory"><summary>Historia zgłoszeń (${history.length})</summary>${history.map(h=>`<p>${esc(f18ShortDate(h.reported_at))} · ${h.discussed_at?'Omówione':h.resolved_at?'Wycofane':'Do omówienia'}${h.description?' · '+esc(h.description):''}</p>`).join('')}</details>`:''}</div>`;
+}
+async function f18MarkDiscussed(id){if(!trainer())return;
+ try{check(await sb.rpc('forma_mark_exercise_discussed',{p_event_id:id}));await f18LoadClientData();render();message('Zgłoszenie oznaczone jako omówione. Informacja pozostaje w historii.')}
+ catch(e){message('Nie udało się oznaczyć zgłoszenia: '+e.message,true)}
+}
+function f18TrainerActiveAlert(id){if(!trainer())return '';
+ const a=f18ActiveEvent(id);return a?`<div class="f18Alert"><strong>⚠ Zgłoszony dyskomfort przy tym ćwiczeniu</strong><p>${esc(a.description||'Brak opisu')} · ${esc(f18ShortDate(a.reported_at))}. Zgłoszenie obsłużysz w Bibliotece ćwiczeń po wybraniu podopiecznej.</p></div>`:'';
+}
+function f18TrainerWorkoutComment(bookingId){const c=f18WorkoutNote(bookingId);return c?.comment?`<details class="f18TrainerComment"><summary>▤ Notatka podopiecznej do treningu</summary><p>${esc(c.comment)}</p></details>`:''}
+function f18TrainerExerciseComment(id){const c=f18ExNote(id);return c?.comment?`<details class="f18TrainerComment"><summary title="Komentarz podopiecznej">▤ Komentarz</summary><p>${esc(c.comment)}</p></details>`:''}
+
+function f18HomeTrainerPanel(){if(!trainer())return '';
+ return card(`<div class="sectionHeading"><h2>⌂ Plan domowy podopiecznej</h2><span class="statusPill">${f18HomePlan?'Plan gotowy':'Brak planu'}</span></div>
+ <p class="hint">Zuzia układa ćwiczenia bez wybierania terminu. Podopieczna sama wpisuje termin domowy do swojego kalendarza — nie pojawia się on w kalendarzu Zuzi.</p>
+ ${f18SqlWarning()}${f18HomeSummary()}
+ ${f18HomePlan?`<details class="f18HomePreview"><summary>Zobacz ćwiczenia (${f18HomeExercises.length})</summary>${f18HomeExercises.map(x=>`<div class="f18SimpleExercise"><b>${esc(x.exercise_name_snapshot)}</b><span>${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg)} kg</span></div>`).join('')}</details>`:''}
+ <button type="button" class="ghost" ${!f18DataReady?'disabled':''} onclick="f18BeginHomeEdit()">${f18HomePlan?'Edytuj plan domowy':'Ułóż plan domowy'} →</button>`);
+}
+function f18BeginHomeEdit(){if(!trainer())return;
+ f18HomeEditing=true;f18HomeExpanded=0;f18HomeDraft={name:f18HomePlan?.name||'Trening domowy',notes:f18HomePlan?.notes||'',items:f18HomeExercises.map(x=>({exercise_id:x.exercise_id,sets_target:x.sets_target,reps_target:x.reps_target,weight_target_kg:x.weight_target_kg,notes:x.notes||''}))};
+ render();window.scrollTo({top:0,behavior:'smooth'});
+}
+function f18CaptureHomeDraft(){if(!f18HomeEditing||!f18HomeDraft)return;
+ if($('f18HomeName'))f18HomeDraft.name=v('f18HomeName');
+ if($('f18HomeNotes'))f18HomeDraft.notes=v('f18HomeNotes');
+ f18HomeDraft.items.forEach((item,i)=>{if($('f18HomeEx-'+i)){item.exercise_id=v('f18HomeEx-'+i);item.sets_target=Number(v('f18HomeSets-'+i));item.reps_target=v('f18HomeReps-'+i);item.weight_target_kg=Number(v('f18HomeWeight-'+i));item.notes=v('f18HomeItemNote-'+i)}});
+}
+function f18HomeOpen(i){f18CaptureHomeDraft();f18HomeExpanded=f18HomeExpanded===i?-1:i;render()}
+function f18HomeAdd(){f18CaptureHomeDraft();const e=validExerciseRows()[0];if(!e)return message('Dodaj najpierw ćwiczenie do biblioteki.',true);
+ f18HomeDraft.items.push({exercise_id:e.id,sets_target:3,reps_target:'10',weight_target_kg:0,notes:''});f18HomeExpanded=f18HomeDraft.items.length-1;render()}
+function f18HomeDelete(i){f18CaptureHomeDraft();f18HomeDraft.items.splice(i,1);f18HomeExpanded=f18HomeDraft.items.length?Math.min(i,f18HomeDraft.items.length-1):-1;render()}
+function f18HomeMove(i,dir){f18CaptureHomeDraft();const j=i+dir;if(j<0||j>=f18HomeDraft.items.length)return;
+ [f18HomeDraft.items[i],f18HomeDraft.items[j]]=[f18HomeDraft.items[j],f18HomeDraft.items[i]];f18HomeExpanded=j;render()}
+function f18HomeEditor(){const d=f18HomeDraft;if(!d)return '';
+ return `<div class="f17Editor f18HomeEditor"><div class="f17Header"><div><button type="button" class="f17Back" onclick="f18CancelHome()">← Wróć do planu treningowego</button><h1>Plan domowy</h1><p class="hint">Plan dla: ${esc(clients.find(c=>c.id===clientId())?.full_name||'Podopieczna')} · bez wyboru terminu</p></div><span class="statusPill">Tylko trenerka</span></div>
+ <div class="f18HomeEditorBody"><label for="f18HomeName">Nazwa planu *</label><input id="f18HomeName" maxlength="120" value="${esc(d.name)}"><h2 style="margin-top:24px">Ćwiczenia (${d.items.length})</h2>
+ ${d.items.map((x,i)=>{const ex=exercises.find(e=>e.id===x.exercise_id),open=f18HomeExpanded===i;return `<article class="f17Exercise"><div class="f17ExerciseTitle"><span class="f17Counter">${String(i+1).padStart(2,'0')}</span><button type="button" class="f17ExerciseTitleText" onclick="f18HomeOpen(${i})"><strong>${esc(ex?.name||'Ćwiczenie')}</strong><small>${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg)} kg</small></button><button type="button" class="f17More" onclick="f18HomeOpen(${i})">${open?'⌃':'⌄'}</button></div>${open?`<div class="f17ExerciseDetails"><label>Ćwiczenie z biblioteki</label><select id="f18HomeEx-${i}">${validExerciseRows().map(e=>`<option value="${esc(e.id)}" ${e.id===x.exercise_id?'selected':''}>${esc(e.name)}</option>`).join('')}</select>
+ <div class="f17Fields3"><div><label>Serie</label><input id="f18HomeSets-${i}" type="number" min="1" max="30" value="${esc(x.sets_target)}"></div><div><label>Powtórzenia</label><input id="f18HomeReps-${i}" maxlength="40" value="${esc(x.reps_target)}"></div><div><label>Ciężar (kg)</label><input id="f18HomeWeight-${i}" type="number" min="0" max="9999" step="0.25" value="${esc(x.weight_target_kg)}"></div></div>
+ <label>Wskazówki</label><input id="f18HomeItemNote-${i}" value="${esc(x.notes)}" maxlength="1000"><div class="f17ItemActions"><button type="button" class="ghost" ${!i?'disabled':''} onclick="f18HomeMove(${i},-1)">↑ Wyżej</button><button type="button" class="ghost" ${i===d.items.length-1?'disabled':''} onclick="f18HomeMove(${i},1)">↓ Niżej</button><button type="button" class="ghost dangerButton" onclick="f18HomeDelete(${i})">Usuń</button></div></div>`:''}</article>`}).join('')}
+ <button type="button" class="f17AddExercise" onclick="f18HomeAdd()">＋ Dodaj ćwiczenie</button><label for="f18HomeNotes">Wskazówki do całego treningu</label><textarea id="f18HomeNotes" rows="3">${valTextarea(d.notes)}</textarea></div>
+ <div class="f17Saving"><p class="hint">Po zapisie plan pojawi się u podopiecznej. Datę samodzielnie wpisze we własnym kalendarzu.</p><div class="f17SaveButtons"><button type="button" class="ghost" onclick="f18CancelHome()">Anuluj</button><button type="button" class="primary" onclick="f18SaveHomePlan()">Zapisz plan domowy</button></div></div></div>`;
+}
+function f18CancelHome(){if(!window.confirm('Zamknąć edytor? Niezapisane zmiany zostaną utracone.'))return;f18HomeEditing=false;f18HomeDraft=null;render()}
+async function f18SaveHomePlan(){if(!trainer()||!f18HomeDraft)return;f18CaptureHomeDraft();const d=f18HomeDraft;
+ if(d.name.trim().length<2||d.name.length>120||!d.items.length)return message('Uzupełnij nazwę i dodaj co najmniej jedno ćwiczenie.',true);
+ if(d.items.some(x=>!x.exercise_id||!Number.isInteger(x.sets_target)||x.sets_target<1||x.sets_target>30||!String(x.reps_target).trim()||!Number.isFinite(x.weight_target_kg)||x.weight_target_kg<0))return message('Sprawdź parametry ćwiczeń.',true);
+ try{check(await sb.rpc('forma_save_home_plan',{p_client_id:clientId(),p_name:d.name,p_notes:d.notes,p_exercises:d.items}));f18HomeEditing=false;f18HomeDraft=null;await f18LoadClientData();render();message('Zapisano plan domowy dla podopiecznej.')}
+ catch(e){message('Nie udało się zapisać planu domowego: '+e.message,true)}
+}
+function f18HomeTrainerPage(){return trainer()?f18HomeTrainerPanel():f18ClientHomeSection()}
+function f18ClientHomeSection(){return card(`<div class="sectionHeading"><h2>Plan domowy</h2></div><p class="hint">Zuzia przygotowuje ćwiczenia. Ty wybierasz termin wykonania w swoim Kalendarzu.</p>${f18HomeSummary()}
+ ${f18HomePlan?`${f18HomeExercises.map((x,i)=>`<div class="f18SimpleExercise"><b>${i+1}. ${esc(x.exercise_name_snapshot)}</b><span>${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg)} kg</span>${x.notes?`<small>${esc(x.notes)}</small>`:''}</div>`).join('')}<div class="f18Aligned"><button type="button" class="primary" onclick="f18HomeFormOpen=true;switchTab('calendar')">Zaplanuj w kalendarzu →</button></div>`:''}`)}
+function f18DietPage(){
+ if(trainer())return plannedFeature('Plan odżywiania','Zalecenia żywieniowe będą dostępne w kolejnym etapie.');
+ return `${card(`<div class="sectionHeading"><h2>Dieta</h2></div><div class="f18Subtabs"><button type="button" class="${f18DietSection==='plan'?'active':''}" onclick="f18DietSection='plan';render()">Mój plan</button><button type="button" class="${f18DietSection==='recipes'?'active':''}" onclick="f18DietSection='recipes';render()">Przepisy</button></div>`)}${f18DietSection==='recipes'?recipesPage():plannedFeature('Mój plan odżywiania','Plan żywieniowy pojawi się tutaj, gdy uruchomimy moduł diety.')}`;
+}
 
 
 (async()=>{try{if(!window.supabase)throw Error('Nie udało się załadować biblioteki Supabase');const r=await fetch('/api/config',{cache:'no-store'});if(!r.ok)throw Error('Brak konfiguracji Supabase. Sprawdź zmienne Vercel i ponowne wdrożenie.');const {url,key}=await r.json();sb=window.supabase.createClient(url,key);let recovering=false;sb.auth.onAuthStateChange((event)=>{if(event==='PASSWORD_RECOVERY'){recovering=true;setTimeout(showNewPassword,0)}});const hash=new URLSearchParams(window.location.hash.slice(1));const query=new URLSearchParams(window.location.search);if(hash.get('type')==='recovery'||query.get('type')==='recovery'){recovering=true;showNewPassword()}else{await initSession();if(recovering)showNewPassword()}}catch(e){$('title').textContent='Konfiguracja';$('app').innerHTML=card(`<h2>Nie udało się uruchomić FORMA</h2><p class="error">${esc(e.message)}</p><p>Sprawdź wdrożenie pliku <code>api/config.js</code> na Vercel.</p>`)}})();
