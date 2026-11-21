@@ -175,6 +175,53 @@ html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);font-fami
 .progressSmallBtn{border:1px solid var(--line);background:white;border-radius:9px;padding:9px 12px;font-size:12px}
 @media(max-width:760px){.progressSummary{gap:7px}.progressMetric{padding:11px}.progressMetric strong{font-size:18px}.progressGallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.progressCompareFilters{grid-template-columns:1fr}.progressCompareCard img{height:240px}.progressComparison{gap:8px}.progressSubtab{font-size:12px;min-width:108px;padding:10px 9px}.progressEntryForm{padding:14px}.progressPlot{padding:7px}}
 
+
+/* FORMA 1.6 — proste planowanie dla trenerki, opinie podopiecznej */
+.f16WeekCards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:14px}
+.f16WorkoutCard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px 18px;min-width:0}
+.f16WorkoutCard.f16Focused{border-color:#bbab94;box-shadow:0 0 0 2px #c5b7a524}
+.f16WorkoutTop{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.f16WorkoutCard h3{font-size:16px;line-height:1.3;margin:5px 0 8px;letter-spacing:-.03em}
+.f16WorkoutCard .hint{font-size:12px;margin:0}
+.f16WorkoutActions{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}
+.f16WorkoutActions button{padding:8px 11px;font-size:12px}
+.f16Upcoming{background:#f8f5f0;border:1px solid #e7ddd1;border-radius:13px;padding:13px;margin-bottom:14px}
+.f16InlineRows{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.f16InlineRow{border:1px solid var(--line);background:#fcfbfa;border-radius:12px;padding:12px}
+.f16InlineRow strong{display:block;font-size:13px;margin-bottom:8px}
+.f16InlineGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;align-items:end}
+.f16InlineGrid input{width:100%;padding:8px}
+.f16InlineGrid label{font-size:11px;margin:0 0 3px}
+.f16CopyBox{background:#fbf9f6;border:1px solid #e9e1d7;padding:17px;border-radius:14px;margin:13px 0 22px}
+.f16CopyBox h4{margin:0 0 7px;font-size:15px}
+.f16CopyBox .formgrid{margin:10px 0}
+.f16CopyRow{display:flex;align-items:flex-start;gap:10px;border:1px solid #e7e1d7;background:white;border-radius:10px;padding:9px 11px;margin-top:7px;font-size:13px}
+.f16CopyRow input{width:auto;margin:4px 0 0}
+.f16CopyRow span{display:block;color:var(--muted);font-size:12px}
+.f16ReadExercise{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
+.f16ReadExercise:first-child{border-top:0}
+.f16ReadExercise strong{font-size:13px}
+.f16ReadExercise .hint{font-size:12px;margin:2px 0 0}
+.f16ReadExercise .f16Params{text-align:right;font-size:13px;white-space:nowrap;font-weight:650}
+.f16Feedback{padding:14px;border:1px solid #e9e2d9;border-radius:12px;background:#faf8f5;margin:14px 0}
+.f16Feedback label{font-size:12px;margin:0 0 5px}
+.f16Feedback textarea{width:100%;min-height:72px}
+.f16Feedback .f16FeedbackActions{display:flex;justify-content:flex-end;margin-top:10px}
+.f16Feedback .f16FeedbackActions button{font-size:12px;padding:9px 13px}
+.f16Feedback .f16Rating{display:flex;align-items:center;gap:8px;margin:10px 0}
+.f16Feedback .f16Rating select{max-width:215px;padding:8px;font-size:13px}
+.f16Feedback .f16FeedbackActions .primary{white-space:nowrap}
+.f16ReadReview{background:#f6f2ec;padding:10px 13px;border-radius:10px;font-size:12px;margin-top:10px}
+.f16ReadReview strong{font-size:12px}
+.f16ReadReview p{margin:5px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}
+.f16Divider{border:0;border-top:1px solid var(--line);margin:19px 0}
+.f16DiaryActual{background:#fff;border:1px solid var(--line);padding:14px;border-radius:12px;margin:10px 0}
+.f16DiaryActual .f16ReadExercise{align-items:flex-start}
+.f16Subtle{color:#71685f;font-size:12px;margin:9px 0 0}
+.f16ReadonlyHint{background:#f8f5f0;padding:13px 15px;border-radius:11px;border:1px solid #eee7dd;font-size:13px;color:#5d554a}
+.f16WorkoutHistoryLink{cursor:pointer;text-decoration:underline;color:#756857;text-underline-offset:2px}
+@media(max-width:760px){.f16WeekCards{grid-template-columns:1fr}.f16WorkoutCard{padding:15px}.f16ReadExercise{align-items:flex-start;flex-direction:column;gap:3px}.f16ReadExercise .f16Params{text-align:left}.f16InlineGrid{gap:6px}.f16InlineGrid input{padding:9px 6px}.f16CopyBox{padding:12px}.f16Feedback{padding:11px}}
+
 </style><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#F0EBE5"><link rel="icon" type="image/png" href="/icon-192.png"><link rel="apple-touch-icon" href="/icon-192.png"></head><body>
 <div class="appLayout"><aside class="sidebar" id="sidebar"><div class="brand"><strong>FORMA<span>.</span></strong><small>BY ZUZIA FIKS</small></div><div class="sideNav" id="sideNav"></div><div class="sidebarFooter" id="identity">Łączenie…</div></aside>
 <div class="pagePane"><header class="mobileHeader"><div class="brand"><strong>FORMA<span>.</span></strong><small>BY ZUZIA FIKS</small></div><div id="mobileIdentity" class="mobileUser"></div></header><main class="shell"><div class="top"><div><div class="muted small">TWÓJ TRENING. TWOJE TEMPO.</div><h1 id="title">FORMA</h1></div><span class="tag">● TWOJA PRZESTRZEŃ</span></div><div id="flash"></div><nav class="tabs" id="tabs"></nav><div id="app">Ładowanie…</div><footer>FORMA | by Zuzia Fiks · Konto prywatne · Dane zapisane w Supabase.</footer></main></div></div><nav class="bottomNav" id="mobileNav" aria-label="Nawigacja mobilna"></nav><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
@@ -598,9 +645,9 @@ function strengthAnalysisHTML(){
  <div class="miniLabel">Zakres czasu</div>${tabs([['1m','1 mies.'],['3m','3 mies.'],['6m','6 mies.'],['all','Całość']],strengthRange,'strengthRangeChanged','strengthRangeTabs')}
  <h3 style="margin:19px 0 4px">${meta.title}</h3><p class="strengthSummaryNote">${meta.explanation}</p>
  <div class="strengthStats">${stats}</div>${strengthChartSvg(rows)}
- <h3 style="margin-top:23px">Historia wyników</h3><p class="hint">Kliknij datę lub wiersz, aby otworzyć ten trening i edytować rzeczywiście wykonane wartości.</p>
+ <h3 style="margin-top:23px">Historia wyników</h3><p class="hint">Kliknij datę lub wiersz, aby otworzyć trening. Korekty wykonania może zapisać wyłącznie Zuzia.</p>
  <div class="strengthTableWrap"><table class="strengthTable"><thead><tr><th>Data</th><th>Serie</th><th>Powtórzenia</th><th>Ciężar</th><th>Objętość</th><th>Źródło</th></tr></thead><tbody>${history||'<tr><td colspan="6">Brak wyników w tym okresie.</td></tr>'}</tbody></table></div>
- <p class="strengthSummaryNote">Wyniki oznaczone „Według planu” są domyślnie uznane za wykonane, dopóki nie zmienisz ich w Dzienniku treningowym. Dla zakresów typu „8–12” nie wyliczamy powtórzeń ani objętości, aby nie zgadywać.</p></div>`;
+ <p class="strengthSummaryNote">Wyniki oznaczone „Według planu” są uznane za wykonane do czasu korekty Zuzi w Dzienniku treningowym. Dla zakresów typu „8–12” nie wyliczamy powtórzeń ani objętości, aby nie zgadywać.</p></div>`;
 }
 function strengthPickerOptions(){const opts=filteredStrengthExercises();return opts.map(x=>`<option value="${esc(x.id)}" ${x.id===strengthExerciseId?'selected':''}>${esc(x.name)}</option>`).join('')}
 function strengthFilterChanged(){strengthSearch=$('strengthSearch')?.value||'';strengthMuscle=v('strengthMuscle')||'all';strengthExerciseId=filteredStrengthExercises().some(e=>e.id===strengthExerciseId)?strengthExerciseId:(filteredStrengthExercises()[0]?.id||'');const sel=$('strengthExerciseSelect');if(sel){sel.innerHTML=strengthPickerOptions();sel.disabled=!filteredStrengthExercises().length}renderStrengthAnalysis()}
@@ -612,7 +659,7 @@ function strengthOverview(){
  const list=strengthExerciseOptions(strengthHistoryRows());if(!list.length)return card('<h2>Progres siłowy</h2><div class="emptyState">Nie ma jeszcze zakończonych treningów z zapisanymi ćwiczeniami. Wyniki pojawią się automatycznie po zakończeniu pierwszego treningu.</div>');
  const muscles=[...new Set(list.map(e=>e.muscle))].sort((a,b)=>a.localeCompare(b,'pl'));const filtered=filteredStrengthExercises();
  if(!filtered.some(e=>e.id===strengthExerciseId))strengthExerciseId=filtered[0]?.id||'';
- return card(`<div class="sectionHeading"><h2>Progres siłowy</h2><span class="statusPill">${list.length} ćwiczeń</span></div><p class="hint">Analizuj rzeczywiście wykonane treningi. Możesz wybrać ćwiczenie, metrykę i zakres czasu.</p>
+ return card(`<div class="sectionHeading"><h2>Progres siłowy</h2><span class="statusPill">${list.length} ćwiczeń</span></div><p class="hint">Analizuj wyniki zakończonych treningów — zgodnie z planem lub korektami Zuzi.</p>
  <div class="strengthControls"><div><label for="strengthSearch">Wyszukaj ćwiczenie</label><input id="strengthSearch" placeholder="Np. Hip thrust" value="${esc(strengthSearch)}" oninput="strengthFilterChanged()"></div><div><label for="strengthMuscle">Partia mięśniowa</label><select id="strengthMuscle" onchange="strengthFilterChanged()"><option value="all">Wszystkie partie</option>${muscles.map(m=>`<option value="${esc(m)}" ${m===strengthMuscle?'selected':''}>${esc(m)}</option>`).join('')}</select></div></div>
  <div class="strengthSelected"><label for="strengthExerciseSelect">Wybierz ćwiczenie</label><select id="strengthExerciseSelect" onchange="strengthExerciseChanged()" ${filtered.length?'':'disabled'}>${strengthPickerOptions()}</select></div>
  <div id="strengthAnalysis">${strengthAnalysisHTML()}</div>`);
@@ -636,7 +683,7 @@ function diaryBookingCard(b){const p=plans.find(x=>x.booking_id===b.id),ex=p?pla
  </div><label for="diaryComment-${key}">Komentarz do całego treningu</label><textarea id="diaryComment-${key}" rows="2">${valTextarea(entry?.comment)}</textarea>
  <div class="trainingActions"><button class="primary" onclick="saveDiaryBooking('${esc(key)}')">Zapisz wyniki treningu</button></div></div></details>`}
 function toggleDiaryExercises(id){const el=$('diaryExercises-'+id);if(el)el.hidden=v('diaryStatus-'+id)==='missed'}
-async function saveDiaryBooking(id){const b=bookings.find(x=>x.id===id&&x.client_id===clientId()&&new Date(x.ends_at).getTime()<=Date.now());if(!b)return message('Trening nie jest jeszcze zakończony.',true);
+async function saveDiaryBooking(id){if(!trainer())return message('Tylko trenerka może poprawiać wykonane treningi.',true);const b=bookings.find(x=>x.id===id&&x.client_id===clientId()&&new Date(x.ends_at).getTime()<=Date.now());if(!b)return message('Trening nie jest jeszcze zakończony.',true);
  const p=plans.find(x=>x.booking_id===id),ex=p?planExercises.filter(x=>x.plan_id===p.id):[],actual={};
  try{const status=v('diaryStatus-'+id)==='missed'?'missed':'completed';
   if(status==='completed')for(const x of ex){const k=id+'-'+x.id,setsNum=Number(v('diarySets-'+k)),weight=Number(v('diaryWeight-'+k)),reps=v('diaryReps-'+k);
@@ -803,6 +850,227 @@ async function progressDeletePhoto(id){const p=photos.find(p=>p.id===id);if(!p||
  const removed=await sb.storage.from('forma-progress').remove([p.storage_path]);
  progressPhotoCacheKey='';await loadClient();render();message(removed.error?'Wpis usunięty, ale usunięcie pliku ze Storage wymaga sprawdzenia: '+removed.error.message:'Zdjęcie usunięte.');
  }catch(e){message('Nie udało się usunąć zdjęcia: '+e.message,true)}}
+
+/* FORMA 1.6 — zasada: tylko trenerka układa i rozlicza treningi.
+   Podopieczna widzi plan i wystawia opinie; nie oznacza wykonania serii. */
+let f16QuickPlanId='',f16CopyBookingId='',f16CopyMode='actual',f16CopySelected={};
+let f16WorkoutFeedback=[],f16ExerciseFeedback=[],f16FeedbackReady=true;
+
+// Wcześniejsze definicje loadClient pozostają w pliku dla zgodności,
+// a ta najnowsza wersja dopina jedynie odczyt opinii.
+async function loadClient(){
+ measurements=[];plans=[];planExercises=[];sets=[];sessions=[];preferences=[];photos=[];diaryEntries=[];
+ f16WorkoutFeedback=[];f16ExerciseFeedback=[];f16FeedbackReady=true;
+ clientPrivateNote='';clientAvatarUrl='';if(!clientId())return;
+ const id=clientId();const res=await Promise.all([
+  sb.from('body_measurements').select('*').eq('client_id',id).order('measured_on'),
+  sb.from('training_plans').select('*').eq('client_id',id).order('created_at',{ascending:false}),
+  sb.from('workout_sessions').select('*').eq('client_id',id).order('started_at',{ascending:false}),
+  sb.from('exercise_preferences').select('*').eq('client_id',id),
+  sb.from('progress_photos').select('*').eq('client_id',id).order('taken_on',{ascending:false}),
+  sb.from('forma_diary_entries').select('*').eq('client_id',id)
+ ]);
+ [measurements,plans,sessions,preferences,photos,diaryEntries]=res.map(check);
+ if(plans.length)planExercises=check(await sb.from('plan_exercises').select('*').in('plan_id',plans.map(x=>x.id)).order('sort_order'));
+ if(sessions.length)sets=check(await sb.from('workout_sets').select('*').in('session_id',sessions.map(x=>x.id)));
+ if(trainer()){
+  const r=await sb.from('forma_trainer_notes').select('notes').eq('client_id',id).maybeSingle();
+  clientPrivateNote=check(r)?.notes||'';
+ }
+ const reviews=await Promise.all([
+  sb.from('forma_workout_feedback').select('*').eq('client_id',id),
+  sb.from('forma_exercise_feedback').select('*').eq('client_id',id)
+ ]);
+ if(reviews.every(r=>!r.error)){
+  f16WorkoutFeedback=reviews[0].data||[];
+  f16ExerciseFeedback=reviews[1].data||[];
+ }else f16FeedbackReady=false;
+ const c=trainer()?clients.find(x=>x.id===id):me;
+ if(c?.avatar_path){const r=await sb.storage.from('forma-avatars').createSignedUrl(c.avatar_path,3600);
+  if(!r.error)clientAvatarUrl=r.data.signedUrl;
+ }
+}
+function futureBookingsForClient(){return bookings.filter(b=>b.client_id===clientId()&&b.status==='approved'&&new Date(b.starts_at).getTime()>Date.now())}
+function f16PlanForBooking(b){return plans.find(p=>p.booking_id===b.id)}
+function f16PlanExercises(p){return planExercises.filter(x=>x.plan_id===p.id)}
+function f16IsFuturePlan(p){return bookings.some(b=>b.id===p.booking_id&&b.status==='approved'&&new Date(b.starts_at).getTime()>Date.now())}
+function f16WorkoutReview(id){return f16WorkoutFeedback.find(r=>r.booking_id===id)}
+function f16ExerciseReview(id){return f16ExerciseFeedback.find(r=>r.plan_exercise_id===id)}
+function f16Stars(n){return n?'★'.repeat(Number(n))+'☆'.repeat(5-Number(n)):'Bez oceny'}
+function f16ReviewReadOnly(r,label){return r?`<div class="f16ReadReview"><strong>${esc(label)} · ${esc(f16Stars(r.rating))}</strong>${r.comment?`<p>${esc(r.comment)}</p>`:''}</div>`:''}
+function f16ExerciseParams(x,entry){const a=diaryActualFor(entry,x);return a.skipped?'Pominięto':`${esc(a.sets)} × ${esc(a.reps)} · ${esc(a.weight)} kg`}
+function f16ReadExercise(x,entry=null){return `<div class="f16ReadExercise"><div><strong>${esc(exerciseDisplayName(x))}</strong>${x.notes?`<p class="hint">${esc(x.notes)}</p>`:''}</div><div class="f16Params">${entry?f16ExerciseParams(x,entry):`${esc(x.sets_target??'—')} × ${esc(x.reps_target??'—')} · ${esc(x.weight_target_kg??0)} kg`}</div></div>`}
+function f16ReviewHint(){return !f16FeedbackReady?'<div class="notice error">Brak tabel opinii w Supabase. Najpierw uruchom SQL z pakietu FORMA 1.6.</div>':''}
+
+function f16StartQuickEdit(id){
+ const p=plans.find(p=>p.id===id);if(!trainer()||!p||!f16IsFuturePlan(p))return message('Można edytować tylko przyszłe plany.',true);
+ trainingDraft=null;f16QuickPlanId=f16QuickPlanId===id?'':id;render();
+}
+function f16QuickEditor(p){const ex=f16PlanExercises(p);return `<div class="f16InlineRows">${ex.map(x=>`<div class="f16InlineRow"><strong>${esc(exerciseDisplayName(x))}</strong><div class="f16InlineGrid"><div><label for="f16qSets-${x.id}">Serie</label><input type="number" id="f16qSets-${x.id}" min="1" max="30" step="1" value="${esc(x.sets_target??3)}"></div><div><label for="f16qReps-${x.id}">Powtórzenia</label><input id="f16qReps-${x.id}" maxlength="40" value="${esc(x.reps_target||'')}"></div><div><label for="f16qWeight-${x.id}">Ciężar (kg)</label><input type="number" id="f16qWeight-${x.id}" min="0" max="9999" step="0.25" value="${esc(x.weight_target_kg??0)}"></div></div></div>`).join('')}</div><div class="trainingActions"><button type="button" class="ghost" onclick="f16QuickPlanId='';render()">Anuluj</button><button type="button" id="f16QuickSave" class="primary" onclick="f16SaveQuick('${esc(p.id)}')">Zapisz zmiany</button></div>`}
+async function f16SaveQuick(id){
+ const p=plans.find(p=>p.id===id),b=bookings.find(b=>b.id===p?.booking_id);
+ if(!trainer()||!p||!b||new Date(b.starts_at).getTime()<=Date.now())return message('Nie można zmienić planu rozpoczętego lub zakończonego treningu.',true);
+ const items=f16PlanExercises(p).map(x=>({plan_exercise_id:x.id,exercise_id:x.exercise_id,sets_target:Number(v('f16qSets-'+x.id)),reps_target:v('f16qReps-'+x.id),weight_target_kg:Number(v('f16qWeight-'+x.id)),notes:x.notes||''}));
+ if(!items.length||items.some(x=>!Number.isInteger(x.sets_target)||x.sets_target<1||x.sets_target>30||!x.reps_target||x.reps_target.length>40||!Number.isFinite(x.weight_target_kg)||x.weight_target_kg<0||x.weight_target_kg>9999))return message('Sprawdź serie, powtórzenia i ciężary.',true);
+ const button=$('f16QuickSave');if(button)button.disabled=true;
+ try{check(await sb.rpc('forma_save_training_plan',{p_booking_id:b.id,p_name:p.name,p_notes:p.description||'',p_exercises:items}));f16QuickPlanId='';await loadClient();render();message('Zmiany w zaplanowanym treningu zapisane.')}
+ catch(e){message('Nie udało się zapisać zmian: '+e.message,true)}
+ finally{if(button)button.disabled=false}
+}
+function f16OpenFullEdit(id){f16QuickPlanId='';editTraining(id)}
+function f16OpenResults(id){diarySection='history';diaryFocusedBookingId=id;diaryFocusedExerciseId='';calendarSelectedBookingId=id;tab='diary';render();$('diaryWorkout-'+id)?.scrollIntoView({behavior:'smooth',block:'center'})}
+
+function storedPlanCard(p){
+ const b=bookings.find(x=>x.id===p.booking_id),ex=f16PlanExercises(p),future=b&&new Date(b.starts_at).getTime()>Date.now(),quick=trainer()&&f16QuickPlanId===p.id;
+ return `<div class="f16WorkoutCard ${b?.id===calendarSelectedBookingId?'f16Focused':''}"><div class="f16WorkoutTop"><div><div class="hint">${b?`${esc(fmtShortDate(b.starts_at))} · ${esc(fmtTime(b.starts_at))}`:'Bez terminu'}</div><h3>${esc(p.name||'Trening')}</h3></div><span class="statusPill">${future?'Zaplanowany':'Po terminie'}</span></div>
+ <div class="hint">${ex.length} ćwiczeń${p.description?' · '+esc(p.description):''}</div>
+ ${quick?f16QuickEditor(p):`<details style="margin-top:12px"><summary class="f16WorkoutHistoryLink">Zobacz ćwiczenia</summary><div style="margin-top:11px">${ex.map(x=>f16ReadExercise(x)).join('')||'<p class="hint">Brak ćwiczeń.</p>'}</div></details>`}
+ ${trainer()&&!quick?`<div class="f16WorkoutActions">${future?`<button class="ghost" onclick="f16StartQuickEdit('${esc(p.id)}')">Szybka edycja</button><button class="ghost" onclick="f16OpenFullEdit('${esc(p.id)}')">Pełna edycja</button>`:`<button class="ghost" onclick="f16OpenResults('${esc(b.id)}')">Wykonanie i korekty</button>`}</div>`:''}
+ </div>`
+}
+
+function f16CopyCandidates(){return bookings.filter(b=>b.client_id===clientId()&&b.status==='approved'&&new Date(b.ends_at).getTime()<=Date.now()&&!!f16PlanForBooking(b)).sort((a,b)=>new Date(b.starts_at)-new Date(a.starts_at))}
+function f16CopyChoose(id){captureTrainingDraft();f16CopyBookingId=id;f16CopySelected={};render()}
+function f16CopyChooseMode(mode){captureTrainingDraft();f16CopyMode=mode;render()}
+function f16CopyPanel(){
+ if(!trainingDraft||!trainer())return '';
+ const source=f16CopyCandidates();if(!source.length)return '';
+ if(!source.some(b=>b.id===f16CopyBookingId))f16CopyBookingId=source[0].id;
+ const chosen=source.find(b=>b.id===f16CopyBookingId),plan=f16PlanForBooking(chosen),entry=diaryEntryFor(chosen.id),ex=f16PlanExercises(plan);
+ const options=source.map(b=>`<option value="${esc(b.id)}" ${b.id===f16CopyBookingId?'selected':''}>${esc(fmtShortDate(b.starts_at))} · ${esc(f16PlanForBooking(b)?.name||'Trening')}</option>`).join('');
+ return `<div class="f16CopyBox"><h4>Skopiuj wcześniejszy trening</h4><p class="hint">Skopiuj cały plan lub wybrane ćwiczenia. Wyniki z historii służą jako punkt wyjścia do nowego planu.</p>
+ <div class="formgrid"><div><label for="f16CopySource">Trening z historii</label><select id="f16CopySource" onchange="f16CopyChoose(this.value)">${options}</select></div><div><label for="f16CopyMode">Jakie wartości skopiować?</label><select id="f16CopyMode" onchange="f16CopyChooseMode(this.value)"><option value="actual" ${f16CopyMode==='actual'?'selected':''}>Wykonane (jeśli bez korekty: plan)</option><option value="planned" ${f16CopyMode==='planned'?'selected':''}>Zaplanowane</option></select></div></div>
+ ${entry?.status==='missed'?'<div class="notice error">Ten trening oznaczono jako nieodbyty — można skopiować tylko jego pierwotny plan.</div>':''}
+ <div class="miniLabel" style="margin:12px 0 6px">Wybierz ćwiczenia</div>
+ ${ex.map(x=>{const a=diaryActualFor(entry,x);return `<label class="f16CopyRow"><input type="checkbox" id="f16CopyEx-${esc(x.id)}" onchange="f16CopySelected['${esc(x.id)}']=this.checked" ${f16CopySelected[x.id]?'checked':''}><div><strong>${esc(exerciseDisplayName(x))}</strong><span>${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg??0)} kg${f16CopyMode==='actual'&&entry?.status!=='missed'&&entry?.actual?.[x.id]&&!a.skipped?` → wykonano: ${esc(a.sets)} × ${esc(a.reps)} · ${esc(a.weight)} kg`:''}</span></div></label>`}).join('')}
+ <div class="f16WorkoutActions"><button type="button" class="ghost" onclick="f16CopyIntoDraft(true)">Kopiuj cały trening</button><button type="button" class="ghost" onclick="f16CopyIntoDraft(false)">Dodaj zaznaczone ćwiczenia</button></div></div>`
+}
+function f16CopyIntoDraft(all){
+ if(!trainingDraft||!trainer())return;const source=bookings.find(b=>b.id===f16CopyBookingId),plan=source&&f16PlanForBooking(source);if(!plan)return;
+ if(!all&&!Object.values(f16CopySelected).some(Boolean))return message('Zaznacz ćwiczenia do skopiowania.',true);
+ captureTrainingDraft();const entry=diaryEntryFor(source.id),useActual=f16CopyMode==='actual'&&entry?.status!=='missed';
+ const copied=f16PlanExercises(plan).filter(x=>all||f16CopySelected[x.id]).map(x=>{
+  const a=useActual?diaryActualFor(entry,x):null;const use=a&&!a.skipped;
+  return {exercise_id:x.exercise_id,sets_target:use?a.sets:x.sets_target,reps_target:use?String(a.reps):String(x.reps_target||''),weight_target_kg:use?a.weight:x.weight_target_kg,notes:x.notes||''};
+ }).filter(x=>{const e=exercises.find(e=>e.id===x.exercise_id);return !!e&&!e.archived_at});
+ if(!copied.length)return message('Nie ma aktywnych ćwiczeń do skopiowania.',true);
+ if(all){trainingDraft.items=copied;trainingDraft.name=plan.name;trainingDraft.notes=plan.description||''}
+ else trainingDraft.items.push(...copied);
+ render();message(all?'Skopiowano cały trening do formularza. Sprawdź wartości i zapisz plan.':'Dodano ćwiczenia do formularza. Sprawdź wartości i zapisz plan.');
+}
+function trainingEditForm(){if(!trainingDraft)return '';const d=trainingDraft;
+ return `<div class="trainingForm"><div class="trainingHead"><h3>${d.mode==='edit'?'Pełna edycja planu':'Nowy trening'}</h3><span class="statusPill">Tylko trenerka</span></div>
+ <p class="hint">Zaplanuj ćwiczenia dla terminu w kalendarzu. Wyniki po treningu można później skorygować w Dzienniku treningowym.</p>
+ ${trainingBookingCards()}
+ <label for="trainingName">Nazwa treningu *</label><input id="trainingName" value="${esc(d.name)}" placeholder="Np. Trening dołu">
+ ${f16CopyPanel()}
+ <h3>Ćwiczenia</h3>${d.items.length?d.items.map(trainingExerciseFields).join(''):'<div class="emptyState">Dodaj ćwiczenia ręcznie albo skopiuj wcześniejszy trening.</div>'}
+ <button type="button" class="ghost" onclick="addTrainingExercise()">＋ Dodaj ćwiczenie</button>
+ <label for="trainingNotes">Wskazówki do treningu (opcjonalnie)</label><textarea id="trainingNotes" rows="3">${valTextarea(d.notes)}</textarea>
+ <div class="trainingActions"><button type="button" class="ghost" onclick="cancelTrainingEdit()">Anuluj</button><button type="button" class="primary trainingSave" id="saveTrainingButton" onclick="saveTrainingDraft()">✓ Zapisz plan</button></div></div>`
+}
+function f16BookingWithoutPlanCard(b){return `<div class="f16WorkoutCard"><div class="f16WorkoutTop"><div><div class="hint">${esc(fmtShortDate(b.starts_at))} · ${esc(fmtTime(b.starts_at))}</div><h3>Trening z kalendarza</h3></div><span class="statusPill">Brak planu</span></div><p class="hint">Ten termin nie ma jeszcze przypisanych ćwiczeń.</p><div class="f16WorkoutActions"><button class="primary" onclick="startTrainingForBooking('${esc(b.id)}')">Utwórz plan</button></div></div>`}
+function plan(){
+ if(!clientId())return card('<h2>Plan treningowy</h2><div class="emptyState">Wybierz podopieczną.</div>');
+ const id=clientId();
+ if(!trainer()){
+  const upcoming=bookings.filter(b=>b.client_id===id&&b.status==='approved'&&new Date(b.ends_at).getTime()>Date.now()).sort((a,b)=>new Date(a.starts_at)-new Date(b.starts_at));
+  const next=upcoming[0],p=next&&f16PlanForBooking(next);
+  return `${card(`<div class="sectionHeading"><h2>Mój najbliższy trening</h2><span class="statusPill">Tylko podgląd</span></div>
+   ${next?`<div class="f16Upcoming"><div class="miniLabel">Najbliższy termin</div><h3 style="margin:5px 0">${esc(fmtShortDate(next.starts_at))} · ${esc(fmtTime(next.starts_at))}–${esc(fmtTime(next.ends_at))}</h3><strong>${esc(p?.name||'Plan w przygotowaniu')}</strong></div>
+   ${p?`${p.description?`<p class="hint">${esc(p.description)}</p>`:''}<h3>Ćwiczenia</h3>${f16PlanExercises(p).map(x=>f16ReadExercise(x)).join('')||'<p class="hint">Brak ćwiczeń.</p>'}`:'<p class="hint">Zuzia jeszcze nie uzupełniła ćwiczeń dla tego terminu.</p>'}`:'<div class="emptyState">Nie masz obecnie zaplanowanego treningu.</div>'}
+   <div class="f16ReadonlyHint" style="margin-top:20px">Plan jest ustalany przez Zuzię. Po treningu możesz wystawić ocenę i komentarz w Dzienniku treningowym.</div>`)}
+   ${upcoming.length>1?card(`<h2>Kolejne terminy</h2>${upcoming.slice(1,4).map(b=>`<div class="flatRow"><strong>${esc(fmtShortDate(b.starts_at))} · ${esc(fmtTime(b.starts_at))}</strong><span>${esc(f16PlanForBooking(b)?.name||'Plan w przygotowaniu')}</span></div>`).join('')}`):''}`;
+ }
+ const week=bookings.filter(b=>b.client_id===id&&b.status==='approved'&&inWeek(b.starts_at)).sort((a,b)=>new Date(a.starts_at)-new Date(b.starts_at));
+ const future=week.filter(b=>new Date(b.starts_at).getTime()>Date.now());
+ const c=clients.find(c=>c.id===id);
+ const header=card(`<div class="trainingToolbar"><div><h2>Plan treningowy</h2><p class="hint">${esc(c?.full_name||'Podopieczna')} · planowanie i edycja przyszłych treningów.</p></div><button class="primary" onclick="startTraining()" ${unplannedBookings().length?'':'disabled'}>＋ Nowy trening</button></div>${trainingWeekHeader()}<div class="f16Subtle">Treningi przypisane do kalendarza. Poprzednie wyniki znajdziesz w historii obok formularza.</div>`);
+ const cards=card(`<div class="sectionHeading"><h2>Treningi w wybranym tygodniu</h2><span class="statusPill">${week.length} terminów</span></div>
+ ${week.length?`<div class="f16WeekCards">${week.map(b=>{const p=f16PlanForBooking(b);return p?storedPlanCard(p):(new Date(b.starts_at).getTime()>Date.now()?f16BookingWithoutPlanCard(b):`<div class="f16WorkoutCard"><strong>${esc(fmtShortDate(b.starts_at))}</strong><p class="hint">Miniony termin bez planu</p></div>`)}).join('')}</div>`:'<div class="emptyState">Brak terminów w tym tygodniu. Przejdź strzałkami do kolejnego tygodnia albo dodaj termin w Kalendarzu.</div>'}
+ ${!future.length?'<p class="hint" style="margin-top:14px">W tym tygodniu nie ma już przyszłych treningów. Możesz przejść do następnego tygodnia.</p>':''}`);
+ return `${header}<div class="planningColumns"><div>${trainingEditForm()}${cards}</div>${historyPanel()}</div>`;
+}
+function historicBookingItem(b){const p=f16PlanForBooking(b),entry=diaryEntryFor(b.id);if(!p)return '';
+ const review=f16WorkoutReview(b.id);
+ return `<details class="historyItem"><summary><strong>${esc(fmtShortDate(b.starts_at))}</strong><span>${esc(p.name)}</span>${entry?.status==='missed'?'<span class="statusPill">Nieodbyty</span>':''}</summary>
+ ${entry?.status==='missed'?'<p class="hint">Trening oznaczony przez Zuzię jako nieodbyty.</p>':f16PlanExercises(p).map(x=>`<div class="historyExercise"><strong>${esc(exerciseDisplayName(x))}</strong><span>${f16ExerciseParams(x,entry)}</span>${f16ReviewReadOnly(f16ExerciseReview(x.id),'Opinia podopiecznej')}</div>`).join('')}
+ ${f16ReviewReadOnly(review,'Ocena całego treningu')}
+ <button type="button" class="ghost" style="margin-top:10px" onclick="f16OpenResults('${esc(b.id)}')">Otwórz w dzienniku →</button>
+ </details>`
+}
+function historyPanel(){const past=f16CopyCandidates(),now=Date.now(),recent=past.filter(b=>new Date(b.ends_at).getTime()>=now-30*86400000),older=past.filter(b=>new Date(b.ends_at).getTime()<now-30*86400000);
+ return `<aside class="trainingHistory card"><div class="sectionHeading"><h2>Historia treningów</h2><span class="statusPill">30 dni</span></div><p class="hint">Wyniki wykonania: zgodnie z planem, chyba że Zuzia wprowadziła korektę. Opinie podopiecznej są widoczne przy treningach.</p>
+ ${recent.map(historicBookingItem).join('')||'<div class="emptyState">Brak treningów z ostatnich 30 dni.</div>'}
+ <button type="button" class="ghost historyOlderButton" onclick="toggleOlderHistory()">${trainingHistoryOlderOpen?'Ukryj':'Zobacz'} starsze treningi (${older.length}) ${trainingHistoryOlderOpen?'▴':'▾'}</button>
+ ${trainingHistoryOlderOpen?older.map(historicBookingItem).join('')||'<p class="hint">Brak starszych treningów.</p>':''}</aside>`
+}
+
+function f16ClientReviewForm(kind,bookingId,exerciseId=''){
+ const isExercise=kind==='exercise',r=isExercise?f16ExerciseReview(exerciseId):f16WorkoutReview(bookingId),key=isExercise?exerciseId:bookingId;
+ return `<div class="f16Feedback"><label for="f16ReviewRating-${key}">${isExercise?'Twoja ocena ćwiczenia':'Twoja ocena treningu'}</label><div class="f16Rating"><select id="f16ReviewRating-${key}"><option value="" ${!r?.rating?'selected':''}>Bez oceny (tylko komentarz)</option>${[1,2,3,4,5].map(n=>`<option value="${n}" ${Number(r?.rating)===n?'selected':''}>${'★'.repeat(n)}${'☆'.repeat(5-n)} · ${n}/5</option>`).join('')}</select></div>
+ <label for="f16ReviewComment-${key}">Komentarz (opcjonalnie)</label><textarea id="f16ReviewComment-${key}" rows="2" maxlength="3000" placeholder="${isExercise?'Np. obciążenie było zbyt lekkie…':'Np. świetny trening, następnym razem więcej pracy nad plecami…'}">${valTextarea(r?.comment||'')}</textarea>
+ <div class="f16FeedbackActions"><button type="button" class="primary" ${f16FeedbackReady?'':'disabled'} onclick="f16SaveReview('${isExercise?'exercise':'workout'}','${esc(bookingId)}','${esc(exerciseId)}')">${r?'Aktualizuj opinię':'Zapisz opinię'}</button></div></div>`
+}
+async function f16SaveReview(kind,bookingId,exerciseId){
+ if(trainer()||!f16FeedbackReady)return message('Opinie zapisuje wyłącznie podopieczna po treningu. Sprawdź, czy został wykonany SQL 1.6.',true);
+ const b=bookings.find(b=>b.id===bookingId&&b.client_id===me.id&&b.status==='approved'&&new Date(b.ends_at).getTime()<=Date.now());
+ const p=b&&f16PlanForBooking(b);
+ if(!b||!p)return message('Ten trening nie jest jeszcze zakończony.',true);
+ if(kind==='exercise'&&!f16PlanExercises(p).some(x=>x.id===exerciseId))return message('Nie znaleziono ćwiczenia w treningu.',true);
+ const id=kind==='exercise'?exerciseId:bookingId;
+ const value=v('f16ReviewRating-'+id),comment=v('f16ReviewComment-'+id);
+ const rating=value?Number(value):null;
+ if(!rating&&!comment)return message('Wybierz ocenę albo wpisz komentarz.',true);
+ if(rating!==null&&(!Number.isInteger(rating)||rating<1||rating>5))return message('Ocena musi wynosić od 1 do 5.',true);
+ if(comment.length>3000)return message('Komentarz może mieć maksymalnie 3000 znaków.',true);
+ const table=kind==='exercise'?'forma_exercise_feedback':'forma_workout_feedback',key=kind==='exercise'?'plan_exercise_id':'booking_id';
+ const payload={client_id:me.id,booking_id:bookingId,rating,comment,updated_at:new Date().toISOString()};if(kind==='exercise')payload.plan_exercise_id=exerciseId;
+ try{check(await sb.from(table).upsert(payload,{onConflict:key}));await loadClient();render();message('Opinia zapisana. Zuzia zobaczy ją przy treningu.')}
+ catch(e){message('Nie udało się zapisać opinii: '+e.message,true)}
+}
+function diaryPage(){if(!clientId())return card('<p>Wybierz podopieczną.</p>');
+ const finished=bookings.filter(b=>b.client_id===clientId()&&b.status==='approved'&&new Date(b.ends_at).getTime()<=Date.now()&&!!f16PlanForBooking(b)).sort((a,b)=>new Date(b.starts_at)-new Date(a.starts_at));
+ const t=trainer();
+ const header=card(`<div class="sectionHeading"><h2>Dziennik treningowy</h2><span class="statusPill">${finished.length} treningów</span></div>
+ <div class="diarySubtabs" role="tablist" aria-label="Widok dziennika"><button class="diarySubtab ${diarySection==='history'?'active':''}" role="tab" aria-selected="${diarySection==='history'}" onclick="switchDiarySection('history')">Historia treningów</button><button class="diarySubtab ${diarySection==='strength'?'active':''}" role="tab" aria-selected="${diarySection==='strength'}" onclick="switchDiarySection('strength')">Progres siłowy</button></div>
+ <p class="hint">${diarySection==='strength'?'Progres liczony według wykonanych wyników: z planu lub korekt trenerki.':t?'Jeśli nie zmienisz parametrów treningu, uznajemy wartości zaplanowane za wykonane. Korekty zapisuje wyłącznie trenerka.':'Zobacz swoje treningi i zostaw ocenę lub komentarz. Parametry treningu ustala Zuzia.'}</p>${f16ReviewHint()}`);
+ return diarySection==='strength'?`${header}${strengthOverview()}`:`${header}${card(finished.length?finished.map(diaryBookingCard).join(''):'<div class="emptyState">Brak zakończonych treningów z planem.</div>')}`;
+}
+function diaryBookingCard(b){
+ const p=f16PlanForBooking(b),ex=p?f16PlanExercises(p):[],entry=diaryEntryFor(b.id),key=b.id,t=trainer();
+ const missed=entry?.status==='missed';const review=f16WorkoutReview(key);
+ if(!t){
+  return `<details id="diaryWorkout-${esc(key)}" class="diaryWorkout ${key===diaryFocusedBookingId?'highlightTarget':''}" ${key===diaryFocusedBookingId||b.id===calendarSelectedBookingId?'open':''}><summary><div><strong>${esc(fmtShortDate(b.starts_at))} · ${esc(p.name)}</strong><div class="hint">${esc(fmtTime(b.starts_at))}–${esc(fmtTime(b.ends_at))} · ${missed?'Nieodbyty':'Zapisany w historii'}</div></div><span class="statusPill">${ex.length} ćwiczeń</span></summary>
+  <div class="diaryInside">${missed?'<div class="f16ReadonlyHint">Trenerka oznaczyła ten trening jako nieodbyty.</div>':''}
+  ${!missed?ex.map(x=>{const a=diaryActualFor(entry,x);return `<div id="diaryExercise-${esc(key+'-'+x.id)}" class="f16DiaryActual"><div class="f16ReadExercise"><div><strong>${esc(exerciseDisplayName(x))}</strong>${x.notes?`<p class="hint">${esc(x.notes)}</p>`:''}</div><div class="f16Params">${f16ExerciseParams(x,entry)}</div></div><div class="f16Subtle">Plan: ${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg??0)} kg${a.skipped?' · oznaczone przez trenerkę jako pominięte':''}</div>${f16ClientReviewForm('exercise',key,x.id)}</div>`}).join(''):''}
+  ${f16ClientReviewForm('workout',key)}</div></details>`;
+ }
+ return `<details id="diaryWorkout-${esc(key)}" class="diaryWorkout ${key===diaryFocusedBookingId?'highlightTarget':''}" ${b.id===calendarSelectedBookingId||key===diaryFocusedBookingId?'open':''}><summary><div><strong>${esc(fmtShortDate(b.starts_at))} · ${esc(p.name)}</strong><div class="hint">${esc(fmtTime(b.starts_at))}–${esc(fmtTime(b.ends_at))} · ${missed?'Nieodbyty':entry?'Wyniki skorygowane':'Wykonano zgodnie z planem'}</div></div><span class="statusPill">${ex.length} ćwiczeń</span></summary>
+ <div class="diaryInside"><div class="f16ReadonlyHint">Jeśli trening przebiegł zgodnie z planem, niczego nie zmieniaj. Zapisz tylko odstępstwa od planu.</div>
+ <label for="diaryStatus-${key}" style="margin-top:14px">Czy trening się odbył?</label><select id="diaryStatus-${key}" onchange="toggleDiaryExercises('${key}')"><option value="completed" ${!missed?'selected':''}>Tak — odbył się</option><option value="missed" ${missed?'selected':''}>Nie — nie odbył się</option></select>
+ <div class="diaryExercises" id="diaryExercises-${key}" ${missed?'hidden':''}>
+ ${ex.map(x=>{const a=diaryActualFor(entry,x),k=key+'-'+x.id;return `<div id="diaryExercise-${esc(k)}" class="diaryExercise ${key===diaryFocusedBookingId&&x.id===diaryFocusedExerciseId?'isFocused':''}"><div class="diaryExerciseTop"><strong>${esc(exerciseDisplayName(x))}</strong><label class="diarySkip"><input type="checkbox" id="diarySkip-${k}" ${a.skipped?'checked':''}> Pominięto</label></div><div class="diaryNumbers"><div><span>Serie</span><small>Plan: ${esc(x.sets_target)}</small><input id="diarySets-${k}" type="number" min="0" max="30" step="1" value="${esc(a.sets)}"></div><div><span>Powtórzenia</span><small>Plan: ${esc(x.reps_target)}</small><input id="diaryReps-${k}" maxlength="40" value="${esc(a.reps)}"></div><div><span>Ciężar (kg)</span><small>Plan: ${esc(x.weight_target_kg??0)}</small><input id="diaryWeight-${k}" type="number" min="0" max="9999" step="0.25" value="${esc(a.weight)}"></div></div><label for="diaryNote-${k}">Uwagi trenerki do wykonania</label><input id="diaryNote-${k}" value="${esc(a.comment||'')}">${f16ReviewReadOnly(f16ExerciseReview(x.id),'Opinia podopiecznej')}</div>`}).join('')}
+ </div><label for="diaryComment-${key}">Notatka trenerki do całego treningu</label><textarea id="diaryComment-${key}" rows="2">${valTextarea(entry?.comment)}</textarea>
+ ${f16ReviewReadOnly(review,'Ocena całego treningu')}
+ <div class="trainingActions"><button class="primary" onclick="saveDiaryBooking('${esc(key)}')">Zapisz korekty wykonania</button></div></div></details>`;
+}
+
+// Dodatkowe zabezpieczenie interfejsu — historia planów jest niemodyfikowalna.
+function editTraining(id){
+ if(!trainer())return;
+ const p=plans.find(x=>x.id===id),b=bookings.find(x=>x.id===p?.booking_id);
+ if(!p||!b||new Date(b.starts_at).getTime()<=Date.now())return message('Plan rozpoczętego lub zakończonego treningu jest już niezmienny. Wyniki poprawisz w Dzienniku treningowym.',true);
+ trainingWeekMonday=weekStart(b.starts_at);f16QuickPlanId='';
+ trainingDraft={mode:'edit',booking_id:p.booking_id,name:p.name||'',notes:p.description||'',items:f16PlanExercises(p).map(e=>({id:e.id,exercise_id:e.exercise_id,sets_target:e.sets_target??3,reps_target:e.reps_target||'',weight_target_kg:e.weight_target_kg??0,notes:e.notes||''}))};
+ render();
+}
+function startTrainingForBooking(id){
+ const b=bookings.find(x=>x.id===id&&x.client_id===clientId()&&x.status==='approved'&&new Date(x.starts_at).getTime()>Date.now());
+ if(!trainer()||!b)return message('Plan można tworzyć tylko dla przyszłego terminu z kalendarza.',true);
+ f16QuickPlanId='';trainingWeekMonday=weekStart(b.starts_at);
+ trainingDraft={mode:'new',booking_id:id,name:'',notes:'',items:[]};render();
+}
 
 (async()=>{try{if(!window.supabase)throw Error('Nie udało się załadować biblioteki Supabase');const r=await fetch('/api/config',{cache:'no-store'});if(!r.ok)throw Error('Brak konfiguracji Supabase. Sprawdź zmienne Vercel i ponowne wdrożenie.');const {url,key}=await r.json();sb=window.supabase.createClient(url,key);let recovering=false;sb.auth.onAuthStateChange((event)=>{if(event==='PASSWORD_RECOVERY'){recovering=true;setTimeout(showNewPassword,0)}});const hash=new URLSearchParams(window.location.hash.slice(1));const query=new URLSearchParams(window.location.search);if(hash.get('type')==='recovery'||query.get('type')==='recovery'){recovering=true;showNewPassword()}else{await initSession();if(recovering)showNewPassword()}}catch(e){$('title').textContent='Konfiguracja';$('app').innerHTML=card(`<h2>Nie udało się uruchomić FORMA</h2><p class="error">${esc(e.message)}</p><p>Sprawdź wdrożenie pliku <code>api/config.js</code> na Vercel.</p>`)}})();
 </script><script>if ('serviceWorker' in navigator && location.protocol==='https:') navigator.serviceWorker.register('/sw.js').catch(()=>{});</script></body></html>
