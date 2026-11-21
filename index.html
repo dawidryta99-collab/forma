@@ -225,6 +225,15 @@ html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);font-fami
 
 /* FORMA 1.6.1 — termin z Planu treningowego */
 
+/* FORMA 1.7.1 — usuniecie pustego paska dawnych zakladek.
+   Zakladki nie sa tworzone w tym widoku; nawigacja jest w sidebar / mobile bottom nav. */
+#tabs:empty { display:none!important; }
+
+/* FORMA 1.7.1 — zwarty pasek tygodnia bez dodatkowej karty. */
+.trainingWeekHeader { margin:0 0 20px; padding:12px 15px; gap:15px; }
+.trainingWeekHeader strong { font-size:15px; white-space:nowrap; }
+@media(max-width:520px){ .trainingWeekHeader { gap:8px; padding:10px 8px; } .trainingWeekHeader strong { font-size:13px; } }
+
 /* FORMA 1.7 — dedykowany pełnoekranowy edytor planu */
 body.f17Editing .pagePane .shell{max-width:1760px;padding:24px clamp(18px,2.2vw,42px) 96px}
 body.f17Editing .pagePane .top,body.f17Editing .pagePane .tabs{display:none}
@@ -585,10 +594,9 @@ function resetTrainingWeek(){if(trainingDraft)captureTrainingDraft();trainingWee
  render()}
 function chooseTrainingBooking(id){if(!trainingDraft||trainingDraft.mode!=='new')return;captureTrainingDraft();trainingDraft.booking_id=id;render()}
 function trainingWeekHeader(){const [a,b]=weekBounds(),end=new Date(b);end.setDate(end.getDate()-1);
- return `<div class="trainingWeekHeader"><button class="ghost weekArrow" onclick="changeTrainingWeek(-1)" aria-label="Poprzedni tydzień">‹</button>
- <div><strong>${fmtShortDate(a)} – ${fmtShortDate(end)}</strong><div class="hint">${a.getTime()===weekStart(new Date()).setHours(0,0,0,0)?'Bieżący tydzień':'Wybrany tydzień'}</div></div>
- <button class="ghost weekArrow" onclick="changeTrainingWeek(1)" aria-label="Następny tydzień">›</button>
- <button class="ghost" onclick="resetTrainingWeek()">Ten tydzień</button></div>`}
+ return `<div class="trainingWeekHeader" aria-label="Wybór tygodnia"><button type="button" class="ghost weekArrow" onclick="changeTrainingWeek(-1)" aria-label="Poprzedni tydzień">‹</button>
+ <strong>${fmtShortDate(a)} – ${fmtShortDate(end)}</strong>
+ <button type="button" class="ghost weekArrow" onclick="changeTrainingWeek(1)" aria-label="Następny tydzień">›</button></div>`}
 function trainingBookingCards(){if(!trainingDraft)return '';
  const d=trainingDraft;
  const list=(d.mode==='edit'?bookings.filter(b=>b.id===d.booking_id):unplannedBookings().filter(b=>inWeek(b.starts_at))).slice().sort((a,b)=>new Date(a.starts_at)-new Date(b.starts_at));
@@ -1055,8 +1063,7 @@ function plan(){
  }
  const week=bookings.filter(b=>b.client_id===id&&b.status==='approved'&&inWeek(b.starts_at)).sort((a,b)=>new Date(a.starts_at)-new Date(b.starts_at));
  const future=week.filter(b=>new Date(b.starts_at).getTime()>Date.now());
- const c=clients.find(c=>c.id===id);
- const header=card(`<div class="trainingToolbar"><div><h2>Plan treningowy</h2><p class="hint">${esc(c?.full_name||'Podopieczna')} · najpierw dodaj termin w Kalendarzu, potem wybierz „Utwórz plan” przy terminie.</p></div></div>${trainingWeekHeader()}<div class="f16Subtle">Treningi przypisane do kalendarza. Poprzednie wyniki znajdziesz w historii obok formularza.</div>`);
+ const header=trainingWeekHeader();
  const cards=card(`<div class="sectionHeading"><h2>Treningi w wybranym tygodniu</h2><span class="statusPill">${week.length} terminów</span></div>
  ${week.length?`<div class="f16WeekCards">${week.map(b=>{const p=f16PlanForBooking(b);return p?storedPlanCard(p):(new Date(b.starts_at).getTime()>Date.now()?f16BookingWithoutPlanCard(b):`<div class="f16WorkoutCard"><strong>${esc(fmtShortDate(b.starts_at))}</strong><p class="hint">Miniony termin bez planu</p></div>`)}).join('')}</div>`:'<div class="emptyState">Brak terminów w tym tygodniu. Przejdź strzałkami do kolejnego tygodnia albo dodaj termin w Kalendarzu.</div>'}
  ${!future.length?'<p class="hint" style="margin-top:14px">W tym tygodniu nie ma już przyszłych treningów. Możesz przejść do następnego tygodnia.</p>':''}`);
