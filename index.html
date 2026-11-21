@@ -1,4 +1,4 @@
-<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FORMA 1.8.1 — by Zuzia Fiks</title><style>
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FORMA 1.9 — by Zuzia Fiks</title><style>
 :root{--bg:#f7f7f4;--ink:#242723;--muted:#747a72;--line:#e6e8e1;--accent:#657b65;--pale:#e8eee6}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.55;cursor:wait}header{background:white;border-bottom:1px solid var(--line);padding:16px max(20px,calc((100vw - 1120px)/2));display:flex;justify-content:space-between;align-items:center;gap:12px}.logo{font-size:25px;font-weight:800;letter-spacing:.13em}.sub{font-size:11px;letter-spacing:.04em;color:var(--muted)}.shell{max-width:1120px;margin:auto;padding:30px 20px 90px}.top{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}h1{font-size:32px;letter-spacing:-.04em;margin:0}h2{font-size:21px;letter-spacing:-.03em;margin:0 0 14px}h3{font-size:16px;margin:0 0 8px}p{margin:6px 0 14px}.muted{color:var(--muted)}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}.tabs button,.ghost{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 15px;border-radius:12px}.tabs button.active{background:var(--ink);color:#fff}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;margin-bottom:16px;box-shadow:0 6px 20px #25342506}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.stat{font-size:29px;font-weight:750;letter-spacing:-.05em}.tag{display:inline-block;padding:5px 10px;border-radius:99px;background:var(--pale);color:#49614a;font-size:12px}.primary{border:0;border-radius:12px;background:var(--accent);color:white;padding:11px 17px;font-weight:650}.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}label{display:block;font-size:13px;font-weight:650;margin:12px 0 6px}input,select,textarea{width:100%;border:1px solid #dce0d8;border-radius:11px;padding:11px;background:#fff;color:var(--ink)}textarea{min-height:80px;resize:vertical}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}.choice{display:flex;gap:8px;flex-wrap:wrap}.choice button{padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:white;font-size:12px}.choice button.on{background:var(--pale);border-color:var(--accent);color:#3d5b3d}.exercise{border-top:1px solid var(--line);padding:12px 0}.small{font-size:12px}.chart{display:flex;align-items:end;gap:9px;height:155px;padding:12px 0 0;border-bottom:1px solid var(--line)}.bar{flex:1;background:#a9bba4;border-radius:7px 7px 0 0;min-height:6px;position:relative}.bar span{position:absolute;bottom:100%;left:0;font-size:11px;white-space:nowrap}.bar em{position:absolute;top:100%;left:0;font-style:normal;font-size:10px;color:var(--muted)}.recipe{background:#f2f4ee;border-radius:14px;padding:20px}.notice{background:#fff7e7;border:1px solid #f0dfbd;padding:12px 16px;border-radius:12px;font-size:13px;margin:15px 0}.error{color:#a34242}.hidden{display:none!important}footer{color:var(--muted);font-size:12px;margin-top:30px}@media(max-width:720px){.grid,.two,.formgrid{grid-template-columns:1fr}.shell{padding:20px 14px 90px}.card{padding:17px}h1{font-size:27px}.tabs{flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px}.tabs button{white-space:nowrap}header{padding:12px 16px}}
 
 /* FORMA | Etap 1 — elegancki minimalizm (wariant B) */
@@ -403,6 +403,43 @@ body.f17Editing #app{min-width:0}
 .f19CalActions{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}.f19CalActions button{font-size:13px;min-height:42px}.f19CalActions .primary{flex:1}
 @media(max-width:520px){.f19WhenFilters{gap:6px}.f19WhenFilters button{font-size:12px;padding:9px 5px;min-height:50px}.f19CalDialog{padding:18px}.f19CalActions .primary{flex-basis:100%}.f19StartInside{max-height:45vh}}
 
+
+/* FORMA 1.9: minimalny nagłówek Start + bezpieczny edytor terminów domowych. */
+body.f20ClientStart .top{display:none!important}
+body.f20ClientStart .f18Welcome{margin-top:0}
+.f20TrainerList{display:flex;flex-direction:column;gap:8px;margin-top:18px}
+.f20TrainerRow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 15px;border:1px solid var(--line);border-radius:13px;background:#faf9f7}
+.f20TrainerRow div{min-width:0}.f20TrainerRow strong{display:block;font-size:14px}.f20TrainerRow small{display:block;font-size:12px;color:var(--muted);margin-top:3px}
+.f20HomeDateFields{grid-template-columns:1.3fr 1fr 1fr;gap:12px;margin:16px 0 22px}
+.f20HomeActions{margin-top:14px;display:flex;justify-content:flex-end}
+.f20HomeBackdrop{position:fixed;inset:0;z-index:10002;background:#15120d99;display:flex;justify-content:center;align-items:center;padding:15px}
+.f20HomeDialog{background:#fff;max-width:820px;width:min(100%,820px);max-height:min(95vh,980px);overflow:auto;overscroll-behavior:contain;border-radius:21px;box-shadow:0 22px 95px #15120d44;display:flex;flex-direction:column}
+.f20HomeDialogHead{padding:21px 25px 12px;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line)}
+.f20HomeDialogHead h2{margin:3px 0 5px;font-size:24px}.f20HomeDialogHead .hint{margin:0}
+.f20HomeDialogHead .f19Close{flex:none}
+.f20HomeDialogBody{padding:5px 25px 20px;overflow-y:auto}
+.f20HomeDialogHeading{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:14px 0}
+.f20HomeDialogHeading h3{margin:0}
+.f20ClientEx{border:1px solid var(--line);border-radius:15px;padding:16px;margin-bottom:12px}
+.f20ClientExHead{display:flex;align-items:center;justify-content:space-between;gap:8px}.f20ClientExHead>div{display:flex;gap:5px}.f20ClientExHead .ghost{padding:5px 11px}
+.f20ClientExGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.f20HomeDialogFooter{display:flex;justify-content:flex-end;gap:10px;padding:15px 25px;background:#faf8f5;border-top:1px solid var(--line);position:sticky;bottom:0}
+@media(max-width:700px){.f20HomeDateFields{grid-template-columns:1fr 1fr}.f20HomeDateFields>div:first-child{grid-column:1/-1}.f20ClientExGrid{grid-template-columns:1fr 1fr}.f20ClientExGrid>div:last-child{grid-column:1/-1}.f20HomeDialogBody{padding:4px 15px 15px}.f20HomeDialogHead{padding:14px 15px}.f20HomeDialogFooter{padding:12px 15px}.f20HomeDialog{max-height:95dvh}.f20TrainerRow{flex-wrap:wrap}}
+
+
+/* FORMA 1.9.1 — czytelne filtrowanie w „Moje ćwiczenia” */
+.f19MineFilters{margin:15px 0 22px;display:grid;grid-template-columns:minmax(0,1fr);gap:15px}
+.f19MineFilters .f18MineSearch{margin:0}
+.f19MineFilters label,.f19MineFilters .f19FilterCaption{display:block;font-size:14px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.f19MineFilters input,.f19MineFilters select{box-sizing:border-box;display:block;width:100%;min-width:0;height:56px;min-height:56px;border:1px solid #ded5c8;border-radius:13px;background:#fff;font-size:16px;padding:13px 15px;color:var(--ink)}
+.f19MineFilters input:focus,.f19MineFilters select:focus{outline:3px solid #c4b49e;outline-offset:1px}
+.f19MineFilters .f18FilterRow{margin:0;display:flex;flex-wrap:wrap;gap:9px}
+.f19MineFilters .f18FilterRow button{min-height:48px;border-radius:12px;border:1px solid #e0d7cb;background:#fff;color:var(--ink);font-size:14px;font-weight:650;padding:10px 17px;cursor:pointer}
+.f19MineFilters .f18FilterRow button.active{background:#252525;color:#fff;border-color:#252525}
+.f19MineFilters .f18FilterRow button:focus-visible,.f19MineClear button:focus-visible{outline:3px solid #bfa989;outline-offset:2px}
+.f19MineClear{display:flex;justify-content:flex-end;margin-top:-3px}
+.f19MineClear button{background:transparent;border:0;min-height:40px;color:#776e64;text-decoration:underline;text-underline-offset:3px;padding:8px;font-size:13px}
+@media(max-width:520px){.f19MineFilters{gap:12px;margin:13px 0 19px}.f19MineFilters input,.f19MineFilters select{height:54px;min-height:54px}.f19MineFilters .f18FilterRow{gap:7px}.f19MineFilters .f18FilterRow button{flex:1 1 auto;min-height:46px;padding:9px 12px;font-size:13px}}
 </style><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#F0EBE5"><link rel="icon" type="image/png" href="/icon-192.png"><link rel="apple-touch-icon" href="/icon-192.png"></head><body>
 <div class="appLayout"><aside class="sidebar" id="sidebar"><div class="brand"><strong>FORMA<span>.</span></strong><small>BY ZUZIA FIKS</small></div><div class="sideNav" id="sideNav"></div><div class="sidebarFooter" id="identity">Łączenie…</div></aside>
 <div class="pagePane"><header class="mobileHeader"><div class="brand"><strong>FORMA<span>.</span></strong><small>BY ZUZIA FIKS</small></div><div id="mobileIdentity" class="mobileUser"></div></header><main class="shell"><div class="top"><div><div class="muted small">TWÓJ TRENING. TWOJE TEMPO.</div><h1 id="title">FORMA</h1></div><span class="tag">● TWOJA PRZESTRZEŃ</span></div><div id="flash"></div><nav class="tabs" id="tabs"></nav><div id="app">Ładowanie…</div><footer>FORMA | by Zuzia Fiks · Konto prywatne · Dane zapisane w Supabase.</footer></main></div></div><nav class="bottomNav" id="mobileNav" aria-label="Nawigacja mobilna"></nav><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
@@ -437,7 +474,7 @@ const bottom=t?[['start','Start','home'],['calendar','Kalendarz','calendar'],['c
 $('mobileNav').style.gridTemplateColumns=`repeat(${bottom.length},minmax(0,1fr))`;$('mobileNav').innerHTML=bottom.map(x=>navButton(x,'bottom')).join('');
 const name=esc(me.full_name||'Użytkownik');$('identity').innerHTML=`<strong style="color:var(--ink)">${name}</strong><div class="small">${t?'Trenerka':'Podopieczna'}</div><button class="ghost" onclick="logout()">Wyloguj się</button>`;$('mobileIdentity').innerHTML=`<span>${name}</span><button class="ghost" onclick="logout()">Wyloguj</button>`;
 }
-function render(){f19CloseCalendarPopup();if(!me)return;document.body.classList.toggle('f17Editing',Boolean(trainer()&&tab==='plan'&&(trainingDraft||f18HomeEditing)));document.body.classList.remove('authMode');if(trainer()&&clientSections.some(x=>x[0]===tab)&&!selected)tab='clients';const valid=trainer()?[...mainTrainer.map(x=>x[0]),...clientSections.map(x=>x[0]),'addclient','survey','more']:[...mainClient.map(x=>x[0]),'survey','more'];if(!valid.includes(tab))tab='start';const names={...Object.fromEntries([...mainClient,...mainTrainer].map(x=>[x[0],x[1]])),diary:'Dziennik treningowy',profile:'Profil podopiecznej',more:'Więcej',addclient:'Nowa podopieczna',survey:'Preferencje'};$('title').textContent=names[tab]||'FORMA';$('tabs').innerHTML='';renderMenus();
+function render(){f19CloseCalendarPopup();if(!me)return;document.body.classList.toggle('f17Editing',Boolean(trainer()&&tab==='plan'&&(trainingDraft||f18HomeEditing)));document.body.classList.toggle('f20ClientStart',!trainer()&&tab==='start');document.body.classList.remove('authMode');if(trainer()&&clientSections.some(x=>x[0]===tab)&&!selected)tab='clients';const valid=trainer()?[...mainTrainer.map(x=>x[0]),...clientSections.map(x=>x[0]),'addclient','survey','more']:[...mainClient.map(x=>x[0]),'survey','more'];if(!valid.includes(tab))tab='start';const names={...Object.fromEntries([...mainClient,...mainTrainer].map(x=>[x[0],x[1]])),diary:'Dziennik treningowy',profile:'Profil podopiecznej',more:'Więcej',addclient:'Nowa podopieczna',survey:'Preferencje'};$('title').textContent=names[tab]||'FORMA';$('tabs').innerHTML='';renderMenus();
 const handlers={start:()=>start(),clients:()=>clientsPage(),calendar:()=>calendarPage(),exercises:()=>exercisesPage(),recipes:()=>recipesPage(),profile:()=>profilePage(),plan:()=>plan(),diary:()=>diaryPage(),trainings:()=>f18ClientTrainings(),progress:()=>progress(),nutrition:()=>f18DietPage(),home:()=>f18HomeTrainerPage(),addclient:()=>plannedFeature('Dodanie podopiecznej','Zapraszanie klientek e-mailem wymaga bezpiecznego procesu serwerowego. Zostanie wdrożone w etapie 2; nie trzeba ręcznie wpisywać UUID.'),survey:()=>survey(),more:()=>morePage()};
 if(formaCalendarInstance){try{calendarAnchorDate=formaCalendarInstance.getDate().toISOString();calendarActiveView=formaCalendarInstance.view.type;formaCalendarInstance.destroy()}catch(_){}formaCalendarInstance=null}
 $('app').innerHTML=(handlers[tab]||handlers.start)();if(tab==='calendar')mountFormaCalendar();}
@@ -1388,7 +1425,7 @@ function f17CancelEditor(){if(!window.confirm('Zamknąć edytor? Niezapisane zmi
    Wymaga migracji SQL 1.8. Wszystkie działania na danych są autoryzowane RLS/RPC. */
 let f18HomePlan=null,f18HomeExercises=[],f18HomeSessions=[],f18Opinions=[],f18Discomfort=[],
  f18WorkoutComments=[],f18ExerciseComments=[],f18DataReady=true,f18DataError='';
-let f18TrainingSection='history',f18HistoryFilter='all',f18DietSection='plan',f18MyFilter='all',f18MySearch='',
+let f18TrainingSection='history',f18HistoryFilter='all',f18DietSection='plan',f18MySearch='',f18MyMuscle='all',f18MyRatingFilter='all',f18MyDiscomfortOnly=false,f18MyUpcomingOnly=false,
  f18MineOpen='',f18MineRating={},f18MinePainDraft={},f18MineNoteDraft={},f18HomeEditing=false,f18HomeDraft=null,f18HomeExpanded=0,
  f18ViewingHomeId='',f18HistoryFocus='',f18CommentOpen='',f18HomeFormOpen=false;
 
@@ -1404,14 +1441,14 @@ async function f18LoadClientData(){
    sb.from('forma_training_comments').select('*').eq('client_id',id),
    sb.from('forma_training_exercise_comments').select('*').eq('client_id',id)
  ];
- if(!trainer())queries.push(sb.from('forma_home_sessions').select('*').eq('client_id',id).order('starts_at'));
+ queries.push(sb.from('forma_home_sessions').select('*').eq('client_id',id).order('starts_at'));
  const res=await Promise.all(queries);
  const failed=res.find(x=>x.error);
  if(failed){f18DataReady=false;f18DataError=failed.error.message||'Brak tabel FORMA 1.8';return}
  f18HomePlan=res[0].data||null;f18HomeExercises=res[1].data||[];
  f18Opinions=res[2].data||[];f18Discomfort=res[3].data||[];
  f18WorkoutComments=res[4].data||[];f18ExerciseComments=res[5].data||[];
- f18HomeSessions=trainer()?[]:res[6].data||[];
+ f18HomeSessions=res[6].data||[];
 }
 function f18SqlWarning(){return !f18DataReady?`<div class="notice error">Nie można odczytać nowych danych. Uruchom SQL FORMA 1.8 w Supabase i odśwież stronę. ${esc(f18DataError)}</div>`:''}
 function f18ShortDate(date){return date?new Date(date).toLocaleDateString('pl-PL',{day:'numeric',month:'long',year:'numeric'}):''}
@@ -1419,7 +1456,7 @@ function f18ShortTime(date){return date?new Date(date).toLocaleTimeString('pl-PL
 function f18ValidHomeItems(){return f18HomeExercises.filter(x=>x.client_id===clientId())}
 function f18HomeSummary(){return f18HomePlan?`<strong>${esc(f18HomePlan.name)}</strong><p class="hint">${f18HomeExercises.length} ćwiczeń${f18HomePlan.notes?' · '+esc(f18HomePlan.notes):''}</p>`:'<p class="hint">Zuzia nie przygotowała jeszcze planu domowego.</p>'}
 function f18ClientStart(){
- const name=String(me?.full_name||'').trim().split(/\s+/)[0];
+ const firstName=String(me?.full_name||'').trim().split(/\s+/)[0];const name=/^klient$/i.test(firstName)?'':firstName;
  const upcomingPersonal=bookings.filter(b=>b.client_id===me.id&&b.status==='approved'&&new Date(b.starts_at).getTime()>Date.now()).map(b=>({type:'personal',date:new Date(b.starts_at),b}));
  const upcomingHome=f18HomeSessions.filter(h=>new Date(h.starts_at).getTime()>Date.now()).map(h=>({type:'home',date:new Date(h.starts_at),h}));
  const next=[...upcomingPersonal,...upcomingHome].sort((a,b)=>a.date-b.date)[0];
@@ -1427,11 +1464,11 @@ function f18ClientStart(){
  const title=next?.type==='home'?(next.h.title||f18HomePlan?.name||'Trening domowy'):(p?.name||next?.b?.title||'Trening z Zuzią');
  const date=next?.date;
  const location=next?.type==='home'?'W domu':(me?.training_location||'Lokalizacja do ustalenia');
- const exRows=next?.type==='home'?f18HomeExercises:(p?f16PlanExercises(p):[]);
- const details=next?`<details class="f19StartDetails"><summary>Rozwiń szczegóły treningu <span aria-hidden="true">⌄</span></summary><div class="f19StartInside">${p?.description?`<p>${esc(p.description)}</p>`:''}${next.type==='home'&&f18HomePlan?.notes?`<p>${esc(f18HomePlan.notes)}</p>`:''}
+ const exRows=next?.type==='home'?f20HomeItems(next.h):(p?f16PlanExercises(p):[]);
+ const details=next?`<details class="f19StartDetails"><summary>Rozwiń szczegóły treningu <span aria-hidden="true">⌄</span></summary><div class="f19StartInside">${p?.description?`<p>${esc(p.description)}</p>`:''}${next.type==='home'&&next.h?.notes_snapshot?`<p>${esc(next.h.notes_snapshot)}</p>`:''}
  ${exRows.length?exRows.map((x,i)=>`<div class="f18SimpleExercise"><b>${i+1}. ${esc(next.type==='home'?x.exercise_name_snapshot:exerciseDisplayName(x))}</b><span>${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg??0)} kg</span>${x.notes?`<small>${esc(x.notes)}</small>`:''}</div>`).join(''):'<p class="hint">Zuzia nie dodała jeszcze ćwiczeń do tego terminu.</p>'}</div></details>`:'';
  return `<div class="f18ClientStart">
- <div class="f18Welcome"><span class="eyebrow">FORMA | BY ZUZIA FIKS</span><h2>Cześć${name?', '+esc(name):''}!</h2></div>
+ <div class="f18Welcome"><h2>Cześć${name?', '+esc(name):''}!</h2></div>
  <section class="f18Next"><div class="miniLabel">NAJBLIŻSZY TRENING</div>
  ${next?`<h2>${esc(title)}</h2><div class="f18NextDetail">${ico('calendar')} <span>${esc(f18ShortDate(date))} · ${esc(f18ShortTime(date))}</span></div><div class="f18NextDetail">${ico(next.type==='home'?'home':'dumbbell')} <span>${esc(location)}</span></div>
  ${details}`:'<h2>Brak nadchodzącego treningu</h2><p>Nowe terminy pojawią się tutaj po ich zaplanowaniu.</p><button class="ghost" onclick="switchTab(\'calendar\')">Otwórz kalendarz</button>'}
@@ -1609,22 +1646,75 @@ function f18MyItems(){
   if(!found.has(x.exercise_id))found.set(x.exercise_id,{id:x.exercise_id,name:x.exercise_name_snapshot,group:exercises.find(e=>e.id===x.exercise_id)?.muscle_group||'',done:false,planned:false,home:true});
   else found.get(x.exercise_id).home=true;
  }
+ for(const h of f18HomeSessions){for(const x of f20HomeItems(h)){
+  if(!x.exercise_id)continue;
+  if(!found.has(x.exercise_id))found.set(x.exercise_id,{id:x.exercise_id,name:x.exercise_name_snapshot||exercises.find(e=>e.id===x.exercise_id)?.name||'Ćwiczenie',group:exercises.find(e=>e.id===x.exercise_id)?.muscle_group||'',done:false,planned:false,home:true});
+  const e=found.get(x.exercise_id);e.home=true;if(new Date(h.ends_at)<=new Date())e.done=true;else e.planned=true;
+ }}
  return [...found.values()].sort((a,b)=>a.name.localeCompare(b.name,'pl'));
 }
 function f18Opinion(id){return f18Opinions.find(x=>x.exercise_id===id)}
 function f18Events(id){return f18Discomfort.filter(x=>x.exercise_id===id)}
 function f18ActiveEvent(id){return f18Events(id).find(x=>!x.discussed_at&&!x.resolved_at)}
-function f18MyFilters(kind){f18MyFilter=kind;render()}
-function f18SetRating(id,number){f18CaptureMyDraft(id);f18MineRating[id]=number;render()}
-function f18CaptureMyDraft(id){const toggle=$('f18Pain-'+id),note=$('f18PainText-'+id);if(toggle)f18MinePainDraft[id]=toggle.checked;if(note)f18MineNoteDraft[id]=note.value}
-function f18MyExercises(){
- const items=f18MyItems(),visible=items.filter(x=>x.name.toLocaleLowerCase('pl').includes(f18MySearch.toLocaleLowerCase('pl'))&&(f18MyFilter==='all'||(f18MyFilter==='rated'&&f18Opinion(x.id)?.rating)||(f18MyFilter==='pain'&&f18Opinion(x.id)?.discomfort)||(f18MyFilter==='future'&&!x.done)));
- return card(`<div class="sectionHeading"><h2>Moje ćwiczenia</h2><span class="statusPill">${items.length} ćwiczeń</span></div><p class="hint">Gwiazdki oznaczają, jak bardzo lubisz ćwiczenie. Ból lub dyskomfort zgłaszasz osobno.</p>
- <div class="f18MineSearch"><label for="f18MySearch">Szukaj ćwiczenia</label><input id="f18MySearch" value="${esc(f18MySearch)}" placeholder="Wpisz nazwę..." oninput="f18FilterMySearch(this.value)"></div>
- <div class="f18FilterRow">${[['all','Wszystkie'],['rated','Ocenione'],['pain','Dyskomfort'],['future','Zaplanowane']].map(([k,n])=>`<button type="button" class="ghost ${f18MyFilter===k?'active':''}" onclick="f18MyFilters('${k}')">${n}</button>`).join('')}</div>
- <div id="f18MineResults">${visible.map(f18MyCard).join('')||'<p class="hint">Brak pasujących ćwiczeń.</p>'}</div>`);
+/* FORMA 1.9.1 — niezależne filtry w „Moje ćwiczenia”.
+   „Najbliższy trening” oznacza JEDEN najwcześniejszy przyszły termin
+   (z Zuzią lub domowy), nie wszystkie przyszłe plany. */
+function f19MyNextExerciseIds(){
+ const uid=clientId(),now=Date.now();
+ const futurePersonal=bookings.filter(b=>b.client_id===uid&&b.status==='approved'&&new Date(b.starts_at).getTime()>now)
+  .map(b=>({kind:'personal',time:new Date(b.starts_at).getTime(),booking:b}));
+ const futureHome=f18HomeSessions.filter(h=>h.client_id===uid&&new Date(h.starts_at).getTime()>now)
+  .map(h=>({kind:'home',time:new Date(h.starts_at).getTime(),home:h}));
+ const next=[...futurePersonal,...futureHome].sort((a,b)=>a.time-b.time)[0];
+ if(!next)return new Set();
+ const rows=next.kind==='home'?f20HomeItems(next.home):
+  (f16PlanForBooking(next.booking)?f16PlanExercises(f16PlanForBooking(next.booking)):[]);
+ return new Set(rows.map(e=>e.exercise_id).filter(Boolean));
 }
-function f18FilterMySearch(value){f18MySearch=value;const el=$('f18MineResults');if(el)el.innerHTML=f18MyItems().filter(x=>x.name.toLocaleLowerCase('pl').includes(value.toLocaleLowerCase('pl'))&&(f18MyFilter==='all'||(f18MyFilter==='rated'&&f18Opinion(x.id)?.rating)||(f18MyFilter==='pain'&&f18Opinion(x.id)?.discomfort)||(f18MyFilter==='future'&&!x.done))).map(f18MyCard).join('')||'<p class="hint">Brak pasujących ćwiczeń.</p>'}
+function f19MyFilteredItems(allItems){
+ const q=f18MySearch.trim().toLocaleLowerCase('pl');
+ const upcoming=f18MyUpcomingOnly?f19MyNextExerciseIds():null;
+ return allItems.filter(ex=>{
+  const rating=f18Opinion(ex.id)?.rating;
+  return (!q||ex.name.toLocaleLowerCase('pl').includes(q))
+   &&(f18MyMuscle==='all'||(ex.group||'Bez kategorii')===f18MyMuscle)
+   &&(f18MyRatingFilter==='all'||(f18MyRatingFilter==='rated'?(rating!==null&&rating!==undefined):(rating===null||rating===undefined)))
+   &&(!f18MyDiscomfortOnly||!!f18Opinion(ex.id)?.discomfort)
+   &&(!upcoming||upcoming.has(ex.id));
+ });
+}
+function f19MyFilterCountLabel(count,total){return `${count} z ${total} ${total===1?'ćwiczenia':'ćwiczeń'}`}
+function f19MyUpdateResults(){
+ const all=f18MyItems(),filtered=f19MyFilteredItems(all);
+ const list=$('f18MineResults');if(list)list.innerHTML=filtered.map(f18MyCard).join('')||'<div class="emptyState">Brak ćwiczeń spełniających wybrane filtry.</div>';
+ const count=$('f19MineCount');if(count)count.textContent=f19MyFilterCountLabel(filtered.length,all.length);
+}
+function f18FilterMySearch(value){f18MySearch=value;f19MyUpdateResults()}
+function f19MyMuscleChanged(value){f18MyMuscle=value;render()}
+function f19MyToggleRating(kind){f18MyRatingFilter=f18MyRatingFilter===kind?'all':kind;render()}
+function f19MyToggleDiscomfort(){f18MyDiscomfortOnly=!f18MyDiscomfortOnly;render()}
+function f19MyToggleUpcoming(){f18MyUpcomingOnly=!f18MyUpcomingOnly;render()}
+function f19MyHasFilters(){return !!f18MySearch||f18MyMuscle!=='all'||f18MyRatingFilter!=='all'||f18MyDiscomfortOnly||f18MyUpcomingOnly}
+function f19MyClearFilters(){f18MySearch='';f18MyMuscle='all';f18MyRatingFilter='all';f18MyDiscomfortOnly=false;f18MyUpcomingOnly=false;render()}
+function f18MyExercises(){
+ const items=f18MyItems(),visible=f19MyFilteredItems(items);
+ const groups=[...new Set(items.map(e=>e.group||'Bez kategorii'))].sort((a,b)=>a.localeCompare(b,'pl'));
+ const chips=[
+  ['rated','Ocenione',f18MyRatingFilter==='rated',"f19MyToggleRating('rated')"],
+  ['unrated','Nieocenione',f18MyRatingFilter==='unrated',"f19MyToggleRating('unrated')"],
+  ['pain','Dyskomfort',f18MyDiscomfortOnly,'f19MyToggleDiscomfort()'],
+  ['upcoming','Najbliższy trening',f18MyUpcomingOnly,'f19MyToggleUpcoming()']
+ ];
+ return card(`<div class="sectionHeading"><h2>Moje ćwiczenia</h2><span class="statusPill" id="f19MineCount" aria-live="polite">${f19MyFilterCountLabel(visible.length,items.length)}</span></div>
+ <p class="hint">Gwiazdki oznaczają, jak bardzo lubisz ćwiczenie. Ból lub dyskomfort zgłaszasz osobno.</p>
+ <div class="f19MineFilters">
+  <div class="f18MineSearch"><label for="f18MySearch">Wyszukaj ćwiczenie</label><input id="f18MySearch" value="${esc(f18MySearch)}" placeholder="Wpisz nazwę ćwiczenia..." oninput="f18FilterMySearch(this.value)"></div>
+  <div class="f19MineMuscle"><label for="f19MyMuscle">Partia mięśniowa</label><select id="f19MyMuscle" onchange="f19MyMuscleChanged(this.value)"><option value="all">Wszystkie partie mięśniowe</option>${groups.map(g=>`<option value="${esc(g)}" ${f18MyMuscle===g?'selected':''}>${esc(g)}</option>`).join('')}</select></div>
+  <div class="f19MineChips"><span class="f19FilterCaption">Filtry</span><div class="f18FilterRow" role="group" aria-label="Filtruj ćwiczenia">${chips.map(([k,label,active,handler])=>`<button type="button" class="ghost ${active?'active':''}" aria-pressed="${active}" onclick="${handler}">${label}</button>`).join('')}</div></div>
+  ${f19MyHasFilters()?'<div class="f19MineClear"><button type="button" class="ghost" onclick="f19MyClearFilters()">× Wyczyść filtry</button></div>':''}
+ </div>
+ <div id="f18MineResults" aria-live="polite">${visible.map(f18MyCard).join('')||'<div class="emptyState">Brak ćwiczeń spełniających wybrane filtry.</div>'}</div>`);
+}
 function f18MyCard(ex){
  const o=f18Opinion(ex.id),rating=f18MineRating[ex.id]??o?.rating??0,open=f18MineOpen===ex.id,history=f18Events(ex.id),active=f18ActiveEvent(ex.id),painDraft=f18MinePainDraft[ex.id]??o?.discomfort??false,noteDraft=f18MineNoteDraft[ex.id]??o?.discomfort_note??'';
  return `<article class="f18MyCard"><button type="button" class="f18MyHead" onclick="f18MineOpen=f18MineOpen==='${esc(ex.id)}'?'':'${esc(ex.id)}';render()"><span><strong>${esc(ex.name)}</strong><small>${esc(ex.group||'Ćwiczenie')} · ${ex.done?'Wcześniej wykonywane':ex.home?'Plan domowy':'Zaplanowane na przyszłość'}</small></span><span class="f18MyHeadRight">${o?.rating?'★ '+o.rating+'/5':'Bez oceny'}${o?.discomfort?'<small>⚠ Dyskomfort</small>':''}</span><span>⌄</span></button>
@@ -1706,6 +1796,153 @@ function f18DietPage(){
  return `${card(`<div class="sectionHeading"><h2>Dieta</h2></div><div class="f18Subtabs"><button type="button" class="${f18DietSection==='plan'?'active':''}" onclick="f18DietSection='plan';render()">Mój plan</button><button type="button" class="${f18DietSection==='recipes'?'active':''}" onclick="f18DietSection='recipes';render()">Przepisy</button></div>`)}${f18DietSection==='recipes'?recipesPage():plannedFeature('Mój plan odżywiania','Plan żywieniowy pojawi się tutaj, gdy uruchomimy moduł diety.')}`;
 }
 
+
+/* FORMA 1.9 — Zuzia tworzy trening domowy z datą; podopieczna może tylko edytować
+   istniejące terminy i ich własne ćwiczenia. Każda sesja ma osobny snapshot. */
+let f20ClientHomeDraft=null;
+function f20HomeItems(h){return Array.isArray(h?.exercises_snapshot)?h.exercises_snapshot:[]}
+function f20HomeInputItems(rows){return (rows||[]).map(x=>({
+ exercise_id:x.exercise_id||'',sets_target:Number(x.sets_target??3),
+ reps_target:String(x.reps_target??'10'),weight_target_kg:Number(x.weight_target_kg??0),
+ notes:String(x.notes||'')
+}))}
+function f20HomeDateFields(prefix,d){return `<div class="formgrid f20HomeDateFields"><div><label for="${prefix}Date">Data *</label><input id="${prefix}Date" type="date" required value="${esc(d.date)}"></div><div><label for="${prefix}From">Od *</label><input id="${prefix}From" type="time" required value="${esc(d.from)}"></div><div><label for="${prefix}To">Do *</label><input id="${prefix}To" type="time" required value="${esc(d.to)}"></div></div>`}
+function f20HomeDateDraft(h){const now=new Date(),base=h?new Date(h.starts_at):new Date(now.getTime()+86400000);
+ if(!h)base.setHours(18,0,0,0);
+ const end=h?new Date(h.ends_at):new Date(base.getTime()+3600000);
+ return {date:localDateTime(base).slice(0,10),from:localDateTime(base).slice(11,16),to:localDateTime(end).slice(11,16)};
+}
+function f20ValidHomeDraft(d){
+ if(!d||d.name.trim().length<2||d.name.length>120||d.notes.length>3000||!d.items.length||d.items.length>50)return 'Wpisz nazwę i dodaj 1–50 ćwiczeń.';
+ if(d.items.some(x=>!x.exercise_id||!Number.isInteger(Number(x.sets_target))||Number(x.sets_target)<1||Number(x.sets_target)>30||!String(x.reps_target).trim()||String(x.reps_target).length>40||!Number.isFinite(Number(x.weight_target_kg))||Number(x.weight_target_kg)<0||Number(x.weight_target_kg)>9999))return 'Sprawdź serie, powtórzenia i ciężary.';
+ const start=new Date(d.date+'T'+d.from+':00'),end=new Date(d.date+'T'+d.to+':00');
+ if(!d.date||!d.from||!d.to||!Number.isFinite(start.getTime())||!Number.isFinite(end.getTime())||start<=new Date()||end<=start||end-start>21600000)return 'Wybierz przyszły termin oraz poprawne godziny (maksymalnie 6 godzin).';
+ return '';
+}
+function f20TrainerHomeStart(id=''){
+ if(!trainer()||!clientId())return;
+ const h=id?f18HomeSessions.find(x=>x.id===id&&x.client_id===clientId()):null;
+ if(id&&!h)return message('Nie znaleziono treningu domowego.',true);
+ if(h&&new Date(h.starts_at)<=new Date())return message('Zakończonego terminu domowego nie edytujemy.',true);
+ const date=f20HomeDateDraft(h);
+ const seed=h?(f20HomeItems(h).length?f20HomeItems(h):f18HomeExercises):f18HomeExercises;
+ const defaultEx=validExerciseRows()[0];
+ f18HomeDraft={sessionId:h?.id||null,name:h?.title||f18HomePlan?.name||'Trening domowy',notes:h?.notes_snapshot||(!h?f18HomePlan?.notes:'')||'',...date,
+   items:f20HomeInputItems(seed.length?seed:defaultEx?[{exercise_id:defaultEx.id,sets_target:3,reps_target:'10',weight_target_kg:0,notes:''}]:[])};
+ f18HomeEditing=true;f18HomeExpanded=0;render();window.scrollTo({top:0,behavior:'smooth'});
+}
+function f18BeginHomeEdit(id=''){f20TrainerHomeStart(id)}
+function f18CaptureHomeDraft(){
+ if(!f18HomeEditing||!f18HomeDraft)return;
+ const d=f18HomeDraft;
+ if($('f18HomeName'))d.name=v('f18HomeName');if($('f18HomeNotes'))d.notes=v('f18HomeNotes');
+ if($('f20TrainerDate'))d.date=v('f20TrainerDate');
+ if($('f20TrainerFrom'))d.from=v('f20TrainerFrom');
+ if($('f20TrainerTo'))d.to=v('f20TrainerTo');
+ d.items.forEach((item,i)=>{if($('f18HomeEx-'+i)){
+  item.exercise_id=v('f18HomeEx-'+i);item.sets_target=Number(v('f18HomeSets-'+i));item.reps_target=v('f18HomeReps-'+i);
+  item.weight_target_kg=Number(v('f18HomeWeight-'+i));item.notes=v('f18HomeItemNote-'+i);
+ }});
+}
+function f18HomeEditor(){const d=f18HomeDraft;if(!d)return '';
+ return `<div class="f17Editor f18HomeEditor"><div class="f17Header"><div><button type="button" class="f17Back" onclick="f18CancelHome()">← Wróć do planu treningowego</button><h1>${d.sessionId?'Edytuj trening domowy':'Dodaj trening domowy'}</h1><p class="hint">${esc(clients.find(c=>c.id===clientId())?.full_name||'Podopieczna')} · termin trafi wyłącznie do kalendarza podopiecznej</p></div><span class="statusPill">Tylko trenerka</span></div>
+ <div class="f18HomeEditorBody"><label for="f18HomeName">Nazwa treningu *</label><input id="f18HomeName" maxlength="120" value="${esc(d.name)}">${f20HomeDateFields('f20Trainer',d)}
+ <h2 style="margin-top:24px">Ćwiczenia (${d.items.length})</h2>
+ ${d.items.map((x,i)=>{const ex=exercises.find(e=>e.id===x.exercise_id),open=f18HomeExpanded===i;return `<article class="f17Exercise"><div class="f17ExerciseTitle"><span class="f17Counter">${String(i+1).padStart(2,'0')}</span><button type="button" class="f17ExerciseTitleText" onclick="f18HomeOpen(${i})"><strong>${esc(ex?.name||'Ćwiczenie')}</strong><small>${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg)} kg</small></button><button type="button" class="f17More" onclick="f18HomeOpen(${i})">${open?'⌃':'⌄'}</button></div>${open?`<div class="f17ExerciseDetails"><label>Ćwiczenie z biblioteki</label><select id="f18HomeEx-${i}">${validExerciseRows().map(e=>`<option value="${esc(e.id)}" ${e.id===x.exercise_id?'selected':''}>${esc(e.name)}</option>`).join('')}</select>
+ <div class="f17Fields3"><div><label>Serie</label><input id="f18HomeSets-${i}" type="number" min="1" max="30" value="${esc(x.sets_target)}"></div><div><label>Powtórzenia</label><input id="f18HomeReps-${i}" maxlength="40" value="${esc(x.reps_target)}"></div><div><label>Ciężar (kg)</label><input id="f18HomeWeight-${i}" type="number" min="0" max="9999" step="0.25" value="${esc(x.weight_target_kg)}"></div></div>
+ <label>Wskazówki</label><input id="f18HomeItemNote-${i}" value="${esc(x.notes)}" maxlength="1000"><div class="f17ItemActions"><button type="button" class="ghost" ${!i?'disabled':''} onclick="f18HomeMove(${i},-1)">↑ Wyżej</button><button type="button" class="ghost" ${i===d.items.length-1?'disabled':''} onclick="f18HomeMove(${i},1)">↓ Niżej</button><button type="button" class="ghost dangerButton" onclick="f18HomeDelete(${i})">Usuń</button></div></div>`:''}</article>`}).join('')}
+ <button type="button" class="f17AddExercise" onclick="f18HomeAdd()">＋ Dodaj ćwiczenie</button><label for="f18HomeNotes">Wskazówki do treningu</label><textarea id="f18HomeNotes" rows="3" maxlength="3000">${valTextarea(d.notes)}</textarea></div>
+ <div class="f17Saving"><p class="hint">Zapis utworzy konkretny termin i zachowa jego własne ćwiczenia. Podopieczna może go później edytować.</p><div class="f17SaveButtons"><button type="button" class="ghost" onclick="f18CancelHome()">Anuluj</button><button type="button" class="primary" id="f20TrainerSave" onclick="f18SaveHomePlan()">✓ Zapisz trening domowy</button></div></div></div>`;
+}
+async function f18SaveHomePlan(){if(!trainer()||!f18HomeDraft)return;f18CaptureHomeDraft();const d=f18HomeDraft;
+ const error=f20ValidHomeDraft(d);if(error)return message(error,true);
+ const btn=$('f20TrainerSave');if(btn)btn.disabled=true;
+ try{
+  check(await sb.rpc('forma19_save_home_workout',{
+   p_session_id:d.sessionId,p_client_id:clientId(),p_title:d.name.trim(),p_notes:d.notes,
+   p_starts_at:new Date(d.date+'T'+d.from+':00').toISOString(),p_ends_at:new Date(d.date+'T'+d.to+':00').toISOString(),p_exercises:d.items
+  }));
+  f18HomeEditing=false;f18HomeDraft=null;await f18LoadClientData();render();message('Trening domowy zapisany w kalendarzu podopiecznej (nie w kalendarzu Zuzi).');
+ }catch(e){if(btn)btn.disabled=false;message('Nie udało się zapisać treningu domowego: '+e.message,true)}
+}
+function f18HomeTrainerPanel(){if(!trainer())return '';
+ const rows=f18HomeSessions.filter(h=>h.client_id===clientId()).slice().sort((a,b)=>new Date(a.starts_at)-new Date(b.starts_at));
+ const future=rows.filter(h=>new Date(h.starts_at)>new Date());
+ return card(`<div class="sectionHeading"><h2>⌂ Treningi domowe podopiecznej</h2><span class="statusPill">${future.length} nadchodzących</span></div>
+ <p class="hint">Dodaj ćwiczenia i termin. Podopieczna zobaczy trening we własnym Kalendarzu i będzie mogła go zmienić. Kalendarz Zuzi nie pokazuje domowych terminów.</p>
+ ${f18SqlWarning()}<button type="button" class="primary" ${!f18DataReady?'disabled':''} onclick="f18BeginHomeEdit()">＋ Dodaj trening domowy z datą</button>
+ <div class="f20TrainerList">${rows.length?rows.map(h=>`<div class="f20TrainerRow"><div><strong>${esc(h.title||'Trening domowy')}</strong><small>${esc(f18ShortDate(h.starts_at))} · ${esc(f18ShortTime(h.starts_at))}–${esc(f18ShortTime(h.ends_at))} · ${f20HomeItems(h).length} ćwiczeń</small></div>${new Date(h.starts_at)>new Date()?`<button type="button" class="ghost" onclick="f18BeginHomeEdit('${esc(h.id)}')">Edytuj</button>`:'<span class="statusPill">Miniony</span>'}</div>`).join(''):'<p class="hint">Nie dodano jeszcze żadnego treningu domowego.</p>'}</div>`);
+}
+function f18ClientCalendarExtras(){return f18SqlWarning()}
+function f18HistoryHomePlan(){return ''}
+function f18ClientHomeSection(){return card('<h2>Treningi domowe</h2><p class="hint">Zuzia dodaje treningi domowe. Ich daty znajdziesz w swoim Kalendarzu, a pełne ćwiczenia w Treningach.</p>')}
+function f20HomeWorkoutDetails(h){const items=f20HomeItems(h);return `${h.notes_snapshot?`<p class="hint">${esc(h.notes_snapshot)}</p>`:''}${items.length?items.map((x,i)=>`<div class="f18HistoryExercise"><div><strong>${i+1}. ${esc(x.exercise_name_snapshot||exercises.find(e=>e.id===x.exercise_id)?.name||'Ćwiczenie')}</strong><span>${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg??0)} kg</span></div>${x.notes?`<p class="hint">${esc(x.notes)}</p>`:''}</div>`).join(''):'<p class="hint">Dla tego starszego terminu nie zapisano odrębnej listy ćwiczeń. Zuzia może uzupełnić przyszły termin.</p>'}`}
+function f19UpcomingHomeCard(h){return `<details id="f18History-home:${esc(h.id)}" class="f18HistoryCard f18HomeHistoryCard" ${f18HistoryFocus===h.id?'open':''}><summary><span><small>${esc(f18ShortDate(h.starts_at))} · ${esc(f18ShortTime(h.starts_at))} · W domu</small><strong>${esc(h.title||'Trening domowy')}</strong><small>${f20HomeItems(h).length} ćwiczeń · termin przygotowany przez Zuzię</small></span><span class="f18Chevron">⌄</span></summary><div class="f18HistoryInside">${f20HomeWorkoutDetails(h)}<div class="f20HomeActions"><button type="button" class="ghost" onclick="f20OpenClientHomeEditor('${esc(h.id)}')">Edytuj trening i termin</button></div></div></details>`}
+function f18HomeHistoryCard(h){return `<details id="f18History-home:${esc(h.id)}" class="f18HistoryCard f18HomeHistoryCard" ${f18HistoryFocus===h.id?'open':''}><summary><span><small>${esc(f18ShortDate(h.starts_at))} · Trening domowy</small><strong>${esc(h.title||'Trening w domu')}</strong><small>${esc(f18ShortTime(h.starts_at))}–${esc(f18ShortTime(h.ends_at))}</small></span><span class="f18Chevron">⌄</span></summary><div class="f18HistoryInside">${f20HomeWorkoutDetails(h)}<p class="hint">Zapis planu na ten termin. Nie wymaga odznaczania wykonanych serii.</p></div></details>`}
+function f19CalendarSummary(id){
+ if(String(id).startsWith('home:')){
+  const h=f18HomeSessions.find(x=>x.id===String(id).slice(5));if(!h)return null;
+  return {id,type:'home',title:h.title||'Trening domowy',start:h.starts_at,end:h.ends_at,location:'W domu',description:h.notes_snapshot||'Trening domowy przygotowany przez Zuzię',count:f20HomeItems(h).length,homeId:h.id};
+ }
+ const b=bookings.find(x=>x.id===id&&x.client_id===clientId()&&x.status==='approved');if(!b)return null;
+ const p=f16PlanForBooking(b);
+ return {id,type:'personal',title:p?.name||b.title||'Trening z Zuzią',start:b.starts_at,end:b.ends_at,location:me.training_location||'Lokalizacja do ustalenia',description:p?.description||'Trening z Zuzią',count:p?f16PlanExercises(p).length:0};
+}
+function f19PopupContents(d,modal){
+ const desc=String(d.description||'').trim(),excerpt=desc.length>160?desc.slice(0,157)+'…':desc;
+ return `<div class="f19CalHead"><div><span class="miniLabel">${d.type==='home'?'TRENING W DOMU':'TRENING Z ZUZIĄ'}</span><h3>${esc(d.title)}</h3></div>${modal?'<button type="button" class="f19Close" onclick="f19CloseCalendarPopup()" aria-label="Zamknij okno">×</button>':''}</div>
+ <p class="f19CalTime">${esc(f18ShortDate(d.start))} · ${esc(f18ShortTime(d.start))}–${esc(f18ShortTime(d.end))}</p><p class="f19CalWhere">${ico(d.type==='home'?'home':'dumbbell')} ${esc(d.location)}</p>
+ ${excerpt?`<p class="f19CalText">${esc(excerpt)}</p>`:''}<p class="f19CalCount">${d.count?f18PolishCount(d.count,'ćwiczenie','ćwiczenia','ćwiczeń'):'Brak zapisanego zestawu ćwiczeń'}</p>
+ <div class="f19CalActions"><button type="button" class="primary" onclick="f19JumpToTraining('${esc(d.id)}')">Szczegóły w Treningach →</button>${d.type==='home'&&new Date(d.start)>new Date()?`<button type="button" class="ghost" onclick="f20OpenClientHomeEditor('${esc(d.homeId)}')">Edytuj trening i termin</button>`:''}</div>`;
+}
+function f20GetClientHomeDraft(h){return {sessionId:h.id,name:h.title||'Trening domowy',notes:h.notes_snapshot||'',...f20HomeDateDraft(h),items:f20HomeInputItems(f20HomeItems(h).length?f20HomeItems(h):f18HomeExercises)}}
+function f20OpenClientHomeEditor(id){
+ if(trainer())return;
+ const h=f18HomeSessions.find(x=>x.id===id&&x.client_id===me.id);
+ if(!h)return message('Nie znaleziono treningu domowego.',true);
+ if(new Date(h.starts_at)<=new Date())return message('Możesz edytować tylko nadchodzące treningi domowe.',true);
+ f19CloseCalendarPopup();f20ClientHomeDraft=f20GetClientHomeDraft(h);
+ if(!f20ClientHomeDraft.items.length){const e=validExerciseRows()[0];if(e)f20ClientHomeDraft.items=[{exercise_id:e.id,sets_target:3,reps_target:'10',weight_target_kg:0,notes:''}]}
+ f20RenderClientHomeModal();
+}
+function f20ClientHomeCapture(){const d=f20ClientHomeDraft;if(!d||!$('f20ClientDate'))return;
+ d.date=v('f20ClientDate');d.from=v('f20ClientFrom');d.to=v('f20ClientTo');d.name=v('f20ClientTitle');d.notes=v('f20ClientNotes');
+ d.items.forEach((x,i)=>{if($('f20ClientEx-'+i)){
+  x.exercise_id=v('f20ClientEx-'+i);x.sets_target=Number(v('f20ClientSets-'+i));x.reps_target=v('f20ClientReps-'+i);x.weight_target_kg=Number(v('f20ClientWeight-'+i));x.notes=v('f20ClientNote-'+i);
+ }});
+}
+function f20ClientHomeAdd(){f20ClientHomeCapture();const e=validExerciseRows()[0];if(!e)return message('Brak dostępnych ćwiczeń.',true);
+ f20ClientHomeDraft.items.push({exercise_id:e.id,sets_target:3,reps_target:'10',weight_target_kg:0,notes:''});f20RenderClientHomeModal();}
+function f20ClientHomeRemove(i){f20ClientHomeCapture();if(f20ClientHomeDraft.items.length<2)return;
+ f20ClientHomeDraft.items.splice(i,1);f20RenderClientHomeModal();}
+function f20ClientHomeMove(i,delta){f20ClientHomeCapture();const j=i+delta,a=f20ClientHomeDraft.items;if(j<0||j>=a.length)return;
+ [a[i],a[j]]=[a[j],a[i]];f20RenderClientHomeModal();}
+function f20ClientHomeClose(){document.getElementById('f20HomeModal')?.remove();f20ClientHomeDraft=null;document.removeEventListener('keydown',f20ClientHomeEscape)}
+function f20ClientHomeEscape(e){if(e.key==='Escape')f20ClientHomeClose()}
+function f20RenderClientHomeModal(){const d=f20ClientHomeDraft;if(!d)return;
+ document.getElementById('f20HomeModal')?.remove();
+ const modal=document.createElement('div');modal.id='f20HomeModal';modal.className='f20HomeBackdrop';
+ modal.innerHTML=`<div class="f20HomeDialog" role="dialog" aria-modal="true" aria-label="Edycja treningu domowego"><div class="f20HomeDialogHead"><div><span class="miniLabel">TWÓJ TRENING W DOMU</span><h2>Edytuj trening i termin</h2><p class="hint">Zuzia dodała trening. Możesz dopasować jego termin i ćwiczenia.</p></div><button type="button" class="f19Close" onclick="f20ClientHomeClose()" aria-label="Zamknij">×</button></div>
+ <div class="f20HomeDialogBody"><label for="f20ClientTitle">Nazwa treningu</label><input id="f20ClientTitle" maxlength="120" value="${esc(d.name)}">${f20HomeDateFields('f20Client',d)}
+ <div class="f20HomeDialogHeading"><h3>Ćwiczenia (${d.items.length})</h3><button class="ghost" type="button" onclick="f20ClientHomeAdd()">＋ Dodaj ćwiczenie</button></div>
+ ${d.items.map((x,i)=>`<div class="f20ClientEx"><div class="f20ClientExHead"><strong>${i+1}. Ćwiczenie</strong><div><button type="button" class="ghost" ${i===0?'disabled':''} onclick="f20ClientHomeMove(${i},-1)" aria-label="Przesuń wyżej">↑</button><button type="button" class="ghost" ${i===d.items.length-1?'disabled':''} onclick="f20ClientHomeMove(${i},1)" aria-label="Przesuń niżej">↓</button><button type="button" class="ghost" ${d.items.length===1?'disabled':''} onclick="f20ClientHomeRemove(${i})" aria-label="Usuń ćwiczenie">×</button></div></div>
+ <label for="f20ClientEx-${i}">Nazwa ćwiczenia</label><select id="f20ClientEx-${i}">${validExerciseRows().map(e=>`<option value="${esc(e.id)}" ${e.id===x.exercise_id?'selected':''}>${esc(e.name)}</option>`).join('')}</select>
+ <div class="f20ClientExGrid"><div><label for="f20ClientSets-${i}">Serie</label><input id="f20ClientSets-${i}" type="number" min="1" max="30" value="${esc(x.sets_target)}"></div><div><label for="f20ClientReps-${i}">Powtórzenia</label><input id="f20ClientReps-${i}" maxlength="40" value="${esc(x.reps_target)}"></div><div><label for="f20ClientWeight-${i}">Ciężar (kg)</label><input id="f20ClientWeight-${i}" type="number" step="0.25" min="0" max="9999" value="${esc(x.weight_target_kg)}"></div></div><label for="f20ClientNote-${i}">Wskazówki</label><input id="f20ClientNote-${i}" maxlength="1000" value="${esc(x.notes)}"></div>`).join('')}
+ <label for="f20ClientNotes">Wskazówki do treningu</label><textarea id="f20ClientNotes" maxlength="3000" rows="2">${valTextarea(d.notes)}</textarea></div>
+ <div class="f20HomeDialogFooter"><button class="ghost" type="button" onclick="f20ClientHomeClose()">Anuluj</button><button class="primary" type="button" id="f20ClientSaveButton" onclick="f20SaveClientHome()">Zapisz zmiany</button></div></div>`;
+ modal.addEventListener('click',e=>{if(e.target===modal)f20ClientHomeClose()});
+ document.body.appendChild(modal);document.removeEventListener('keydown',f20ClientHomeEscape);document.addEventListener('keydown',f20ClientHomeEscape);
+ modal.querySelector('.f19Close')?.focus();
+}
+async function f20SaveClientHome(){if(trainer()||!f20ClientHomeDraft)return;f20ClientHomeCapture();const d=f20ClientHomeDraft;
+ const error=f20ValidHomeDraft(d);if(error){window.alert(error);return}
+ const btn=$('f20ClientSaveButton');if(btn)btn.disabled=true;
+ try{check(await sb.rpc('forma19_edit_my_home_workout',{
+  p_session_id:d.sessionId,p_title:d.name.trim(),p_notes:d.notes,
+  p_starts_at:new Date(d.date+'T'+d.from+':00').toISOString(),p_ends_at:new Date(d.date+'T'+d.to+':00').toISOString(),p_exercises:d.items
+ }));f20ClientHomeClose();await f18LoadClientData();render();message('Zaktualizowano trening domowy i jego termin.');
+ }catch(e){if(btn)btn.disabled=false;window.alert('Nie udało się zapisać: '+e.message)}
+}
 
 (async()=>{try{if(!window.supabase)throw Error('Nie udało się załadować biblioteki Supabase');const r=await fetch('/api/config',{cache:'no-store'});if(!r.ok)throw Error('Brak konfiguracji Supabase. Sprawdź zmienne Vercel i ponowne wdrożenie.');const {url,key}=await r.json();sb=window.supabase.createClient(url,key);let recovering=false;sb.auth.onAuthStateChange((event)=>{if(event==='PASSWORD_RECOVERY'){recovering=true;setTimeout(showNewPassword,0)}});const hash=new URLSearchParams(window.location.hash.slice(1));const query=new URLSearchParams(window.location.search);if(hash.get('type')==='recovery'||query.get('type')==='recovery'){recovering=true;showNewPassword()}else{await initSession();if(recovering)showNewPassword()}}catch(e){$('title').textContent='Konfiguracja';$('app').innerHTML=card(`<h2>Nie udało się uruchomić FORMA</h2><p class="error">${esc(e.message)}</p><p>Sprawdź wdrożenie pliku <code>api/config.js</code> na Vercel.</p>`)}})();
 </script><script>if ('serviceWorker' in navigator && location.protocol==='https:') navigator.serviceWorker.register('/sw.js').catch(()=>{});</script></body></html>
