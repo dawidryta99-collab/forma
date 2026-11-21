@@ -1,4 +1,4 @@
-<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FORMA 2.0 — by Zuzia Fiks</title><style>
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FORMA 2.0.1 — by Zuzia Fiks</title><style>
 :root{--bg:#f7f7f4;--ink:#242723;--muted:#747a72;--line:#e6e8e1;--accent:#657b65;--pale:#e8eee6}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.55;cursor:wait}header{background:white;border-bottom:1px solid var(--line);padding:16px max(20px,calc((100vw - 1120px)/2));display:flex;justify-content:space-between;align-items:center;gap:12px}.logo{font-size:25px;font-weight:800;letter-spacing:.13em}.sub{font-size:11px;letter-spacing:.04em;color:var(--muted)}.shell{max-width:1120px;margin:auto;padding:30px 20px 90px}.top{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}h1{font-size:32px;letter-spacing:-.04em;margin:0}h2{font-size:21px;letter-spacing:-.03em;margin:0 0 14px}h3{font-size:16px;margin:0 0 8px}p{margin:6px 0 14px}.muted{color:var(--muted)}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}.tabs button,.ghost{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 15px;border-radius:12px}.tabs button.active{background:var(--ink);color:#fff}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;margin-bottom:16px;box-shadow:0 6px 20px #25342506}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.stat{font-size:29px;font-weight:750;letter-spacing:-.05em}.tag{display:inline-block;padding:5px 10px;border-radius:99px;background:var(--pale);color:#49614a;font-size:12px}.primary{border:0;border-radius:12px;background:var(--accent);color:white;padding:11px 17px;font-weight:650}.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}label{display:block;font-size:13px;font-weight:650;margin:12px 0 6px}input,select,textarea{width:100%;border:1px solid #dce0d8;border-radius:11px;padding:11px;background:#fff;color:var(--ink)}textarea{min-height:80px;resize:vertical}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}.choice{display:flex;gap:8px;flex-wrap:wrap}.choice button{padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:white;font-size:12px}.choice button.on{background:var(--pale);border-color:var(--accent);color:#3d5b3d}.exercise{border-top:1px solid var(--line);padding:12px 0}.small{font-size:12px}.chart{display:flex;align-items:end;gap:9px;height:155px;padding:12px 0 0;border-bottom:1px solid var(--line)}.bar{flex:1;background:#a9bba4;border-radius:7px 7px 0 0;min-height:6px;position:relative}.bar span{position:absolute;bottom:100%;left:0;font-size:11px;white-space:nowrap}.bar em{position:absolute;top:100%;left:0;font-style:normal;font-size:10px;color:var(--muted)}.recipe{background:#f2f4ee;border-radius:14px;padding:20px}.notice{background:#fff7e7;border:1px solid #f0dfbd;padding:12px 16px;border-radius:12px;font-size:13px;margin:15px 0}.error{color:#a34242}.hidden{display:none!important}footer{color:var(--muted);font-size:12px;margin-top:30px}@media(max-width:720px){.grid,.two,.formgrid{grid-template-columns:1fr}.shell{padding:20px 14px 90px}.card{padding:17px}h1{font-size:27px}.tabs{flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px}.tabs button{white-space:nowrap}header{padding:12px 16px}}
 
 /* FORMA | Etap 1 — elegancki minimalizm (wariant B) */
@@ -459,6 +459,29 @@ body.f20TrainerStart .top{display:none!important}
 .f20CalendarForm #calendarClient{width:100%;min-width:0;min-height:55px}.f20CalendarForm #f20CalendarType{min-height:55px;width:100%;font-size:16px}.f20CalendarForm .f20ProfileGrid{margin:9px 0 17px}
 @media(max-width:1100px){.f20DashboardGrid{grid-template-columns:1fr}.f20DashboardCard:last-child{grid-column:auto}}
 @media(max-width:760px){.f20DashboardGrid{grid-template-columns:1fr}.f20DashboardCard:last-child{grid-column:auto}.f20DashboardCard{height:315px}.f20ProfileGrid{grid-template-columns:1fr}.f20LibraryFilters{grid-template-columns:1fr}.f20LibraryFilters .f20Full{grid-column:auto}.f20LibraryItemHead{flex-wrap:wrap}}
+
+/* FORMA 2.0.1 — niezależne okno dodawania terminu i karta profilu tylko do odczytu */
+.f21BookingOverlay{position:fixed;inset:0;z-index:10020;display:flex;align-items:center;justify-content:center;background:rgba(25,22,19,.58);padding:20px;overscroll-behavior:contain}
+.f21BookingModal{width:min(100%,650px);max-height:min(92dvh,860px);overflow-y:auto;background:#fff;border:1px solid #e8e1d8;border-radius:22px;box-shadow:0 24px 80px #17130e45;padding:26px 29px;scrollbar-width:thin}
+.f21BookingHeader{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:19px}
+.f21BookingHeader h2{margin:0;font-size:25px;letter-spacing:-.035em}
+.f21BookingClose{border:1px solid #e8e1d8;background:#fff;color:#5f554b;border-radius:10px;width:38px;height:38px;min-width:38px;font-size:25px;line-height:1;display:grid;place-items:center;padding:0}
+.f21BookingContext{background:#f5f2ed;border:1px solid #e6ded4;border-radius:15px;padding:17px 18px;margin-bottom:18px}
+.f21BookingFields{border:1px solid #e8e1d8;background:#fdfcfb;border-radius:15px;padding:18px;margin-bottom:18px}
+.f21BookingFields .f21FormCols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.f21BookingContext label,.f21BookingFields label{margin:0 0 7px;font-weight:700;font-size:13px}
+.f21BookingContext select,.f21BookingFields select,.f21BookingFields input{display:block;width:100%;min-width:0;min-height:55px;font-size:16px;padding:12px 13px;background:#fff}
+.f21BookingContext select{border-color:#cfc2b1}
+.f21BookingFields .f21Field{margin-bottom:17px}.f21BookingFields .f21Field:last-child{margin-bottom:0}
+.f21BookingFields .hint{margin:12px 0 0}
+.f21BookingActions{display:flex;align-items:center;justify-content:flex-end;gap:11px;flex-wrap:wrap}
+.f21BookingActions button{min-height:48px;padding:12px 18px}
+.f21ProfileSummary .profileRow{grid-template-columns:minmax(130px,220px) minmax(0,1fr)}
+.f21ProfileSummary .profileRow strong{font-weight:620;overflow-wrap:anywhere}
+.f21ProfileSummary .f21Empty{color:#99918a;font-weight:500}
+.f21ProfileActions{display:flex;justify-content:flex-end;gap:10px;margin:12px 0 0}
+.f21ProfileActions button{min-height:43px}
+@media(max-width:600px){.f21BookingOverlay{padding:10px;align-items:center}.f21BookingModal{max-height:calc(100dvh - 25px);padding:20px 16px;border-radius:18px}.f21BookingFields .f21FormCols{grid-template-columns:1fr;gap:16px}.f21BookingHeader h2{font-size:22px}.f21BookingContext,.f21BookingFields{padding:15px}.f21BookingActions button{flex:1}.f21ProfileSummary .profileRow{grid-template-columns:1fr;gap:2px}}
 </style><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#F0EBE5"><link rel="icon" type="image/png" href="/icon-192.png"><link rel="apple-touch-icon" href="/icon-192.png"></head><body>
 <div class="appLayout"><aside class="sidebar" id="sidebar"><div class="brand"><strong>FORMA<span>.</span></strong><small>BY ZUZIA FIKS</small></div><div class="sideNav" id="sideNav"></div><div class="sidebarFooter" id="identity">Łączenie…</div></aside>
 <div class="pagePane"><header class="mobileHeader"><div class="brand"><strong>FORMA<span>.</span></strong><small>BY ZUZIA FIKS</small></div><div id="mobileIdentity" class="mobileUser"></div></header><main class="shell"><div class="top"><div><div class="muted small">TWÓJ TRENING. TWOJE TEMPO.</div><h1 id="title">FORMA</h1></div><span class="tag">● TWOJA PRZESTRZEŃ</span></div><div id="flash"></div><nav class="tabs" id="tabs"></nav><div id="app">Ładowanie…</div><footer>FORMA | by Zuzia Fiks · Konto prywatne · Dane zapisane w Supabase.</footer></main></div></div><nav class="bottomNav" id="mobileNav" aria-label="Nawigacja mobilna"></nav><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
@@ -483,7 +506,7 @@ function ico(name){return '<svg viewBox="0 0 24 24" aria-hidden="true">'+(uiIcon
 const mainTrainer=[['start','Start','home'],['clients','Podopieczne','users'],['calendar','Kalendarz','calendar'],['exercises','Biblioteka ćwiczeń','dumbbell'],['recipes','Biblioteka przepisów','book']];
 const clientSections=[['profile','Profil','user'],['plan','Plan treningowy','dumbbell'],['diary','Dziennik treningowy','list'],['progress','Dziennik progresu','chart'],['nutrition','Plan odżywiania','heart'],['home','Plan domowy','home']];
 const mainClient=[['start','Start','home'],['calendar','Kalendarz','calendar'],['trainings','Treningi','dumbbell'],['progress','Progres','chart'],['nutrition','Dieta','heart']];
-function switchTab(next){f19CloseCalendarPopup();if($('flash'))$('flash').innerHTML='';if(next!=='plan'){trainingDraft=null;calendarSelectedBookingId=''}tab=next;render();window.scrollTo({top:0,behavior:'smooth'})}
+function switchTab(next){if(next!=='profile')f21ProfileEditing=false;if(next!=='calendar')calendarFormOpen=false;f19CloseCalendarPopup();if($('flash'))$('flash').innerHTML='';if(next!=='plan'){trainingDraft=null;calendarSelectedBookingId=''}tab=next;render();window.scrollTo({top:0,behavior:'smooth'})}
 function openClient(id){selected=id;trainingDraft=null;loadClient().then(()=>switchTab('profile')).catch(e=>message(e.message,true))}
 function displayDate(x){if(!x)return 'Brak danych';const d=new Date(String(x).length===10?x+'T12:00:00':x);return isNaN(d)?'Brak danych':d.toLocaleDateString('pl-PL',{day:'numeric',month:'long',year:'numeric'})}
 function navButton([id,name,icon],scope='side'){const active=tab===id||((tab==='more')&&id==='more');return `<button type="button" class="${scope==='bottom'?'bottomItem':'navItem'} ${active?'active':''}" onclick="switchTab('${id}')" ${active?'aria-current="page"':''}>${ico(icon)}<span>${esc(scope==='bottom'&&name==='Plan treningowy'?'Plan':scope==='bottom'&&name==='Dziennik treningowy'?'Dziennik':name)}</span></button>`}
@@ -939,7 +962,7 @@ async function saveDiaryBooking(id){if(!trainer())return message('Tylko trenerka
  }catch(e){message('Nie udało się zapisać dziennika: '+e.message,true)}}
 
 function calendarAddAt(date){if(!trainer())return;calendarDatePrefill=localDateTime(date||new Date(Date.now()+86400000));calendarFormOpen=true;render();
- const f=$('calendarDate');if(f){f.focus();f.scrollIntoView({block:'center',behavior:'smooth'})}}
+ const f=$('calendarClient');if(f)f.focus()}
 function calendarDefaultEndTime(time){const [h,m]=String(time||'').split(':').map(Number);if(!Number.isFinite(h)||!Number.isFinite(m))return '18:00';
  return `${String((h+1)%24).padStart(2,'0')}:${String(m).padStart(2,'0')}`}
 let calendarEndManuallyEdited=false;
@@ -963,7 +986,7 @@ async function saveCalendarBooking(e){e.preventDefault();if(!trainer())return;
  try{check(await sb.from('forma_bookings').insert({client_id:id,starts_at:start.toISOString(),ends_at:end.toISOString(),status:'approved'}));
  calendarFormOpen=false;calendarDatePrefill='';calendarEndManuallyEdited=false;await loadBookings();render();message('Trening dodany do kalendarza.')}
  catch(err){message(err.code==='23P01'?'Ten termin zajmuje już inny zatwierdzony trening.':'Nie udało się zapisać terminu: '+err.message,true)}}
-function openClient(id){selected=id;profileHealthEdit=false;trainingDraft=null;trainingWeekMonday=weekStart(new Date());
+function openClient(id){selected=id;f21ProfileEditing=false;profileHealthEdit=false;trainingDraft=null;trainingWeekMonday=weekStart(new Date());
  loadClient().then(()=>switchTab('profile')).catch(e=>message(e.message,true))}
 async function openCalendarTraining(id){if(id.startsWith('home:'))return f18OpenHomeEvent(id.slice(5));const b=bookings.find(x=>x.id===id&&x.status==='approved');if(!b)return message('Nie znaleziono terminu.',true);
  calendarSelectedBookingId=id;trainingDraft=null;trainingWeekMonday=weekStart(b.starts_at);
@@ -1987,7 +2010,7 @@ async function f20LoadAllOpinions(){
 }
 async function f20SelectGlobalClient(id){
  if(!trainer()||!clients.some(c=>c.id===id))return;
- selected=id;profileHealthEdit=false;trainingDraft=null;f18HomeEditing=false;f18HomeDraft=null;
+ selected=id;f21ProfileEditing=false;profileHealthEdit=false;trainingDraft=null;f18HomeEditing=false;f18HomeDraft=null;
  trainingWeekMonday=weekStart(new Date());
  try{await loadClient();if(tab==='clients'||tab==='more'||tab==='home')tab='profile';
   if(tab==='exercises')f20LibraryOpinionClient=id;
@@ -2043,21 +2066,45 @@ function f20Age(birth){if(!/^\d{4}-\d{2}-\d{2}$/.test(String(birth||'')))return 
  let years=now.getFullYear()-year;if(now.getMonth()+1<month||(now.getMonth()+1===month&&now.getDate()<day))years--;
  return years>=0&&years<=120?years:null;
 }
+let f21ProfileEditing=false;
+function f21ProfileEdit(on){f21ProfileEditing=!!on;render()}
+function f21ProfileValue(value){return value!==null && value!==undefined && String(value).trim()?esc(value):'<span class="f21Empty">Nie podano</span>'}
 function profilePage(){
- const c=trainer()?clients.find(x=>x.id===selected):me;if(!c)return card('<div class="emptyState">Wybierz podopieczną.</div>');
+ const c=trainer()?clients.find(x=>x.id===selected):me;
+ if(!c)return card('<div class="emptyState">Wybierz podopieczną.</div>');
  if(!trainer())return card('<p>Profil podopiecznej jest dostępny z panelu trenerki.</p>');
  const age=f20Age(c.birth_date);
+ const contactEmail=c.contact_email??c.email??'';
+ const profileContent=f21ProfileEditing?`
+  <div class="sectionHeading"><h2>Podstawowe informacje</h2><button class="ghost" type="button" onclick="f21ProfileEdit(false)">Anuluj edycję</button></div>
+  <form id="f20ProfileForm" onsubmit="f20SaveProfile(event)">
+   <div class="f20ProfileGrid">
+    <div><label for="f20FullName">Imię i nazwisko</label><input id="f20FullName" required maxlength="150" value="${esc(c.full_name||'')}"></div>
+    <div><label for="f20BirthDate">Data urodzenia ${age!==null?`(wiek: ${age} lat)`:''}</label><input type="date" id="f20BirthDate" value="${esc(c.birth_date||'')}" max="${today()}" oninput="f20UpdateAge(this.value)"><p class="hint" id="f20AgeLabel">${age!==null?`Wiek: ${age} lat`:'Wiek zostanie obliczony z daty urodzenia.'}</p></div>
+    <div><label for="f20Location">Lokalizacja treningów</label><select id="f20Location"><option value="">Nie wybrano</option>${['Xtreme Lesznowola','Xtreme Gołków'].map(l=>`<option value="${esc(l)}" ${c.training_location===l?'selected':''}>${esc(l)}</option>`).join('')}</select></div>
+   </div>
+   <h2 class="f20Subheading">Dane kontaktowe</h2>
+   <div class="f20ProfileGrid">
+    <div><label for="f20Phone">Telefon</label><input type="tel" id="f20Phone" maxlength="60" value="${esc(c.phone||'')}" placeholder="Numer telefonu"></div>
+    <div><label for="f20ContactEmail">E-mail kontaktowy</label><input type="email" id="f20ContactEmail" maxlength="254" value="${esc(contactEmail)}" placeholder="Adres do kontaktu"></div>
+    <div><label for="f20Messenger">Komunikator</label><input id="f20Messenger" maxlength="150" value="${esc(c.messenger||'')}" placeholder="Np. WhatsApp / Messenger"></div>
+   </div>
+   <p class="hint">E-mail kontaktowy nie zmienia adresu logowania do FORMA.</p>
+   <div class="trainingActions"><button type="button" class="ghost" onclick="f21ProfileEdit(false)">Anuluj</button><button type="submit" class="primary" id="f20ProfileSave">Zapisz informacje</button></div>
+  </form>`:
+  `<div class="f21ProfileSummary">
+    <div class="sectionHeading"><h2>Podstawowe informacje</h2><button type="button" class="ghost" onclick="f21ProfileEdit(true)">✎ Edytuj</button></div>
+    <div class="profileRow"><span>Imię i nazwisko</span><strong>${f21ProfileValue(c.full_name)}</strong></div>
+    <div class="profileRow"><span>Data urodzenia</span><strong>${c.birth_date?`${esc(displayDate(c.birth_date))}${age!==null?` (wiek: ${age} lat)`:''}`:f21ProfileValue(null)}</strong></div>
+    <div class="profileRow"><span>Lokalizacja treningów</span><strong>${f21ProfileValue(c.training_location)}</strong></div>
+    <h2 class="f20Subheading">Dane kontaktowe</h2>
+    <div class="profileRow"><span>Telefon</span><strong>${f21ProfileValue(c.phone)}</strong></div>
+    <div class="profileRow"><span>E-mail kontaktowy</span><strong>${f21ProfileValue(contactEmail)}</strong></div>
+    <div class="profileRow"><span>Komunikator</span><strong>${f21ProfileValue(c.messenger)}</strong></div>
+   </div>`;
  return `${card(`<div class="profileHeader"><div class="profileAvatar">${clientAvatarUrl?`<img src="${esc(clientAvatarUrl)}" alt="Zdjęcie ${esc(c.full_name||'podopiecznej')}">`:ico('user')}</div>
- <div><h2>${esc(c.full_name||'Podopieczna')}</h2><p class="hint">Dane wybranej podopiecznej</p><div class="avatarActions"><button type="button" class="ghost" onclick="document.getElementById('avatarUpload').click()">${clientAvatarUrl?'Zmień zdjęcie':'Dodaj zdjęcie'}</button>${c.avatar_path?'<button type="button" class="ghost" onclick="removeProfileAvatar()">Usuń zdjęcie</button>':''}</div><input type="file" id="avatarUpload" hidden accept="image/jpeg,image/png,image/webp" onchange="uploadProfileAvatar(this)"></div></div>`)}
- ${card(`<h2>Podstawowe informacje</h2><form id="f20ProfileForm" onsubmit="f20SaveProfile(event)"><div class="f20ProfileGrid">
- <div><label for="f20FullName">Imię i nazwisko</label><input id="f20FullName" required maxlength="150" value="${esc(c.full_name||'')}"></div>
- <div><label for="f20BirthDate">Data urodzenia ${age!==null?`(wiek: ${age} lat)`:''}</label><input type="date" id="f20BirthDate" value="${esc(c.birth_date||'')}" max="${today()}" oninput="f20UpdateAge(this.value)"><p class="hint" id="f20AgeLabel">${age!==null?`Wiek: ${age} lat`:'Wiek zostanie obliczony z daty urodzenia.'}</p></div>
- <div><label for="f20Location">Lokalizacja treningów</label><select id="f20Location"><option value="">Nie wybrano</option>${['Xtreme Lesznowola','Xtreme Gołków'].map(l=>`<option value="${esc(l)}" ${c.training_location===l?'selected':''}>${esc(l)}</option>`).join('')}</select></div>
- </div><h2 class="f20Subheading">Dane kontaktowe</h2><div class="f20ProfileGrid">
- <div><label for="f20Phone">Telefon</label><input type="tel" id="f20Phone" maxlength="60" value="${esc(c.phone||'')}" placeholder="Numer telefonu"></div>
- <div><label for="f20ContactEmail">E-mail kontaktowy</label><input type="email" id="f20ContactEmail" maxlength="254" value="${esc(c.contact_email??c.email??'')}" placeholder="Adres do kontaktu"></div>
- <div><label for="f20Messenger">Komunikator</label><input id="f20Messenger" maxlength="150" value="${esc(c.messenger||'')}" placeholder="Np. WhatsApp / Messenger"></div>
- </div><p class="hint">E-mail kontaktowy nie zmienia adresu logowania do FORMA.</p><div class="trainingActions"><button type="submit" class="primary" id="f20ProfileSave">Zapisz informacje</button></div></form>`)}
+  <div><h2>${esc(c.full_name||'Podopieczna')}</h2><p class="hint">Dane wybranej podopiecznej</p><div class="avatarActions"><button type="button" class="ghost" onclick="document.getElementById('avatarUpload').click()">${clientAvatarUrl?'Zmień zdjęcie':'Dodaj zdjęcie'}</button>${c.avatar_path?'<button type="button" class="ghost" onclick="removeProfileAvatar()">Usuń zdjęcie</button>':''}</div><input type="file" id="avatarUpload" hidden accept="image/jpeg,image/png,image/webp" onchange="uploadProfileAvatar(this)"></div></div>`)}
+ ${card(profileContent)}
  ${card(`<h2>Notatki prywatne Zuzi</h2><p class="hint">Widoczne wyłącznie dla trenerki. Zmiany zapisują się po kliknięciu przycisku.</p><textarea id="trainerPrivateNotes" rows="5" maxlength="20000" placeholder="Wpisz własne notatki…">${valTextarea(clientPrivateNote)}</textarea><div class="trainingActions"><button type="button" class="primary" onclick="savePrivateNotes()">Zapisz notatki</button></div>`)}
  `;
 }
@@ -2069,7 +2116,7 @@ async function f20SaveProfile(event){event.preventDefault();if(!trainer()||!sele
  try{
   const row=check(await sb.rpc('forma20_update_client_profile',payload));
   const c=clients.find(c=>c.id===selected);if(c)Object.assign(c,row||{}, {full_name:payload.p_full_name,birth_date:payload.p_birth_date,training_location:payload.p_training_location,phone:payload.p_phone,contact_email:payload.p_contact_email,messenger:payload.p_messenger});
-  render();message('Profil podopiecznej zapisany.');
+   f21ProfileEditing=false;render();message('Profil podopiecznej zapisany.');
  }catch(e){message('Nie udało się zapisać profilu: '+e.message,true)}finally{if(save)save.disabled=false}
 }
 
@@ -2135,38 +2182,66 @@ function f20EditorOpinion(id){
  return `<div class="f20EditorOpinion"><strong>${esc(score)}</strong> · Ocena wybranej podopiecznej (jak bardzo lubi ćwiczenie)</div>`;
 }
 
-function f20SetCalendarType(type){f20CalendarType=type;const b=document.querySelector('.f20CalendarForm button[type=submit]');if(b)b.textContent=type==='home'?'Dalej do ćwiczeń':'Zatwierdź termin'}
+function f20SetCalendarType(type){f20CalendarType=type;const b=document.querySelector('.f21BookingModal button[type=submit]');if(b)b.textContent=type==='home'?'Dalej do ćwiczeń':'Zatwierdź termin'}
+function f21CloseBookingModal(){calendarFormOpen=false;render()}
+function f21HourOptions(prefTime){
+ const hh=Number(String(prefTime||'').slice(0,2)),mm=Number(String(prefTime||'').slice(3,5));
+ const prefHour=Number.isFinite(hh)?Math.min(22,Math.max(0,hh+(Number.isFinite(mm)&&mm>0?1:0))):10;
+ return Array.from({length:23},(_,h)=>{
+  const start=String(h).padStart(2,'0')+':00',end=String(h+1).padStart(2,'0')+':00';
+  return `<option value="${start}" ${h===prefHour?'selected':''}>${start} – ${end}</option>`;
+ }).join('');
+}
+function f21CalendarBookingModal(prefDate,prefTime){
+ const picked=calendarFilterClient!=='all'?calendarFilterClient:selected;
+ return `<div class="f21BookingOverlay" onclick="if(event.target===this)f21CloseBookingModal()" role="presentation">
+ <div class="f21BookingModal" role="dialog" aria-modal="true" aria-labelledby="f21BookingTitle" tabindex="-1">
+  <div class="f21BookingHeader"><h2 id="f21BookingTitle">Dodaj trening</h2><button type="button" class="f21BookingClose" aria-label="Zamknij okno" onclick="f21CloseBookingModal()">×</button></div>
+  <form class="f21BookingForm" onsubmit="saveCalendarBooking(event)">
+   <div class="f21BookingContext"><label for="calendarClient">Wybrana podopieczna *</label>
+    <select id="calendarClient" required>${clients.map(c=>`<option value="${esc(c.id)}" ${c.id===picked?'selected':''}>${esc(c.full_name||'Podopieczna')}</option>`).join('')}</select>
+   </div>
+   <div class="f21BookingFields">
+    <div class="f21Field"><label for="f20CalendarType">Rodzaj treningu *</label><select id="f20CalendarType" required onchange="f20SetCalendarType(this.value)"><option value="personal" ${f20CalendarType==='personal'?'selected':''}>Z Zuzią</option><option value="home" ${f20CalendarType==='home'?'selected':''}>W domu</option></select></div>
+    <div class="f21FormCols">
+      <div class="f21Field"><label for="calendarDate">Data treningu *</label><input id="calendarDate" type="date" required value="${esc(prefDate)}"></div>
+      <div class="f21Field"><label for="calendarHourRange">Godzina (60 minut) *</label><select id="calendarHourRange" required>${f21HourOptions(prefTime)}</select></div>
+    </div>
+    <p class="hint">Każdy trening trwa 60 minut. Trening domowy będzie widoczny tylko w kalendarzu podopiecznej.</p>
+   </div>
+   <div class="f21BookingActions"><button type="button" class="ghost" onclick="f21CloseBookingModal()">Anuluj</button><button type="submit" class="primary">${f20CalendarType==='home'?'Dalej do ćwiczeń':'Zatwierdź termin'}</button></div>
+  </form>
+ </div></div>`;
+}
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&calendarFormOpen&&tab==='calendar'){f21CloseBookingModal()}});
 function calendarPage(){
  const t=trainer(),pref=calendarDatePrefill||localDateTime(new Date(Date.now()+86400000)),prefDate=pref.slice(0,10),prefTime=pref.slice(11,16);
- return card(`<div class="calendarIntro"><div><h2>Kalendarz treningów</h2><p class="hint">${t?'Wybierz termin i rodzaj treningu. Terminy domowe nie zajmują kalendarza Zuzi.':'Najedź na termin na komputerze lub dotknij go na telefonie, aby zobaczyć opis.'}</p></div>${t?`<button class="primary" onclick="calendarFormOpen?(calendarFormOpen=false,render()):calendarAddAt()">＋ Dodaj trening</button>`:''}</div>
+ const main=card(`<div class="calendarIntro"><div><h2>Kalendarz treningów</h2><p class="hint">${t?'Wybierz termin i rodzaj treningu. Terminy domowe nie zajmują kalendarza Zuzi.':'Najedź na termin na komputerze lub dotknij go na telefonie, aby zobaczyć opis.'}</p></div>${t?`<button type="button" class="primary" onclick="calendarAddAt()">＋ Dodaj trening</button>`:''}</div>
  ${!bookingsReady?'<div class="calendarSetup">Kalendarz wymaga wcześniejszej konfiguracji Supabase.</div>':''}
  ${t&&clients.length?`<div class="calendarFilters"><label for="calendarFilter">Podopieczna:</label><select id="calendarFilter" onchange="calendarSetFilter(this.value)"><option value="all" ${calendarFilterClient==='all'?'selected':''}>Wszystkie podopieczne</option>${clients.map(c=>`<option value="${esc(c.id)}" ${calendarFilterClient===c.id?'selected':''}>${esc(c.full_name)}</option>`).join('')}</select></div>`:''}
- ${t&&calendarFormOpen&&bookingsReady?`<form onsubmit="saveCalendarBooking(event)" class="trainingForm calendarForm f20CalendarForm"><h3>Dodaj trening</h3>
- <div><label for="f20CalendarType">Rodzaj treningu *</label><select id="f20CalendarType" onchange="f20SetCalendarType(this.value)"><option value="personal" ${f20CalendarType==='personal'?'selected':''}>Z Zuzią</option><option value="home" ${f20CalendarType==='home'?'selected':''}>W domu</option></select></div>
- <div class="f20ProfileGrid"><div><label for="calendarClient">Podopieczna *</label><select id="calendarClient" required>${clients.map(c=>`<option value="${esc(c.id)}" ${c.id===(calendarFilterClient!=='all'?calendarFilterClient:selected)?'selected':''}>${esc(c.full_name)}</option>`).join('')}</select></div>
- <div><label for="calendarDate">Data treningu *</label><input id="calendarDate" type="date" required value="${prefDate}"></div></div>
- <div class="f20ProfileGrid"><div><label for="calendarStartTime">Godzina rozpoczęcia *</label><input id="calendarStartTime" type="time" required value="${prefTime}" oninput="calendarAutoEnd()"></div><div><label for="calendarEndTime">Godzina zakończenia *</label><input id="calendarEndTime" type="time" required value="${calendarDefaultEndTime(prefTime)}" oninput="calendarEndManuallyEdited=true"></div></div>
- <p class="hint">Trening z Zuzią utworzy termin do uzupełnienia w Planie treningowym. „W domu” otworzy edytor ćwiczeń z wybraną datą — termin pojawi się tylko u podopiecznej po zapisaniu.</p>
- <div class="trainingActions"><button type="button" class="ghost" onclick="calendarFormOpen=false;render()">Anuluj</button><button class="primary" type="submit">${f20CalendarType==='home'?'Dalej do ćwiczeń':'Zatwierdź termin'}</button></div></form>`:''}
  ${!t?f18ClientCalendarExtras():''}<div id="formaCalendar" class="formaCalendar" aria-label="Interaktywny kalendarz treningów"></div><div class="calendarHelp"><span class="calendarLegend"></span> Trening z Zuzią ${t?'· Przeciągnij, by przesunąć termin':'· Treningi domowe są oznaczone ikoną domu'}</div>`).replace('<section class="card">','<section class="card formaCalendarCard">');
+ return main+(t&&calendarFormOpen&&bookingsReady&&clients.length?f21CalendarBookingModal(prefDate,prefTime):'');
 }
-async function saveCalendarBooking(event){event.preventDefault();if(!trainer())return;
- const day=v('calendarDate'),from=v('calendarStartTime'),to=v('calendarEndTime'),id=v('calendarClient');
- const start=new Date(`${day}T${from}:00`),end=new Date(`${day}T${to}:00`);
- if(!day||!from||!to||!id||!Number.isFinite(start.getTime())||!Number.isFinite(end.getTime()))return message('Uzupełnij podopieczną, datę i godziny.',true);
- if(end<=start||start<=new Date())return message('Wybierz przyszły termin z prawidłową godziną zakończenia.',true);
- if(f20CalendarType==='home'){
+async function saveCalendarBooking(event){
+ event.preventDefault();if(!trainer())return;
+ const day=v('calendarDate'),from=v('calendarHourRange'),id=v('calendarClient'),type=v('f20CalendarType');
+ const start=new Date(`${day}T${from}:00`),end=new Date(start.getTime()+60*60000);
+ if(!day||!from||!id||!['home','personal'].includes(type)||!Number.isFinite(start.getTime())||!Number.isFinite(end.getTime()))return message('Wybierz podopieczną, rodzaj, datę i godzinę.',true);
+ if(start<=new Date())return message('Wybierz przyszły termin treningu.',true);
+ const to=localDateTime(end).slice(11,16);
+ if(type==='home'){
   try{
-   if(selected!==id){selected=id;await loadClient()}
-   calendarFormOpen=false;calendarDatePrefill='';calendarEndManuallyEdited=false;
+   if(selected!==id){selected=id;f21ProfileEditing=false;await loadClient()}
+   calendarFormOpen=false;calendarDatePrefill='';
    tab='plan';f20TrainerHomeStart();
    if(f18HomeDraft){Object.assign(f18HomeDraft,{date:day,from,to});render()}
   }catch(e){message('Nie udało się otworzyć edytora domowego: '+e.message,true)}
   return;
  }
- try{check(await sb.from('forma_bookings').insert({client_id:id,starts_at:start.toISOString(),ends_at:end.toISOString(),status:'approved'}));
-  calendarFormOpen=false;calendarDatePrefill='';calendarEndManuallyEdited=false;await loadBookings();render();message('Termin z Zuzią zapisany w kalendarzu.');
- }catch(e){message(e.code==='23P01'?'Ten termin zajmuje inna rezerwacja.':'Nie udało się zapisać terminu: '+e.message,true)}
+ try{
+  check(await sb.from('forma_bookings').insert({client_id:id,starts_at:start.toISOString(),ends_at:end.toISOString(),status:'approved'}));
+  calendarFormOpen=false;calendarDatePrefill='';await loadBookings();render();message('Termin z Zuzią zapisany w kalendarzu.');
+ }catch(err){message(err.code==='23P01'?'Ten termin zajmuje inna rezerwacja.':'Nie udało się zapisać terminu: '+err.message,true)}
 }
 function f20HomeWeekCard(h){
  const future=new Date(h.starts_at)>new Date(),items=f20HomeItems(h);
