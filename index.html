@@ -384,11 +384,12 @@ body.f17Editing #app{min-width:0}
 @media(max-width:520px){.f18HistoryFilter{gap:6px}.f18HistoryFilter button{min-height:48px;padding:10px 4px;font-size:12px}.f18HistoryHomePlan{padding:14px}.f18HistoryHomeActions .ghost{width:100%}}
 
 /* FORMA 1.8.3 — rozwijany Start, wyskakujące okna kalendarza, filtrowanie dat. */
-.f19StartDetails{margin-top:15px;border:1px solid #d5ded3;background:#fafcf9;border-radius:15px;overflow:hidden}
-.f19StartDetails summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 15px;font-weight:680;color:#405641}
+.f19StartDetails{margin-top:15px;border:1px solid #d9c8b2;background:#fbf5eb;border-radius:15px;overflow:hidden;box-shadow:0 1px 5px #4a36280b}
+.f19StartDetails summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 15px;font-weight:680;color:#544636;transition:background .15s ease}.f19StartDetails summary:hover{background:#f6eadb}.f19StartDetails summary:focus-visible{outline:2px solid #a88c68;outline-offset:-3px}
 .f19StartDetails summary::-webkit-details-marker{display:none}.f19StartDetails[open] summary span{transform:rotate(180deg)}
-.f19StartInside{border-top:1px solid #d5ded3;padding:9px 15px 14px;max-height:380px;overflow:auto}.f19StartInside>p{font-size:13px;color:#586a58}
-.f19StartInside .f18SimpleExercise{font-size:13px}.f19OtherTrainings{margin-top:13px!important}
+.f19StartInside{border-top:1px solid #e5d8c8;padding:9px 15px 14px;max-height:380px;overflow:auto;background:#fffdf9}.f19StartInside>p{font-size:13px;color:#62584c}
+.f19StartInside .f18SimpleExercise{font-size:13px}
+/* FORMA 1.8.5 — porządek na ekranie Start: bez osobnego przycisku do kalendarza. */
 .f19WhenFilters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:16px 0 11px}
 .f19WhenFilters button{min-height:53px;border-radius:13px;border:1px solid #e5dfd5;background:#fff;color:var(--ink);font-size:14px;font-weight:700;padding:10px 12px}
 .f19WhenFilters button.active{background:#292929;color:#fff;border-color:#292929}.f19WhenFilters+.f18HistoryFilter{margin-top:0}
@@ -1433,7 +1434,7 @@ function f18ClientStart(){
  <div class="f18Welcome"><span class="eyebrow">FORMA | BY ZUZIA FIKS</span><h2>Cześć${name?', '+esc(name):''}!</h2></div>
  <section class="f18Next"><div class="miniLabel">NAJBLIŻSZY TRENING</div>
  ${next?`<h2>${esc(title)}</h2><div class="f18NextDetail">${ico('calendar')} <span>${esc(f18ShortDate(date))} · ${esc(f18ShortTime(date))}</span></div><div class="f18NextDetail">${ico(next.type==='home'?'home':'dumbbell')} <span>${esc(location)}</span></div>
- ${details}<button type="button" class="primary f19OtherTrainings" onclick="switchTab('calendar')">Zobacz inne treningi →</button>`:'<h2>Brak nadchodzącego treningu</h2><p>Nowe terminy pojawią się tutaj po ich zaplanowaniu.</p><button class="ghost" onclick="switchTab(\'calendar\')">Otwórz kalendarz</button>'}
+ ${details}`:'<h2>Brak nadchodzącego treningu</h2><p>Nowe terminy pojawią się tutaj po ich zaplanowaniu.</p><button class="ghost" onclick="switchTab(\'calendar\')">Otwórz kalendarz</button>'}
  </section>
  <h3 class="f18StartHeading">Twoje postępy</h3><div class="f18ShortcutGrid">
  <button type="button" onclick="f18TrainingSection='strength';switchTab('trainings')">${ico('dumbbell')}<strong>Progres siłowy</strong><small>Wykresy ćwiczeń →</small></button>
