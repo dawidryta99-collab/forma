@@ -1,4 +1,4 @@
-<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FORMA 1.9 — by Zuzia Fiks</title><style>
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FORMA 2.0 — by Zuzia Fiks</title><style>
 :root{--bg:#f7f7f4;--ink:#242723;--muted:#747a72;--line:#e6e8e1;--accent:#657b65;--pale:#e8eee6}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.55;cursor:wait}header{background:white;border-bottom:1px solid var(--line);padding:16px max(20px,calc((100vw - 1120px)/2));display:flex;justify-content:space-between;align-items:center;gap:12px}.logo{font-size:25px;font-weight:800;letter-spacing:.13em}.sub{font-size:11px;letter-spacing:.04em;color:var(--muted)}.shell{max-width:1120px;margin:auto;padding:30px 20px 90px}.top{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}h1{font-size:32px;letter-spacing:-.04em;margin:0}h2{font-size:21px;letter-spacing:-.03em;margin:0 0 14px}h3{font-size:16px;margin:0 0 8px}p{margin:6px 0 14px}.muted{color:var(--muted)}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}.tabs button,.ghost{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 15px;border-radius:12px}.tabs button.active{background:var(--ink);color:#fff}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;margin-bottom:16px;box-shadow:0 6px 20px #25342506}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.stat{font-size:29px;font-weight:750;letter-spacing:-.05em}.tag{display:inline-block;padding:5px 10px;border-radius:99px;background:var(--pale);color:#49614a;font-size:12px}.primary{border:0;border-radius:12px;background:var(--accent);color:white;padding:11px 17px;font-weight:650}.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}label{display:block;font-size:13px;font-weight:650;margin:12px 0 6px}input,select,textarea{width:100%;border:1px solid #dce0d8;border-radius:11px;padding:11px;background:#fff;color:var(--ink)}textarea{min-height:80px;resize:vertical}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}.choice{display:flex;gap:8px;flex-wrap:wrap}.choice button{padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:white;font-size:12px}.choice button.on{background:var(--pale);border-color:var(--accent);color:#3d5b3d}.exercise{border-top:1px solid var(--line);padding:12px 0}.small{font-size:12px}.chart{display:flex;align-items:end;gap:9px;height:155px;padding:12px 0 0;border-bottom:1px solid var(--line)}.bar{flex:1;background:#a9bba4;border-radius:7px 7px 0 0;min-height:6px;position:relative}.bar span{position:absolute;bottom:100%;left:0;font-size:11px;white-space:nowrap}.bar em{position:absolute;top:100%;left:0;font-style:normal;font-size:10px;color:var(--muted)}.recipe{background:#f2f4ee;border-radius:14px;padding:20px}.notice{background:#fff7e7;border:1px solid #f0dfbd;padding:12px 16px;border-radius:12px;font-size:13px;margin:15px 0}.error{color:#a34242}.hidden{display:none!important}footer{color:var(--muted);font-size:12px;margin-top:30px}@media(max-width:720px){.grid,.two,.formgrid{grid-template-columns:1fr}.shell{padding:20px 14px 90px}.card{padding:17px}h1{font-size:27px}.tabs{flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px}.tabs button{white-space:nowrap}header{padding:12px 16px}}
 
 /* FORMA | Etap 1 — elegancki minimalizm (wariant B) */
@@ -440,6 +440,25 @@ body.f20ClientStart .f18Welcome{margin-top:0}
 .f19MineClear{display:flex;justify-content:flex-end;margin-top:-3px}
 .f19MineClear button{background:transparent;border:0;min-height:40px;color:#776e64;text-decoration:underline;text-underline-offset:3px;padding:8px;font-size:13px}
 @media(max-width:520px){.f19MineFilters{gap:12px;margin:13px 0 19px}.f19MineFilters input,.f19MineFilters select{height:54px;min-height:54px}.f19MineFilters .f18FilterRow{gap:7px}.f19MineFilters .f18FilterRow button{flex:1 1 auto;min-height:46px;padding:9px 12px;font-size:13px}}
+
+/* FORMA 2.0 — uproszczony panel trenerki */
+body.f20TrainerStart .top{display:none!important}
+.f20DashboardIntro{margin:0 0 22px}.f20DashboardIntro .eyebrow{color:#9d8e7c;font-size:12px;font-weight:700}.f20DashboardIntro h2{font-size:clamp(24px,2.7vw,32px);margin:7px 0 0}
+.f20DashboardGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+.f20DashboardCard{margin:0;min-width:0;display:flex;flex-direction:column;height:385px;padding:23px}
+.f20DashboardCard .sectionHeading{flex-shrink:0;min-height:52px;align-items:start;gap:8px}.f20DashboardCard .sectionHeading h2{font-size:21px}
+.f20DashboardScroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:2px 3px 3px 0;scrollbar-color:#c9bdae transparent;scrollbar-width:thin}
+.f20DashboardItem{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--line);font-size:13px}.f20DashboardItem span{color:var(--muted);text-align:right}
+.f20Notification{width:100%;display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:3px;background:#faf8f5;border:1px solid #eae2d8;border-radius:11px;margin:0 0 8px;padding:10px 12px;color:var(--ink)}.f20Notification span{font-size:13px}.f20Notification small{color:var(--muted);font-size:11px}
+.f20SideClient{padding:3px 10px 12px}.f20SideClient label{font-size:11px;color:var(--muted);margin:0 0 6px}.f20SideClient select{font-size:13px;min-height:43px}
+.f20ProfileGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px 16px}.f20ProfileGrid>div{min-width:0}.f20ProfileGrid input,.f20ProfileGrid select{min-width:0;min-height:52px;font-size:15px}.f20Subheading{font-size:20px;margin:30px 0 11px}
+.f20LibTabs{display:flex;flex-wrap:wrap;gap:8px}.f20LibTabs button{border:1px solid #e6ded3;background:#fff;color:var(--ink);border-radius:12px;padding:13px 18px;font-weight:700;min-height:48px}.f20LibTabs button.active{color:white;background:#252525;border-color:#252525}
+.f20LibraryFilters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 15px;margin:16px 0 23px}.f20LibraryFilters>div{min-width:0}.f20LibraryFilters .f20Full{grid-column:1/-1}.f20LibraryFilters input,.f20LibraryFilters select{min-height:54px;font-size:15px}.f20LibraryUse{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin:19px 0}.f20LibraryUse>label:first-child{width:100%;margin:0}.f20LibraryUse label{margin:0}.f20LibraryUse input{width:17px;height:17px;vertical-align:middle}
+.f20LibraryItem{border:1px solid #e6ded3;padding:18px;border-radius:15px;margin:10px 0;background:#fff}.f20LibraryItemHead{display:flex;justify-content:space-between;align-items:start;gap:16px}.f20LibraryItemHead strong{font-size:16px}.f20LibraryItemHead .hint{margin:5px 0 9px}.f20LibraryRating{white-space:nowrap;background:#f5f0ea;border-radius:999px;padding:5px 10px;font-size:12px;color:#77634e;font-weight:650}.f20LibraryItem .exerciseRowActions{margin-top:7px}
+.f20EditorOpinion{font-size:12px;color:#6d5a47;background:#faf4ec;border:1px solid #e6d7c3;border-radius:9px;padding:10px 12px;margin:10px 0}.f20HomeWeekDetails{padding-top:8px}.f20AddHomeRow{margin:22px 0 0;padding-top:16px;border-top:1px solid var(--line)}.f20AddHomeRow .hint{font-size:12px;margin:8px 0 0}
+.f20CalendarForm #calendarClient{width:100%;min-width:0;min-height:55px}.f20CalendarForm #f20CalendarType{min-height:55px;width:100%;font-size:16px}.f20CalendarForm .f20ProfileGrid{margin:9px 0 17px}
+@media(max-width:1100px){.f20DashboardGrid{grid-template-columns:1fr}.f20DashboardCard:last-child{grid-column:auto}}
+@media(max-width:760px){.f20DashboardGrid{grid-template-columns:1fr}.f20DashboardCard:last-child{grid-column:auto}.f20DashboardCard{height:315px}.f20ProfileGrid{grid-template-columns:1fr}.f20LibraryFilters{grid-template-columns:1fr}.f20LibraryFilters .f20Full{grid-column:auto}.f20LibraryItemHead{flex-wrap:wrap}}
 </style><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#F0EBE5"><link rel="icon" type="image/png" href="/icon-192.png"><link rel="apple-touch-icon" href="/icon-192.png"></head><body>
 <div class="appLayout"><aside class="sidebar" id="sidebar"><div class="brand"><strong>FORMA<span>.</span></strong><small>BY ZUZIA FIKS</small></div><div class="sideNav" id="sideNav"></div><div class="sidebarFooter" id="identity">Łączenie…</div></aside>
 <div class="pagePane"><header class="mobileHeader"><div class="brand"><strong>FORMA<span>.</span></strong><small>BY ZUZIA FIKS</small></div><div id="mobileIdentity" class="mobileUser"></div></header><main class="shell"><div class="top"><div><div class="muted small">TWÓJ TRENING. TWOJE TEMPO.</div><h1 id="title">FORMA</h1></div><span class="tag">● TWOJA PRZESTRZEŃ</span></div><div id="flash"></div><nav class="tabs" id="tabs"></nav><div id="app">Ładowanie…</div><footer>FORMA | by Zuzia Fiks · Konto prywatne · Dane zapisane w Supabase.</footer></main></div></div><nav class="bottomNav" id="mobileNav" aria-label="Nawigacja mobilna"></nav><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
@@ -448,7 +467,7 @@ body.f20ClientStart .f18Welcome{margin-top:0}
 <script>
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),today=()=>new Date().toLocaleDateString('en-CA'),card=x=>`<section class="card">${x}</section>`,btn=(text,fn)=>`<button class="primary" onclick="${fn}">${text}</button>`,input=(label,id,type='text',value='')=>`<div><label for="${id}">${label}</label><input id="${id}" type="${type}" value="${esc(value)}" ${type==='number'?'step="any"':''}></div>`,v=id=>$(id)?.value?.trim()||'',number=id=>Number(v(id)),groups={'Pośladki':['Hip thrust','Glute bridge','Kickback na wyciągu','Odwodzenie na maszynie','Bułgarskie przysiady'],'Nogi':['Suwnica','Przysiady','Wykroki','Prostowanie nóg','Uginanie nóg'],'Plecy':['Ściąganie drążka','Wiosłowanie siedząc','Podciąganie'],'Klatka piersiowa':['Wyciskanie hantli','Wyciskanie na maszynie','Rozpiętki'],'Barki':['Wyciskanie nad głowę','Unoszenie bokiem'],'Ramiona':['Uginanie z hantlami','Prostowanie na wyciągu'],'Brzuch':['Plank','Dead bug','Spięcia brzucha']};
 let sb,user,me,tab='start',clients=[],selected='',measurements=[],plans=[],planExercises=[],exercises=[],sets=[],sessions=[],recipes=[],questionnaires=[],preferences=[],photos=[],bookings=[],bookingsReady=true,trainingDraft=null;const trainer=()=>me?.role==='trainer',clientId=()=>trainer()?selected:me?.id;
-function message(t,error=false){$('flash').innerHTML=`<div class="notice ${error?'error':''}">${esc(t)}</div>`;window.scrollTo({top:0,behavior:'smooth'})}function check(result){if(result.error)throw result.error;return result.data}async function load(){if(!me)return;const base=[sb.from('recipes').select('*').order('created_at',{ascending:false}),sb.from('exercises').select('*').order('name')];if(trainer())base.push(sb.from('profiles').select('*').eq('role','client').order('full_name'),sb.from('questionnaires').select('*').order('created_at',{ascending:false}));const all=await Promise.all(base);recipes=check(all[0]);exercises=check(all[1]);if(trainer()){clients=check(all[2]);questionnaires=check(all[3]);if(!clients.some(c=>c.id===selected))selected=clients[0]?.id||''}else{clients=[me];selected=me.id}await loadBookings();await loadClient();render()}
+function message(t,error=false){$('flash').innerHTML=`<div class="notice ${error?'error':''}">${esc(t)}</div>`;window.scrollTo({top:0,behavior:'smooth'})}function check(result){if(result.error)throw result.error;return result.data}async function load(){if(!me)return;const base=[sb.from('recipes').select('*').order('created_at',{ascending:false}),sb.from('exercises').select('*').order('name')];if(trainer())base.push(sb.from('profiles').select('*').eq('role','client').order('full_name'),sb.from('questionnaires').select('*').order('created_at',{ascending:false}));const all=await Promise.all(base);recipes=check(all[0]);exercises=check(all[1]);if(trainer()){clients=check(all[2]);questionnaires=check(all[3]);if(!clients.some(c=>c.id===selected))selected=clients[0]?.id||''}else{clients=[me];selected=me.id}await loadBookings();await loadClient();if(trainer())await f20LoadAllOpinions();render()}
 async function loadBookings(){const result=await sb.from('forma_bookings').select('*').order('starts_at',{ascending:true});if(result.error){const msg=String(result.error.message||'');if(['42P01','PGRST205','PGRST204'].includes(result.error.code)||/forma_bookings.*(not found|does not exist|schema cache)/i.test(msg)){bookingsReady=false;bookings=[];return}throw result.error}bookingsReady=true;bookings=result.data||[]}
 async function loadClient(){measurements=[];plans=[];planExercises=[];sets=[];sessions=[];preferences=[];photos=[];if(!clientId())return;const id=clientId();const res=await Promise.all([sb.from('body_measurements').select('*').eq('client_id',id).order('measured_on'),sb.from('training_plans').select('*').eq('client_id',id).order('created_at',{ascending:false}),sb.from('workout_sessions').select('*').eq('client_id',id).order('started_at',{ascending:false}),sb.from('exercise_preferences').select('*').eq('client_id',id),sb.from('progress_photos').select('*').eq('client_id',id).order('taken_on',{ascending:false})]);[measurements,plans,sessions,preferences,photos]=res.map(check);if(plans.length){planExercises=check(await sb.from('plan_exercises').select('*').in('plan_id',plans.map(x=>x.id)).order('sort_order'))}if(sessions.length){sets=check(await sb.from('workout_sets').select('*').in('session_id',sessions.map(x=>x.id)))} }
 function showLogin(){document.body.classList.add('authMode');$('mobileIdentity').textContent='';$('mobileNav').innerHTML='';me=null;$('title').textContent='Logowanie';$('identity').textContent='';$('tabs').innerHTML='';$('app').innerHTML=card(`<h2>Witaj w FORMA</h2><p class="muted">Zaloguj się na konto utworzone przez trenerkę.</p><form onsubmit="login(event)">${input('E-mail','email','email')}${input('Hasło','password','password')}<div style="margin-top:16px"><button class="primary" type="submit">Zaloguj się</button></div></form><p class="small muted"><button class="ghost" type="button" onclick="showRecoveryRequest()">Nie pamiętasz hasła? Ustaw nowe</button></p>`)}
@@ -474,7 +493,7 @@ const bottom=t?[['start','Start','home'],['calendar','Kalendarz','calendar'],['c
 $('mobileNav').style.gridTemplateColumns=`repeat(${bottom.length},minmax(0,1fr))`;$('mobileNav').innerHTML=bottom.map(x=>navButton(x,'bottom')).join('');
 const name=esc(me.full_name||'Użytkownik');$('identity').innerHTML=`<strong style="color:var(--ink)">${name}</strong><div class="small">${t?'Trenerka':'Podopieczna'}</div><button class="ghost" onclick="logout()">Wyloguj się</button>`;$('mobileIdentity').innerHTML=`<span>${name}</span><button class="ghost" onclick="logout()">Wyloguj</button>`;
 }
-function render(){f19CloseCalendarPopup();if(!me)return;document.body.classList.toggle('f17Editing',Boolean(trainer()&&tab==='plan'&&(trainingDraft||f18HomeEditing)));document.body.classList.toggle('f20ClientStart',!trainer()&&tab==='start');document.body.classList.remove('authMode');if(trainer()&&clientSections.some(x=>x[0]===tab)&&!selected)tab='clients';const valid=trainer()?[...mainTrainer.map(x=>x[0]),...clientSections.map(x=>x[0]),'addclient','survey','more']:[...mainClient.map(x=>x[0]),'survey','more'];if(!valid.includes(tab))tab='start';const names={...Object.fromEntries([...mainClient,...mainTrainer].map(x=>[x[0],x[1]])),diary:'Dziennik treningowy',profile:'Profil podopiecznej',more:'Więcej',addclient:'Nowa podopieczna',survey:'Preferencje'};$('title').textContent=names[tab]||'FORMA';$('tabs').innerHTML='';renderMenus();
+function render(){f19CloseCalendarPopup();if(!me)return;document.body.classList.toggle('f17Editing',Boolean(trainer()&&tab==='plan'&&(trainingDraft||f18HomeEditing)));document.body.classList.toggle('f20ClientStart',!trainer()&&tab==='start');document.body.classList.toggle('f20TrainerStart',trainer()&&tab==='start');document.body.classList.remove('authMode');if(trainer()&&clientSections.some(x=>x[0]===tab)&&!selected)tab='clients';const valid=trainer()?[...mainTrainer.map(x=>x[0]),...clientSections.map(x=>x[0]),'addclient','survey','more']:[...mainClient.map(x=>x[0]),'survey','more'];if(!valid.includes(tab))tab='start';const names={...Object.fromEntries([...mainClient,...mainTrainer].map(x=>[x[0],x[1]])),diary:'Dziennik treningowy',profile:'Profil podopiecznej',more:'Więcej',addclient:'Nowa podopieczna',survey:'Preferencje'};$('title').textContent=names[tab]||'FORMA';$('tabs').innerHTML='';renderMenus();
 const handlers={start:()=>start(),clients:()=>clientsPage(),calendar:()=>calendarPage(),exercises:()=>exercisesPage(),recipes:()=>recipesPage(),profile:()=>profilePage(),plan:()=>plan(),diary:()=>diaryPage(),trainings:()=>f18ClientTrainings(),progress:()=>progress(),nutrition:()=>f18DietPage(),home:()=>f18HomeTrainerPage(),addclient:()=>plannedFeature('Dodanie podopiecznej','Zapraszanie klientek e-mailem wymaga bezpiecznego procesu serwerowego. Zostanie wdrożone w etapie 2; nie trzeba ręcznie wpisywać UUID.'),survey:()=>survey(),more:()=>morePage()};
 if(formaCalendarInstance){try{calendarAnchorDate=formaCalendarInstance.getDate().toISOString();calendarActiveView=formaCalendarInstance.view.type;formaCalendarInstance.destroy()}catch(_){}formaCalendarInstance=null}
 $('app').innerHTML=(handlers[tab]||handlers.start)();if(tab==='calendar')mountFormaCalendar();}
@@ -1323,7 +1342,7 @@ function captureTrainingDraft(){
 }
 function f17Flip(index){captureTrainingDraft();f17Expanded=f17Expanded===index?-1:index;render()}
 function f17ChangeExercise(index,id){captureTrainingDraft();trainingDraft.items[index].exercise_id=id;render()}
-function f17AddExercise(){captureTrainingDraft();const live=validExerciseRows();if(!live.length)return message('Dodaj najpierw ćwiczenie do biblioteki.',true);
+function f17AddExercise(){captureTrainingDraft();const live=f20SelectableExercises('personal');if(!live.length)return message('Dodaj najpierw ćwiczenie do biblioteki.',true);
  trainingDraft.items.push({exercise_id:live[0].id,sets_target:3,reps_target:'10',weight_target_kg:0,notes:''});f17Expanded=trainingDraft.items.length-1;f17MobilePane='editor';render();}
 function f17MoveExercise(index,direction){captureTrainingDraft();const to=index+direction;if(to<0||to>=trainingDraft.items.length)return;
  const a=trainingDraft.items;[a[index],a[to]]=[a[to],a[index]];f17Expanded=to;render()}
@@ -1379,12 +1398,12 @@ function f17SpecificHistory(exId){
 function f17ExerciseCard(x,i){
  const open=i===f17Expanded;
  const exercise=exercises.find(e=>e.id===x.exercise_id),name=exercise?.name||'Ćwiczenie z biblioteki';
- const choices=exercise?.archived_at?[exercise,...validExerciseRows()]:validExerciseRows();
+ const choices=f20SelectableExercises('personal',exercise?.id);
  return `<article class="f17Exercise ${open?'active':''}"><div class="f17ExerciseTitle"><span class="f17Counter">${String(i+1).padStart(2,'0')}</span><button type="button" class="f17ExerciseTitleText" onclick="f17Flip(${i})" aria-expanded="${open}"><strong>${esc(name)}${exercise?.archived_at?' (archiwalne)':''}</strong><small>${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg)} kg</small></button><button type="button" class="f17More" onclick="f17Flip(${i})" aria-label="${open?'Zwiń':'Rozwiń'} ćwiczenie">${open?'⌃':'⌄'}</button></div>
  ${open?`<div class="f17ExerciseDetails"><div class="f17LabelGroup"><label for="trainingExercise-${i}">Ćwiczenie</label><select id="trainingExercise-${i}" onchange="f17ChangeExercise(${i},this.value)">${choices.map(e=>`<option value="${esc(e.id)}" ${e.id===x.exercise_id?'selected':''}>${esc(e.name)}${e.archived_at?' (archiwalne)':''}</option>`).join('')}</select></div>
  <div class="f17Fields3"><div class="f17LabelGroup"><label for="trainingSets-${i}">Serie</label><input id="trainingSets-${i}" type="number" min="1" max="30" step="1" value="${esc(x.sets_target)}"></div><div class="f17LabelGroup"><label for="trainingReps-${i}">Powtórzenia</label><input id="trainingReps-${i}" maxlength="40" value="${esc(x.reps_target)}"></div><div class="f17LabelGroup"><label for="trainingWeight-${i}">Ciężar (kg)</label><input id="trainingWeight-${i}" type="number" min="0" max="9999" step="0.25" value="${esc(x.weight_target_kg)}"></div></div>
  <div class="f17LabelGroup"><label for="trainingExNotes-${i}">Wskazówki do ćwiczenia</label><input id="trainingExNotes-${i}" value="${esc(x.notes||'')}" placeholder="Np. przerwy 90 sekund"></div>
- ${f18TrainerActiveAlert(x.exercise_id)}<div class="f17InlineHistory"><h4>Ostatnie wyniki: ${esc(name)}</h4>${f17SpecificHistory(x.exercise_id)}</div>
+ ${f20EditorOpinion(x.exercise_id)}${f18TrainerActiveAlert(x.exercise_id)}<div class="f17InlineHistory"><h4>Ostatnie wyniki: ${esc(name)}</h4>${f17SpecificHistory(x.exercise_id)}</div>
  <div class="f17ItemActions"><button class="ghost" type="button" ${i===0?'disabled':''} onclick="f17MoveExercise(${i},-1)">↑ Wyżej</button><button class="ghost" type="button" ${i===trainingDraft.items.length-1?'disabled':''} onclick="f17MoveExercise(${i},1)">↓ Niżej</button><button class="ghost f17ButtonDanger" type="button" onclick="f17RemoveExercise(${i})">Usuń</button></div>
  </div>`:''}</article>`;
 }
@@ -1456,7 +1475,7 @@ function f18ShortTime(date){return date?new Date(date).toLocaleTimeString('pl-PL
 function f18ValidHomeItems(){return f18HomeExercises.filter(x=>x.client_id===clientId())}
 function f18HomeSummary(){return f18HomePlan?`<strong>${esc(f18HomePlan.name)}</strong><p class="hint">${f18HomeExercises.length} ćwiczeń${f18HomePlan.notes?' · '+esc(f18HomePlan.notes):''}</p>`:'<p class="hint">Zuzia nie przygotowała jeszcze planu domowego.</p>'}
 function f18ClientStart(){
- const firstName=String(me?.full_name||'').trim().split(/\s+/)[0];const name=/^klient$/i.test(firstName)?'':firstName;
+ const firstName=String(me?.full_name||'').trim().split(/\s+/)[0];const name=firstName||'podopieczna';
  const upcomingPersonal=bookings.filter(b=>b.client_id===me.id&&b.status==='approved'&&new Date(b.starts_at).getTime()>Date.now()).map(b=>({type:'personal',date:new Date(b.starts_at),b}));
  const upcomingHome=f18HomeSessions.filter(h=>new Date(h.starts_at).getTime()>Date.now()).map(h=>({type:'home',date:new Date(h.starts_at),h}));
  const next=[...upcomingPersonal,...upcomingHome].sort((a,b)=>a.date-b.date)[0];
@@ -1741,7 +1760,7 @@ function f18TrainerExerciseOpinion(id){if(!trainer()||!selected)return '';
  ${history.length?`<details class="f18OpinionHistory"><summary>Historia zgłoszeń (${history.length})</summary>${history.map(h=>`<p>${esc(f18ShortDate(h.reported_at))} · ${h.discussed_at?'Omówione':h.resolved_at?'Wycofane':'Do omówienia'}${h.description?' · '+esc(h.description):''}</p>`).join('')}</details>`:''}</div>`;
 }
 async function f18MarkDiscussed(id){if(!trainer())return;
- try{check(await sb.rpc('forma_mark_exercise_discussed',{p_event_id:id}));await f18LoadClientData();render();message('Zgłoszenie oznaczone jako omówione. Informacja pozostaje w historii.')}
+ try{check(await sb.rpc('forma_mark_exercise_discussed',{p_event_id:id}));await f18LoadClientData();await f20LoadAllOpinions();render();message('Zgłoszenie oznaczone jako omówione. Informacja pozostaje w historii.')}
  catch(e){message('Nie udało się oznaczyć zgłoszenia: '+e.message,true)}
 }
 function f18TrainerActiveAlert(id){if(!trainer())return '';
@@ -1767,7 +1786,7 @@ function f18CaptureHomeDraft(){if(!f18HomeEditing||!f18HomeDraft)return;
  f18HomeDraft.items.forEach((item,i)=>{if($('f18HomeEx-'+i)){item.exercise_id=v('f18HomeEx-'+i);item.sets_target=Number(v('f18HomeSets-'+i));item.reps_target=v('f18HomeReps-'+i);item.weight_target_kg=Number(v('f18HomeWeight-'+i));item.notes=v('f18HomeItemNote-'+i)}});
 }
 function f18HomeOpen(i){f18CaptureHomeDraft();f18HomeExpanded=f18HomeExpanded===i?-1:i;render()}
-function f18HomeAdd(){f18CaptureHomeDraft();const e=validExerciseRows()[0];if(!e)return message('Dodaj najpierw ćwiczenie do biblioteki.',true);
+function f18HomeAdd(){f18CaptureHomeDraft();const e=f20SelectableExercises('home')[0];if(!e)return message('Dodaj najpierw ćwiczenie domowe do biblioteki.',true);
  f18HomeDraft.items.push({exercise_id:e.id,sets_target:3,reps_target:'10',weight_target_kg:0,notes:''});f18HomeExpanded=f18HomeDraft.items.length-1;render()}
 function f18HomeDelete(i){f18CaptureHomeDraft();f18HomeDraft.items.splice(i,1);f18HomeExpanded=f18HomeDraft.items.length?Math.min(i,f18HomeDraft.items.length-1):-1;render()}
 function f18HomeMove(i,dir){f18CaptureHomeDraft();const j=i+dir;if(j<0||j>=f18HomeDraft.items.length)return;
@@ -1775,7 +1794,7 @@ function f18HomeMove(i,dir){f18CaptureHomeDraft();const j=i+dir;if(j<0||j>=f18Ho
 function f18HomeEditor(){const d=f18HomeDraft;if(!d)return '';
  return `<div class="f17Editor f18HomeEditor"><div class="f17Header"><div><button type="button" class="f17Back" onclick="f18CancelHome()">← Wróć do planu treningowego</button><h1>Plan domowy</h1><p class="hint">Plan dla: ${esc(clients.find(c=>c.id===clientId())?.full_name||'Podopieczna')} · bez wyboru terminu</p></div><span class="statusPill">Tylko trenerka</span></div>
  <div class="f18HomeEditorBody"><label for="f18HomeName">Nazwa planu *</label><input id="f18HomeName" maxlength="120" value="${esc(d.name)}"><h2 style="margin-top:24px">Ćwiczenia (${d.items.length})</h2>
- ${d.items.map((x,i)=>{const ex=exercises.find(e=>e.id===x.exercise_id),open=f18HomeExpanded===i;return `<article class="f17Exercise"><div class="f17ExerciseTitle"><span class="f17Counter">${String(i+1).padStart(2,'0')}</span><button type="button" class="f17ExerciseTitleText" onclick="f18HomeOpen(${i})"><strong>${esc(ex?.name||'Ćwiczenie')}</strong><small>${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg)} kg</small></button><button type="button" class="f17More" onclick="f18HomeOpen(${i})">${open?'⌃':'⌄'}</button></div>${open?`<div class="f17ExerciseDetails"><label>Ćwiczenie z biblioteki</label><select id="f18HomeEx-${i}">${validExerciseRows().map(e=>`<option value="${esc(e.id)}" ${e.id===x.exercise_id?'selected':''}>${esc(e.name)}</option>`).join('')}</select>
+ ${d.items.map((x,i)=>{const ex=exercises.find(e=>e.id===x.exercise_id),open=f18HomeExpanded===i;return `<article class="f17Exercise"><div class="f17ExerciseTitle"><span class="f17Counter">${String(i+1).padStart(2,'0')}</span><button type="button" class="f17ExerciseTitleText" onclick="f18HomeOpen(${i})"><strong>${esc(ex?.name||'Ćwiczenie')}</strong><small>${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg)} kg</small></button><button type="button" class="f17More" onclick="f18HomeOpen(${i})">${open?'⌃':'⌄'}</button></div>${open?`<div class="f17ExerciseDetails"><label>Ćwiczenie z biblioteki</label><select id="f18HomeEx-${i}" onchange="f20HomeChangeExercise(${i},this.value)">${f20SelectableExercises('home',x.exercise_id).map(e=>`<option value="${esc(e.id)}" ${e.id===x.exercise_id?'selected':''}>${esc(e.name)}</option>`).join('')}</select>${f20EditorOpinion(x.exercise_id)}${f18TrainerActiveAlert(x.exercise_id)}
  <div class="f17Fields3"><div><label>Serie</label><input id="f18HomeSets-${i}" type="number" min="1" max="30" value="${esc(x.sets_target)}"></div><div><label>Powtórzenia</label><input id="f18HomeReps-${i}" maxlength="40" value="${esc(x.reps_target)}"></div><div><label>Ciężar (kg)</label><input id="f18HomeWeight-${i}" type="number" min="0" max="9999" step="0.25" value="${esc(x.weight_target_kg)}"></div></div>
  <label>Wskazówki</label><input id="f18HomeItemNote-${i}" value="${esc(x.notes)}" maxlength="1000"><div class="f17ItemActions"><button type="button" class="ghost" ${!i?'disabled':''} onclick="f18HomeMove(${i},-1)">↑ Wyżej</button><button type="button" class="ghost" ${i===d.items.length-1?'disabled':''} onclick="f18HomeMove(${i},1)">↓ Niżej</button><button type="button" class="ghost dangerButton" onclick="f18HomeDelete(${i})">Usuń</button></div></div>`:''}</article>`}).join('')}
  <button type="button" class="f17AddExercise" onclick="f18HomeAdd()">＋ Dodaj ćwiczenie</button><label for="f18HomeNotes">Wskazówki do całego treningu</label><textarea id="f18HomeNotes" rows="3">${valTextarea(d.notes)}</textarea></div>
@@ -1826,7 +1845,7 @@ function f20TrainerHomeStart(id=''){
  if(h&&new Date(h.starts_at)<=new Date())return message('Zakończonego terminu domowego nie edytujemy.',true);
  const date=f20HomeDateDraft(h);
  const seed=h?(f20HomeItems(h).length?f20HomeItems(h):f18HomeExercises):f18HomeExercises;
- const defaultEx=validExerciseRows()[0];
+ const defaultEx=f20SelectableExercises('home')[0];
  f18HomeDraft={sessionId:h?.id||null,name:h?.title||f18HomePlan?.name||'Trening domowy',notes:h?.notes_snapshot||(!h?f18HomePlan?.notes:'')||'',...date,
    items:f20HomeInputItems(seed.length?seed:defaultEx?[{exercise_id:defaultEx.id,sets_target:3,reps_target:'10',weight_target_kg:0,notes:''}]:[])};
  f18HomeEditing=true;f18HomeExpanded=0;render();window.scrollTo({top:0,behavior:'smooth'});
@@ -1848,7 +1867,7 @@ function f18HomeEditor(){const d=f18HomeDraft;if(!d)return '';
  return `<div class="f17Editor f18HomeEditor"><div class="f17Header"><div><button type="button" class="f17Back" onclick="f18CancelHome()">← Wróć do planu treningowego</button><h1>${d.sessionId?'Edytuj trening domowy':'Dodaj trening domowy'}</h1><p class="hint">${esc(clients.find(c=>c.id===clientId())?.full_name||'Podopieczna')} · termin trafi wyłącznie do kalendarza podopiecznej</p></div><span class="statusPill">Tylko trenerka</span></div>
  <div class="f18HomeEditorBody"><label for="f18HomeName">Nazwa treningu *</label><input id="f18HomeName" maxlength="120" value="${esc(d.name)}">${f20HomeDateFields('f20Trainer',d)}
  <h2 style="margin-top:24px">Ćwiczenia (${d.items.length})</h2>
- ${d.items.map((x,i)=>{const ex=exercises.find(e=>e.id===x.exercise_id),open=f18HomeExpanded===i;return `<article class="f17Exercise"><div class="f17ExerciseTitle"><span class="f17Counter">${String(i+1).padStart(2,'0')}</span><button type="button" class="f17ExerciseTitleText" onclick="f18HomeOpen(${i})"><strong>${esc(ex?.name||'Ćwiczenie')}</strong><small>${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg)} kg</small></button><button type="button" class="f17More" onclick="f18HomeOpen(${i})">${open?'⌃':'⌄'}</button></div>${open?`<div class="f17ExerciseDetails"><label>Ćwiczenie z biblioteki</label><select id="f18HomeEx-${i}">${validExerciseRows().map(e=>`<option value="${esc(e.id)}" ${e.id===x.exercise_id?'selected':''}>${esc(e.name)}</option>`).join('')}</select>
+ ${d.items.map((x,i)=>{const ex=exercises.find(e=>e.id===x.exercise_id),open=f18HomeExpanded===i;return `<article class="f17Exercise"><div class="f17ExerciseTitle"><span class="f17Counter">${String(i+1).padStart(2,'0')}</span><button type="button" class="f17ExerciseTitleText" onclick="f18HomeOpen(${i})"><strong>${esc(ex?.name||'Ćwiczenie')}</strong><small>${esc(x.sets_target)} × ${esc(x.reps_target)} · ${esc(x.weight_target_kg)} kg</small></button><button type="button" class="f17More" onclick="f18HomeOpen(${i})">${open?'⌃':'⌄'}</button></div>${open?`<div class="f17ExerciseDetails"><label>Ćwiczenie z biblioteki</label><select id="f18HomeEx-${i}" onchange="f20HomeChangeExercise(${i},this.value)">${f20SelectableExercises('home',x.exercise_id).map(e=>`<option value="${esc(e.id)}" ${e.id===x.exercise_id?'selected':''}>${esc(e.name)}</option>`).join('')}</select>${f20EditorOpinion(x.exercise_id)}${f18TrainerActiveAlert(x.exercise_id)}
  <div class="f17Fields3"><div><label>Serie</label><input id="f18HomeSets-${i}" type="number" min="1" max="30" value="${esc(x.sets_target)}"></div><div><label>Powtórzenia</label><input id="f18HomeReps-${i}" maxlength="40" value="${esc(x.reps_target)}"></div><div><label>Ciężar (kg)</label><input id="f18HomeWeight-${i}" type="number" min="0" max="9999" step="0.25" value="${esc(x.weight_target_kg)}"></div></div>
  <label>Wskazówki</label><input id="f18HomeItemNote-${i}" value="${esc(x.notes)}" maxlength="1000"><div class="f17ItemActions"><button type="button" class="ghost" ${!i?'disabled':''} onclick="f18HomeMove(${i},-1)">↑ Wyżej</button><button type="button" class="ghost" ${i===d.items.length-1?'disabled':''} onclick="f18HomeMove(${i},1)">↓ Niżej</button><button type="button" class="ghost dangerButton" onclick="f18HomeDelete(${i})">Usuń</button></div></div>`:''}</article>`}).join('')}
  <button type="button" class="f17AddExercise" onclick="f18HomeAdd()">＋ Dodaj ćwiczenie</button><label for="f18HomeNotes">Wskazówki do treningu</label><textarea id="f18HomeNotes" rows="3" maxlength="3000">${valTextarea(d.notes)}</textarea></div>
@@ -1942,6 +1961,260 @@ async function f20SaveClientHome(){if(trainer()||!f20ClientHomeDraft)return;f20C
   p_starts_at:new Date(d.date+'T'+d.from+':00').toISOString(),p_ends_at:new Date(d.date+'T'+d.to+':00').toISOString(),p_exercises:d.items
  }));f20ClientHomeClose();await f18LoadClientData();render();message('Zaktualizowano trening domowy i jego termin.');
  }catch(e){if(btn)btn.disabled=false;window.alert('Nie udało się zapisać: '+e.message)}
+}
+
+/* FORMA 2.0 — panel trenerki; zgodnie z zatwierdzonymi zasadami.
+ * Te nadpisania korzystają z istniejącego modelu kalendarza i treningów 1.9.
+ */
+let f20LibraryTab='list',f20LibrarySearch='',f20LibraryGroup='all',f20LibraryUsage='all',f20LibraryOpinionClient='all';
+let f20AllOpinions=[],f20AllDiscomfort=[],f20AllComments=[],f20AllExerciseComments=[];
+let f20CalendarType='personal',f20TrainerDiaryPeriod='upcoming';
+
+async function f20LoadAllOpinions(){
+ if(!trainer())return;
+ const res=await Promise.all([
+  sb.from('forma_exercise_opinions').select('*'),
+  sb.from('forma_exercise_discomfort_events').select('*').order('reported_at',{ascending:false}),
+  sb.from('forma_training_comments').select('*').order('updated_at',{ascending:false}),
+  sb.from('forma_training_exercise_comments').select('*').order('updated_at',{ascending:false})
+ ]);
+ if(res.some(r=>r.error)){
+  // Działanie innych modułów nie jest uzależnione od agregacji opinii.
+  console.warn('FORMA 2.0: Nie udało się odczytać zbiorczych opinii.',res.find(r=>r.error)?.error?.message);
+  return;
+ }
+ [f20AllOpinions,f20AllDiscomfort,f20AllComments,f20AllExerciseComments]=res.map(r=>r.data||[]);
+}
+async function f20SelectGlobalClient(id){
+ if(!trainer()||!clients.some(c=>c.id===id))return;
+ selected=id;profileHealthEdit=false;trainingDraft=null;f18HomeEditing=false;f18HomeDraft=null;
+ trainingWeekMonday=weekStart(new Date());
+ try{await loadClient();if(tab==='clients'||tab==='more'||tab==='home')tab='profile';
+  if(tab==='exercises')f20LibraryOpinionClient=id;
+  render();}
+ catch(e){message('Nie udało się załadować podopiecznej: '+e.message,true)}
+}
+function renderMenus(){
+ const t=trainer(),all=t?mainTrainer:mainClient;
+ let html='<div class="sidebarTitle">Menu główne</div>'+all.map(x=>navButton(x)).join('');
+ if(t){
+  html+=`<div class="sidebarTitle">Wybrana podopieczna</div><div class="f20SideClient"><label for="f20GlobalClient">Wybrana klientka</label><select id="f20GlobalClient" onchange="f20SelectGlobalClient(this.value)">${clients.map(c=>`<option value="${esc(c.id)}" ${c.id===selected?'selected':''}>${esc(c.full_name||'Bez nazwy')}</option>`).join('')}</select></div>`;
+  if(selected)html+=clientSections.filter(x=>x[0]!=='home').map(x=>navButton(x)).join('');
+ }
+ $('sideNav').innerHTML=html;
+ const bottom=t?[['start','Start','home'],['calendar','Kalendarz','calendar'],['clients','Podopieczne','users'],['more','Więcej','more']]:mainClient;
+ $('mobileNav').style.gridTemplateColumns=`repeat(${bottom.length},minmax(0,1fr))`;
+ $('mobileNav').innerHTML=bottom.map(x=>navButton(x,'bottom')).join('');
+ const name=esc(me.full_name||'Użytkownik');
+ $('identity').innerHTML=`<strong style="color:var(--ink)">${name}</strong><div class="small">${t?'Trenerka':'Podopieczna'}</div><button class="ghost" onclick="logout()">Wyloguj się</button>`;
+ $('mobileIdentity').innerHTML=`<span>${name}</span><button class="ghost" onclick="logout()">Wyloguj</button>`;
+}
+function morePage(){
+ const menu=trainer()?[...mainTrainer.slice(3),['survey','Ankiety','list'],['profile','Profil wybranej podopiecznej','user'],['plan','Plan treningowy','dumbbell'],['diary','Dziennik treningowy','list'],['progress','Dziennik progresu','chart']]:[];
+ return card(`<h2>Pozostałe funkcje</h2>${menu.map(x=>`<div class="flatRow"><button class="navItem" onclick="switchTab('${x[0]}')">${ico(x[2])}<span>${esc(x[1])}</span></button></div>`).join('')}`);
+}
+function f20TrainerNotifications(){
+ const alerts=f20AllDiscomfort.filter(x=>!x.discussed_at&&!x.resolved_at).map(x=>({
+  at:x.reported_at||'',client_id:x.client_id,
+  text:`Dyskomfort · ${exercises.find(e=>e.id===x.exercise_id)?.name||'Ćwiczenie'}`,
+  kind:'exercise'
+ }));
+ const comments=[...f20AllComments.map(x=>({...x,_at:x.updated_at,_text:'Nowa notatka do treningu'})),...f20AllExerciseComments.map(x=>({...x,_at:x.updated_at,_text:'Komentarz do ćwiczenia'}))].map(x=>({at:x._at||'',client_id:x.client_id,text:x._text,kind:'diary'}));
+ return [...alerts,...comments].sort((a,b)=>String(b.at).localeCompare(String(a.at))).slice(0,50);
+}
+async function f20OpenNotification(id,section){if(!clients.some(c=>c.id===id))return;selected=id;await loadClient();tab=section==='exercise'?'exercises':'diary';if(section==='exercise')f20LibraryOpinionClient=id;else f20TrainerDiaryPeriod='past';render()}
+function start(){
+ if(!trainer())return f18ClientStart();
+ const d=new Date().toLocaleDateString('pl-PL',{weekday:'long',day:'numeric',month:'long'});
+ const todaySessions=bookings.filter(b=>b.status==='approved'&&new Date(b.starts_at).toDateString()===new Date().toDateString()).sort((a,b)=>new Date(a.starts_at)-new Date(b.starts_at));
+ const pending=bookings.filter(b=>b.status==='pending'||b.status==='requested').sort((a,b)=>new Date(a.starts_at)-new Date(b.starts_at));
+ const notices=f20TrainerNotifications();
+ const todayHtml=todaySessions.length?todaySessions.map(b=>`<div class="f20DashboardItem"><strong>${esc(fmtTime(b.starts_at))}–${esc(fmtTime(b.ends_at))}</strong><span>${esc(clients.find(c=>c.id===b.client_id)?.full_name||'Podopieczna')}</span></div>`).join(''):'<p class="hint">Brak treningów na dzisiaj.</p>';
+ const pendingHtml=pending.length?pending.map(b=>`<div class="f20DashboardItem"><strong>${esc(clients.find(c=>c.id===b.client_id)?.full_name||'Podopieczna')}</strong><span>${esc(f18ShortDate(b.starts_at))} · ${esc(fmtTime(b.starts_at))}</span></div>`).join(''):'<p class="hint">Brak oczekujących próśb.</p>';
+ const noticeHtml=notices.length?notices.map(n=>`<button type="button" class="f20Notification" onclick="f20OpenNotification('${esc(n.client_id)}','${n.kind}')"><strong>${esc(clients.find(c=>c.id===n.client_id)?.full_name||'Podopieczna')}</strong><span>${esc(n.text)}</span><small>${esc(f18ShortDate(n.at))}</small></button>`).join(''):'<p class="hint">Na razie brak nowych uwag i zgłoszeń.</p>';
+ return `<div class="f20DashboardIntro"><div class="eyebrow">${esc(d)}</div><h2>Dzień dobry, ${esc(me.full_name?.split(' ')[0]||'Zuzia')}.</h2></div><div class="f20DashboardGrid">
+  <section class="card f20DashboardCard"><div class="sectionHeading"><h2>Dzisiejsze treningi</h2><button class="ghost" onclick="switchTab('calendar')">Kalendarz →</button></div><div class="f20DashboardScroll">${todayHtml}</div></section>
+  <section class="card f20DashboardCard"><div class="sectionHeading"><h2>Oczekujące prośby</h2><span class="statusPill">${pending.length}</span></div><div class="f20DashboardScroll">${pendingHtml}</div></section>
+  <section class="card f20DashboardCard"><div class="sectionHeading"><h2>Powiadomienia</h2><span class="statusPill">${notices.length}</span></div><div class="f20DashboardScroll">${noticeHtml}</div></section>
+ </div>`;
+}
+function f20Age(birth){if(!/^\d{4}-\d{2}-\d{2}$/.test(String(birth||'')))return null;
+ const now=new Date(),[year,month,day]=birth.split('-').map(Number);
+ let years=now.getFullYear()-year;if(now.getMonth()+1<month||(now.getMonth()+1===month&&now.getDate()<day))years--;
+ return years>=0&&years<=120?years:null;
+}
+function profilePage(){
+ const c=trainer()?clients.find(x=>x.id===selected):me;if(!c)return card('<div class="emptyState">Wybierz podopieczną.</div>');
+ if(!trainer())return card('<p>Profil podopiecznej jest dostępny z panelu trenerki.</p>');
+ const age=f20Age(c.birth_date);
+ return `${card(`<div class="profileHeader"><div class="profileAvatar">${clientAvatarUrl?`<img src="${esc(clientAvatarUrl)}" alt="Zdjęcie ${esc(c.full_name||'podopiecznej')}">`:ico('user')}</div>
+ <div><h2>${esc(c.full_name||'Podopieczna')}</h2><p class="hint">Dane wybranej podopiecznej</p><div class="avatarActions"><button type="button" class="ghost" onclick="document.getElementById('avatarUpload').click()">${clientAvatarUrl?'Zmień zdjęcie':'Dodaj zdjęcie'}</button>${c.avatar_path?'<button type="button" class="ghost" onclick="removeProfileAvatar()">Usuń zdjęcie</button>':''}</div><input type="file" id="avatarUpload" hidden accept="image/jpeg,image/png,image/webp" onchange="uploadProfileAvatar(this)"></div></div>`)}
+ ${card(`<h2>Podstawowe informacje</h2><form id="f20ProfileForm" onsubmit="f20SaveProfile(event)"><div class="f20ProfileGrid">
+ <div><label for="f20FullName">Imię i nazwisko</label><input id="f20FullName" required maxlength="150" value="${esc(c.full_name||'')}"></div>
+ <div><label for="f20BirthDate">Data urodzenia ${age!==null?`(wiek: ${age} lat)`:''}</label><input type="date" id="f20BirthDate" value="${esc(c.birth_date||'')}" max="${today()}" oninput="f20UpdateAge(this.value)"><p class="hint" id="f20AgeLabel">${age!==null?`Wiek: ${age} lat`:'Wiek zostanie obliczony z daty urodzenia.'}</p></div>
+ <div><label for="f20Location">Lokalizacja treningów</label><select id="f20Location"><option value="">Nie wybrano</option>${['Xtreme Lesznowola','Xtreme Gołków'].map(l=>`<option value="${esc(l)}" ${c.training_location===l?'selected':''}>${esc(l)}</option>`).join('')}</select></div>
+ </div><h2 class="f20Subheading">Dane kontaktowe</h2><div class="f20ProfileGrid">
+ <div><label for="f20Phone">Telefon</label><input type="tel" id="f20Phone" maxlength="60" value="${esc(c.phone||'')}" placeholder="Numer telefonu"></div>
+ <div><label for="f20ContactEmail">E-mail kontaktowy</label><input type="email" id="f20ContactEmail" maxlength="254" value="${esc(c.contact_email??c.email??'')}" placeholder="Adres do kontaktu"></div>
+ <div><label for="f20Messenger">Komunikator</label><input id="f20Messenger" maxlength="150" value="${esc(c.messenger||'')}" placeholder="Np. WhatsApp / Messenger"></div>
+ </div><p class="hint">E-mail kontaktowy nie zmienia adresu logowania do FORMA.</p><div class="trainingActions"><button type="submit" class="primary" id="f20ProfileSave">Zapisz informacje</button></div></form>`)}
+ ${card(`<h2>Notatki prywatne Zuzi</h2><p class="hint">Widoczne wyłącznie dla trenerki. Zmiany zapisują się po kliknięciu przycisku.</p><textarea id="trainerPrivateNotes" rows="5" maxlength="20000" placeholder="Wpisz własne notatki…">${valTextarea(clientPrivateNote)}</textarea><div class="trainingActions"><button type="button" class="primary" onclick="savePrivateNotes()">Zapisz notatki</button></div>`)}
+ `;
+}
+function f20UpdateAge(s){const age=f20Age(s);const e=$('f20AgeLabel');if(e)e.textContent=age===null?'Wprowadź prawidłową datę urodzenia.':`Wiek: ${age} lat`}
+async function f20SaveProfile(event){event.preventDefault();if(!trainer()||!selected)return;
+ const save=$('f20ProfileSave');if(save)save.disabled=true;
+ const payload={p_client_id:selected,p_full_name:v('f20FullName').trim(),p_birth_date:v('f20BirthDate')||null,
+  p_training_location:v('f20Location')||null,p_phone:v('f20Phone').trim(),p_contact_email:v('f20ContactEmail').trim(),p_messenger:v('f20Messenger').trim()};
+ try{
+  const row=check(await sb.rpc('forma20_update_client_profile',payload));
+  const c=clients.find(c=>c.id===selected);if(c)Object.assign(c,row||{}, {full_name:payload.p_full_name,birth_date:payload.p_birth_date,training_location:payload.p_training_location,phone:payload.p_phone,contact_email:payload.p_contact_email,messenger:payload.p_messenger});
+  render();message('Profil podopiecznej zapisany.');
+ }catch(e){message('Nie udało się zapisać profilu: '+e.message,true)}finally{if(save)save.disabled=false}
+}
+
+function f20Usage(e){return Array.isArray(e.usage_contexts)&&e.usage_contexts.length?e.usage_contexts:['home','personal']}
+function f20SelectableExercises(type,currentId=''){return validExerciseRows().filter(e=>f20Usage(e).includes(type)||e.id===currentId)}
+function f20HomeChangeExercise(index,id){f18CaptureHomeDraft();if(f18HomeDraft?.items[index])f18HomeDraft.items[index].exercise_id=id;render()}
+function f20OpinionBadge(exId){const o=f18Opinions.find(x=>x.exercise_id===exId);return o?.rating?` · ★ ${esc(o.rating)}/5`:''}
+
+function f20LibrarySwitch(type){f20LibraryTab=type; if(type==='list')exerciseEditingId='';render()}
+function f20LibraryFiltersChange(){f20LibrarySearch=$('exerciseSearch')?.value||'';f20LibraryGroup=$('f20ExGroup')?.value||'all';f20LibraryUsage=$('f20ExUsage')?.value||'all';filterExercises()}
+async function f20LibraryOpinionPick(id){f20LibraryOpinionClient=id;
+ if(id!=='all'&&id!==selected&&clients.some(c=>c.id===id)){selected=id;await loadClient()}
+ render()}
+function f20LibraryRow(e){
+ const allRatings=f20AllOpinions.filter(o=>o.exercise_id===e.id&&o.rating!==null&&o.rating!==undefined);
+ const average=allRatings.length?allRatings.reduce((s,o)=>s+Number(o.rating),0)/allRatings.length:null;
+ const selectedOpinion=f20LibraryOpinionClient==='all'?null:f20AllOpinions.find(o=>o.exercise_id===e.id&&o.client_id===f20LibraryOpinionClient);
+ const score=f20LibraryOpinionClient==='all'?(average===null?'Bez ocen':`★ ${average.toLocaleString('pl-PL',{maximumFractionDigits:1})}/5 · ${allRatings.length} ocen`):(selectedOpinion?.rating?`★ ${selectedOpinion.rating}/5`:'Bez oceny');
+ const tags=f20Usage(e).map(x=>x==='home'?'W domu':'Z Zuzią').join(' · ');
+ return `<div class="f20LibraryItem"><div class="f20LibraryItemHead"><div><strong>${esc(e.name)}</strong><p class="hint">${esc(e.muscle_group||'Bez kategorii')} · ${esc(tags)}${e.equipment?' · '+esc(e.equipment):''}</p></div><span class="f20LibraryRating">${esc(score)}</span></div>
+ ${f20LibraryOpinionClient!=='all'?f18TrainerExerciseOpinion(e.id):''}
+ <div class="exerciseRowActions"><button type="button" class="ghost" onclick="editLibraryExercise('${esc(e.id)}')">✎ Edytuj</button><button type="button" class="ghost dangerButton" onclick="archiveLibraryExercise('${esc(e.id)}')">Usuń</button></div></div>`;
+}
+function f20FilteredLibrary(){const q=f20LibrarySearch.trim().toLocaleLowerCase('pl');return validExerciseRows().filter(e=>(!q||[e.name,e.muscle_group,e.equipment].some(v=>String(v||'').toLocaleLowerCase('pl').includes(q)))&&(f20LibraryGroup==='all'||e.muscle_group===f20LibraryGroup)&&(f20LibraryUsage==='all'||f20Usage(e).includes(f20LibraryUsage)))}
+function filterExercises(){const el=$('exerciseList');if(el)el.innerHTML=f20FilteredLibrary().map(f20LibraryRow).join('')||'<div class="emptyState">Brak ćwiczeń spełniających kryteria.</div>';const count=$('f20LibCount');if(count)count.textContent=`${f20FilteredLibrary().length} ćwiczeń`}
+function editLibraryExercise(id){exerciseEditingId=id;f20LibraryTab='add';render()}
+function cancelExerciseEditing(){exerciseEditingId='';f20LibraryTab='list';render()}
+function exercisesPage(){
+ if(!trainer())return card('<p>Biblioteka ćwiczeń jest dostępna w panelu trenerki.</p>');
+ const active=validExerciseRows(),editing=exercises.find(e=>e.id===exerciseEditingId&&!e.archived_at);
+ const menu=`<div class="f20LibTabs"><button type="button" class="${f20LibraryTab==='list'?'active':''}" onclick="f20LibrarySwitch('list')">Lista ćwiczeń</button><button type="button" class="${f20LibraryTab==='add'?'active':''}" onclick="f20LibrarySwitch('add')">${editing?'Edytuj ćwiczenie':'Dodaj ćwiczenie'}</button></div>`;
+ if(f20LibraryTab==='add')return `${card(menu)}${card(`<h2>${editing?'Edytuj ćwiczenie':'Dodaj ćwiczenie'}</h2>
+ <div class="f20ProfileGrid"><div><label for="ename">Nazwa ćwiczenia *</label><input id="ename" value="${esc(editing?.name||'')}" maxlength="150"></div>
+ <div><label for="egroup">Partia mięśniowa</label><select id="egroup">${Object.keys(groups).map(g=>`<option ${editing?.muscle_group===g?'selected':''}>${esc(g)}</option>`).join('')}</select></div></div>
+ <div class="f20LibraryUse"><label>Dostępne w planach</label><label><input type="checkbox" id="f20UsePersonal" ${!editing||f20Usage(editing).includes('personal')?'checked':''}> Z Zuzią</label><label><input type="checkbox" id="f20UseHome" ${!editing||f20Usage(editing).includes('home')?'checked':''}> W domu</label></div>
+ <label for="eequipment">Sprzęt (opcjonalnie)</label><input id="eequipment" value="${esc(editing?.equipment||'')}">
+ <label for="evideo">Link do filmu (opcjonalnie)</label><input type="url" id="evideo" value="${esc(editing?.video_url||'')}">
+ <label for="einstructions">Opis wykonania (opcjonalnie)</label><textarea id="einstructions" rows="3">${valTextarea(editing?.instructions)}</textarea>
+ <div class="trainingActions"><button type="button" class="ghost" onclick="cancelExerciseEditing()">Anuluj</button><button type="button" class="primary" onclick="saveLibraryExercise()">${editing?'Zapisz zmiany':'Dodaj ćwiczenie'}</button></div>`)} `;
+ const groupOptions=[...new Set(active.map(e=>e.muscle_group).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'pl'));
+ const options=`<option value="all">Wszystkie podopieczne — średnia ocen</option>${clients.map(c=>`<option value="${esc(c.id)}" ${f20LibraryOpinionClient===c.id?'selected':''}>${esc(c.full_name)}</option>`).join('')}`;
+ return `${card(menu)}${card(`<div class="sectionHeading"><h2>Lista ćwiczeń</h2><span class="statusPill" id="f20LibCount">${active.length} ćwiczeń</span></div><div class="f20LibraryFilters">
+ <div class="f20Full"><label for="exerciseSearch">Wyszukaj ćwiczenie</label><input id="exerciseSearch" value="${esc(f20LibrarySearch)}" oninput="f20LibraryFiltersChange()" placeholder="Wpisz nazwę ćwiczenia…"></div>
+ <div><label for="f20ExGroup">Partia mięśniowa</label><select id="f20ExGroup" onchange="f20LibraryFiltersChange()"><option value="all">Wszystkie partie</option>${groupOptions.map(g=>`<option value="${esc(g)}" ${g===f20LibraryGroup?'selected':''}>${esc(g)}</option>`).join('')}</select></div>
+ <div><label for="f20ExUsage">Rodzaj treningu</label><select id="f20ExUsage" onchange="f20LibraryFiltersChange()"><option value="all">W domu i z Zuzią</option><option value="personal" ${f20LibraryUsage==='personal'?'selected':''}>Z Zuzią</option><option value="home" ${f20LibraryUsage==='home'?'selected':''}>W domu</option></select></div>
+ <div class="f20Full"><label for="f20LibClient">Oceny podopiecznych</label><select id="f20LibClient" onchange="f20LibraryOpinionPick(this.value)">${options.replace('<option value="all">','<option value="all" '+(f20LibraryOpinionClient==='all'?'selected':'')+'>')}</select></div></div>
+ <div id="exerciseList">${f20FilteredLibrary().map(f20LibraryRow).join('')||'<div class="emptyState">Brak ćwiczeń spełniających kryteria.</div>'}</div>`)}`;
+}
+async function saveLibraryExercise(){if(!trainer())return;
+ const name=v('ename').trim(),usage=[...($('f20UsePersonal')?.checked?['personal']:[]),...($('f20UseHome')?.checked?['home']:[])];
+ if(name.length<2||name.length>150)return message('Nazwa ćwiczenia musi mieć 2–150 znaków.',true);
+ if(!usage.length)return message('Wybierz co najmniej jeden typ treningu.',true);
+ const video=v('evideo');if(video&&!/^https:\/\//i.test(video))return message('Link do filmu musi zaczynać się od https://',true);
+ const data={name,muscle_group:v('egroup'),equipment:v('eequipment')||null,instructions:v('einstructions')||null,video_url:video||null,usage_contexts:usage};
+ try{if(exerciseEditingId)check(await sb.from('exercises').update(data).eq('id',exerciseEditingId));else check(await sb.from('exercises').insert(data));exerciseEditingId='';f20LibraryTab='list';await load();message('Ćwiczenie zapisane.');}
+ catch(e){message('Nie udało się zapisać ćwiczenia: '+e.message,true)}
+}
+function f20EditorOpinion(id){
+ if(!trainer()||!id)return '';
+ const opinion=f18Opinions.find(x=>x.exercise_id===id);
+ if(!opinion)return '<div class="f20EditorOpinion">☆ Podopieczna jeszcze nie oceniła tego ćwiczenia.</div>';
+ const score=opinion.rating?`★ ${opinion.rating}/5`:'Bez oceny';
+ return `<div class="f20EditorOpinion"><strong>${esc(score)}</strong> · Ocena wybranej podopiecznej (jak bardzo lubi ćwiczenie)</div>`;
+}
+
+function f20SetCalendarType(type){f20CalendarType=type;const b=document.querySelector('.f20CalendarForm button[type=submit]');if(b)b.textContent=type==='home'?'Dalej do ćwiczeń':'Zatwierdź termin'}
+function calendarPage(){
+ const t=trainer(),pref=calendarDatePrefill||localDateTime(new Date(Date.now()+86400000)),prefDate=pref.slice(0,10),prefTime=pref.slice(11,16);
+ return card(`<div class="calendarIntro"><div><h2>Kalendarz treningów</h2><p class="hint">${t?'Wybierz termin i rodzaj treningu. Terminy domowe nie zajmują kalendarza Zuzi.':'Najedź na termin na komputerze lub dotknij go na telefonie, aby zobaczyć opis.'}</p></div>${t?`<button class="primary" onclick="calendarFormOpen?(calendarFormOpen=false,render()):calendarAddAt()">＋ Dodaj trening</button>`:''}</div>
+ ${!bookingsReady?'<div class="calendarSetup">Kalendarz wymaga wcześniejszej konfiguracji Supabase.</div>':''}
+ ${t&&clients.length?`<div class="calendarFilters"><label for="calendarFilter">Podopieczna:</label><select id="calendarFilter" onchange="calendarSetFilter(this.value)"><option value="all" ${calendarFilterClient==='all'?'selected':''}>Wszystkie podopieczne</option>${clients.map(c=>`<option value="${esc(c.id)}" ${calendarFilterClient===c.id?'selected':''}>${esc(c.full_name)}</option>`).join('')}</select></div>`:''}
+ ${t&&calendarFormOpen&&bookingsReady?`<form onsubmit="saveCalendarBooking(event)" class="trainingForm calendarForm f20CalendarForm"><h3>Dodaj trening</h3>
+ <div><label for="f20CalendarType">Rodzaj treningu *</label><select id="f20CalendarType" onchange="f20SetCalendarType(this.value)"><option value="personal" ${f20CalendarType==='personal'?'selected':''}>Z Zuzią</option><option value="home" ${f20CalendarType==='home'?'selected':''}>W domu</option></select></div>
+ <div class="f20ProfileGrid"><div><label for="calendarClient">Podopieczna *</label><select id="calendarClient" required>${clients.map(c=>`<option value="${esc(c.id)}" ${c.id===(calendarFilterClient!=='all'?calendarFilterClient:selected)?'selected':''}>${esc(c.full_name)}</option>`).join('')}</select></div>
+ <div><label for="calendarDate">Data treningu *</label><input id="calendarDate" type="date" required value="${prefDate}"></div></div>
+ <div class="f20ProfileGrid"><div><label for="calendarStartTime">Godzina rozpoczęcia *</label><input id="calendarStartTime" type="time" required value="${prefTime}" oninput="calendarAutoEnd()"></div><div><label for="calendarEndTime">Godzina zakończenia *</label><input id="calendarEndTime" type="time" required value="${calendarDefaultEndTime(prefTime)}" oninput="calendarEndManuallyEdited=true"></div></div>
+ <p class="hint">Trening z Zuzią utworzy termin do uzupełnienia w Planie treningowym. „W domu” otworzy edytor ćwiczeń z wybraną datą — termin pojawi się tylko u podopiecznej po zapisaniu.</p>
+ <div class="trainingActions"><button type="button" class="ghost" onclick="calendarFormOpen=false;render()">Anuluj</button><button class="primary" type="submit">${f20CalendarType==='home'?'Dalej do ćwiczeń':'Zatwierdź termin'}</button></div></form>`:''}
+ ${!t?f18ClientCalendarExtras():''}<div id="formaCalendar" class="formaCalendar" aria-label="Interaktywny kalendarz treningów"></div><div class="calendarHelp"><span class="calendarLegend"></span> Trening z Zuzią ${t?'· Przeciągnij, by przesunąć termin':'· Treningi domowe są oznaczone ikoną domu'}</div>`).replace('<section class="card">','<section class="card formaCalendarCard">');
+}
+async function saveCalendarBooking(event){event.preventDefault();if(!trainer())return;
+ const day=v('calendarDate'),from=v('calendarStartTime'),to=v('calendarEndTime'),id=v('calendarClient');
+ const start=new Date(`${day}T${from}:00`),end=new Date(`${day}T${to}:00`);
+ if(!day||!from||!to||!id||!Number.isFinite(start.getTime())||!Number.isFinite(end.getTime()))return message('Uzupełnij podopieczną, datę i godziny.',true);
+ if(end<=start||start<=new Date())return message('Wybierz przyszły termin z prawidłową godziną zakończenia.',true);
+ if(f20CalendarType==='home'){
+  try{
+   if(selected!==id){selected=id;await loadClient()}
+   calendarFormOpen=false;calendarDatePrefill='';calendarEndManuallyEdited=false;
+   tab='plan';f20TrainerHomeStart();
+   if(f18HomeDraft){Object.assign(f18HomeDraft,{date:day,from,to});render()}
+  }catch(e){message('Nie udało się otworzyć edytora domowego: '+e.message,true)}
+  return;
+ }
+ try{check(await sb.from('forma_bookings').insert({client_id:id,starts_at:start.toISOString(),ends_at:end.toISOString(),status:'approved'}));
+  calendarFormOpen=false;calendarDatePrefill='';calendarEndManuallyEdited=false;await loadBookings();render();message('Termin z Zuzią zapisany w kalendarzu.');
+ }catch(e){message(e.code==='23P01'?'Ten termin zajmuje inna rezerwacja.':'Nie udało się zapisać terminu: '+e.message,true)}
+}
+function f20HomeWeekCard(h){
+ const future=new Date(h.starts_at)>new Date(),items=f20HomeItems(h);
+ return `<div class="f16WorkoutCard"><div class="f16WorkoutTop"><div><div class="hint">${esc(fmtShortDate(h.starts_at))} · ${esc(fmtTime(h.starts_at))}</div><h3>${esc(h.title||'Trening domowy')}</h3></div><span class="statusPill">⌂ W domu</span></div>
+ <p class="hint">${items.length} ćwiczeń · ${future?'Nadchodzący':'Po terminie'}</p>
+ <details><summary class="f16WorkoutHistoryLink">Zobacz ćwiczenia</summary><div class="f20HomeWeekDetails">${f20HomeWorkoutDetails(h)}</div></details>
+ ${future?`<div class="f16WorkoutActions"><button type="button" class="ghost" onclick="f18BeginHomeEdit('${esc(h.id)}')">Pełna edycja</button></div>`:''}</div>`;
+}
+function storedPlanCard(p){
+ const b=bookings.find(x=>x.id===p.booking_id),ex=f16PlanExercises(p),future=b&&new Date(b.starts_at)>new Date(),quick=trainer()&&f16QuickPlanId===p.id;
+ return `<div class="f16WorkoutCard ${b?.id===calendarSelectedBookingId?'f16Focused':''}"><div class="f16WorkoutTop"><div><div class="hint">${b?`${esc(fmtShortDate(b.starts_at))} · ${esc(fmtTime(b.starts_at))}`:'Bez terminu'}</div><h3>${esc(p.name||'Trening')}</h3></div><span class="statusPill">Z Zuzią</span></div>
+ <p class="hint">${ex.length} ćwiczeń · ${future?'Zaplanowany':'Po terminie'}</p>
+ ${quick?f16QuickEditor(p):`<details style="margin-top:12px"><summary class="f16WorkoutHistoryLink">Zobacz ćwiczenia</summary><div style="margin-top:11px">${ex.map(x=>f16ReadExercise(x)).join('')||'<p class="hint">Brak ćwiczeń.</p>'}</div></details>`}
+ ${trainer()&&!quick?`<div class="f16WorkoutActions">${future?`<button type="button" class="ghost" onclick="f16StartQuickEdit('${esc(p.id)}')">Szybka edycja</button><button type="button" class="ghost" onclick="f16OpenFullEdit('${esc(p.id)}')">Pełna edycja</button>`:`<button type="button" class="ghost" onclick="f16OpenResults('${esc(b.id)}')">Wykonanie i korekty</button>`}</div>`:''}</div>`;
+}
+function f16BookingWithoutPlanCard(b){return `<div class="f16WorkoutCard"><div class="f16WorkoutTop"><div><div class="hint">${esc(fmtShortDate(b.starts_at))} · ${esc(fmtTime(b.starts_at))}</div><h3>Trening z Zuzią</h3></div><span class="statusPill">Z Zuzią · Brak planu</span></div><p class="hint">Termin jest w kalendarzu, ale nie ma jeszcze przypisanych ćwiczeń.</p><button type="button" class="primary" onclick="startTrainingForBooking('${esc(b.id)}')">Utwórz trening</button></div>`}
+function plan(){
+ if(!trainer())return card('<p>Plan oglądasz w segmencie Treningi.</p>');
+ if(f18HomeEditing)return f18HomeEditor();
+ if(trainingDraft)return f17FullEditor();
+ if(!clientId())return card('<div class="emptyState">Wybierz podopieczną.</div>');
+ const weekPersonal=bookings.filter(b=>b.client_id===clientId()&&b.status==='approved'&&inWeek(b.starts_at)).map(b=>({kind:'personal',date:new Date(b.starts_at),row:b}));
+ const weekHome=f18HomeSessions.filter(h=>h.client_id===clientId()&&inWeek(h.starts_at)).map(h=>({kind:'home',date:new Date(h.starts_at),row:h}));
+ const week=[...weekPersonal,...weekHome].sort((a,b)=>a.date-b.date);
+ const items=week.map(item=>{if(item.kind==='home')return f20HomeWeekCard(item.row);const b=item.row,p=f16PlanForBooking(b);
+   return p?storedPlanCard(p):(new Date(b.starts_at)>new Date()?f16BookingWithoutPlanCard(b):`<div class="f16WorkoutCard"><strong>${esc(fmtShortDate(b.starts_at))} · Z Zuzią</strong><p class="hint">Miniony termin bez planu</p></div>`)}).join('');
+ return `${trainingWeekHeader()}${card(`<div class="sectionHeading"><h2>Treningi w wybranym tygodniu</h2><span class="statusPill">${week.length} terminów</span></div>
+ ${week.length?`<div class="f16WeekCards">${items}</div>`:'<div class="emptyState">Brak treningów w tym tygodniu. Terminy z Zuzią dodasz w Kalendarzu, a trening domowy utworzysz dla wybranej podopiecznej.</div>'}
+ <div class="f20AddHomeRow"><button type="button" class="ghost" onclick="f18BeginHomeEdit()">＋ Utwórz trening domowy</button><p class="hint">Trening domowy trafi do kalendarza podopiecznej, nie do kalendarza Zuzi.</p></div>`)}`;
+}
+function f16OpenResults(id){diarySection='history';f20TrainerDiaryPeriod='past';diaryFocusedBookingId=id;diaryFocusedExerciseId='';calendarSelectedBookingId=id;tab='diary';render();$('diaryWorkout-'+id)?.scrollIntoView({behavior:'smooth',block:'center'})}
+function diaryPage(){
+ if(!trainer())return card('<p>Dziennik treningowy jest dostępny w segmencie Treningi.</p>');
+ if(!clientId())return card('<p>Wybierz podopieczną.</p>');
+ const finished=bookings.filter(b=>b.client_id===clientId()&&b.status==='approved'&&new Date(b.ends_at)<=new Date()&&!!f16PlanForBooking(b)).sort((a,b)=>new Date(b.starts_at)-new Date(a.starts_at));
+ const upcoming=bookings.filter(b=>b.client_id===clientId()&&b.status==='approved'&&new Date(b.ends_at)>new Date()).sort((a,b)=>new Date(a.starts_at)-new Date(b.starts_at));
+ const home=f18HomeSessions.filter(h=>h.client_id===clientId()&&(f20TrainerDiaryPeriod==='upcoming'?new Date(h.ends_at)>new Date():new Date(h.ends_at)<=new Date()));
+ const isStrength=diarySection==='strength',isUpcoming=f20TrainerDiaryPeriod==='upcoming';
+ const nav=`<div class="diarySubtabs" role="tablist"><button type="button" class="diarySubtab ${!isStrength?'active':''}" onclick="diarySection='history';render()">Treningi</button><button type="button" class="diarySubtab ${isStrength?'active':''}" onclick="diarySection='strength';render()">Progres siłowy</button></div>`;
+ if(isStrength)return `${card(nav)}${strengthOverview()}`;
+ const rows=[...(isUpcoming?upcoming:finished).map(b=>({type:'personal',date:new Date(b.starts_at),b})),...home.map(h=>({type:'home',date:new Date(h.starts_at),h}))].sort((a,b)=>isUpcoming?a.date-b.date:b.date-a.date);
+ const cards=rows.map(row=>{
+  if(row.type==='home')return `<details class="diaryWorkout"><summary><div><strong>${esc(fmtShortDate(row.h.starts_at))} · ${esc(row.h.title||'Trening domowy')}</strong><div class="hint">W domu · ${esc(fmtTime(row.h.starts_at))}</div></div><span class="statusPill">${f20HomeItems(row.h).length} ćwiczeń</span></summary><div class="diaryInside">${f20HomeWorkoutDetails(row.h)}</div></details>`;
+  const b=row.b,p=f16PlanForBooking(b);
+  if(isUpcoming){return `<details class="diaryWorkout"><summary><div><strong>${esc(fmtShortDate(b.starts_at))} · ${esc(p?.name||b.title||'Trening z Zuzią')}</strong><div class="hint">Z Zuzią · ${esc(fmtTime(b.starts_at))}</div></div><span class="statusPill">${p?'Plan gotowy':'Brak planu'}</span></summary><div class="diaryInside">${p?f16PlanExercises(p).map(x=>f16ReadExercise(x)).join(''):'<p class="hint">Trenerka nie dodała jeszcze ćwiczeń.</p>'}</div></details>`}
+  return diaryBookingCard(b);
+ }).join('');
+ return `${card(`${nav}<div class="f19WhenFilters"><button type="button" class="${isUpcoming?'active':''}" onclick="f20TrainerDiaryPeriod='upcoming';render()">Nadchodzące treningi</button><button type="button" class="${!isUpcoming?'active':''}" onclick="f20TrainerDiaryPeriod='past';render()">Historia treningów</button></div>`)}${card(cards||'<div class="emptyState">Brak treningów w wybranym zakresie.</div>')}`;
 }
 
 (async()=>{try{if(!window.supabase)throw Error('Nie udało się załadować biblioteki Supabase');const r=await fetch('/api/config',{cache:'no-store'});if(!r.ok)throw Error('Brak konfiguracji Supabase. Sprawdź zmienne Vercel i ponowne wdrożenie.');const {url,key}=await r.json();sb=window.supabase.createClient(url,key);let recovering=false;sb.auth.onAuthStateChange((event)=>{if(event==='PASSWORD_RECOVERY'){recovering=true;setTimeout(showNewPassword,0)}});const hash=new URLSearchParams(window.location.hash.slice(1));const query=new URLSearchParams(window.location.search);if(hash.get('type')==='recovery'||query.get('type')==='recovery'){recovering=true;showNewPassword()}else{await initSession();if(recovering)showNewPassword()}}catch(e){$('title').textContent='Konfiguracja';$('app').innerHTML=card(`<h2>Nie udało się uruchomić FORMA</h2><p class="error">${esc(e.message)}</p><p>Sprawdź wdrożenie pliku <code>api/config.js</code> na Vercel.</p>`)}})();
