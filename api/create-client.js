@@ -13,7 +13,7 @@ module.exports = async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { error: 'Użyj metody POST.' });
   const url = (process.env.SUPABASE_URL || '').replace(/\/$/, '');
   const anon = process.env.SUPABASE_PUBLISHABLE_KEY;
-  const service = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const service = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim();
   if (!url || !anon || !service)
     return json(res, 503, { error: 'Brak konfiguracji serwera. Dodaj SUPABASE_SERVICE_ROLE_KEY w ustawieniach Vercel i ponów wdrożenie.' });
   let authOrigin;
@@ -43,11 +43,19 @@ module.exports = async function handler(req, res) {
     if (!/^[0-9a-f-]{36}$/i.test(user.id || '')) return json(res, 401, { error: 'Nie można potwierdzić tożsamości.' });
 
     // 2) Verify current role server-side, using service role to read profiles.
-    const adminHeaders = { apikey: service, Authorization: 'Bearer ' + service };
+    const adminHeaders = { apikey: service };
+    // Legacy service_role keys are JWTs. Opaque secret keys use apikey.
+    if (!service.startsWith('sb_secret_')) adminHeaders.Authorization = 'Bearer ' + service;
     const roles = await fetch(url + '/rest/v1/profiles?select=id,role&id=eq.' + encodeURIComponent(user.id), {
       headers: adminHeaders, signal: AbortSignal.timeout(10000)
     });
-    if (!roles.ok) return json(res, 502, { error: 'Nie można potwierdzić uprawnień trenerki.' });
+    if (!roles.ok) {
+      console.error('Supabase trainer profile lookup failed', { status: roles.status });
+      if (roles.status === 401 || roles.status === 403) {
+        return json(res, 502, { error: 'Supabase odrzucił dostęp serwera do profili. Sprawdź, czy SUPABASE_SERVICE_ROLE_KEY w Vercel jest kluczem secret lub service_role z projektu wskazanego przez SUPABASE_URL.' });
+      }
+      return json(res, 502, { error: 'Nie można odczytać profilu trenerki w Supabase (HTTP ' + roles.status + ').' });
+    }
     const roleRows = await readBody(roles);
     if (!Array.isArray(roleRows) || roleRows[0]?.role !== 'trainer')
       return json(res, 403, { error: 'Tylko trenerka może zapraszać podopieczne.' });
